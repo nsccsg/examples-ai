@@ -1,0 +1,45 @@
+
+These three test inputs are designed to check that your username is set up correctly to use the DGX nodes.
+
+## 1-submit-job
+
+This test runs some simple commands on the host operating system.
+Change the project setting "-P 99999999" in the job script to the correct code for your project.
+
+Submit the job to the scheduler with:
+ qsub submit.pbs
+
+See the status of the job with:
+ qstat
+
+## 2-check-container
+
+This test runs the same commands inside a Docker container
+
+Change the project code in the job script and submit the job as in the previous example.
+
+## 3-docker-mxnet
+
+This test runs an MXNet training example
+
+Change the project code in the job script and submit the job as in the previous example.
+
+
+## Checking results
+
+Once jobs have finished check {1-submit-job,2-check-container,3-docker-mxnet}/*.o[0-9]* to see standard output and error from jobs.
+Reference output is available in the directory "reference" in each of the test cases.
+
+If these jobs fail then either email help@nscc.sg or use the portal https://servicedesk.nscc.sg/ and we will investigate.
+
+Please use the job scripts as templates for your own workflows.
+
+You can see your home and project directories on the DGX nodes and in Docker containers, the Lustre scratch directory is avilable inside Docker containers if the are run with the "nscc-docker run --lustre" option.
+
+If you are having any problems porting your workflows then get in contact and we will provide assistance.
+
+If the ncsc-docker utility does not provide all the functionality you require then please submit a feature request.
+
+If your workflow does not fit cleanly into the batch scheduling then we would like to discuss that with you so that we can improve our service in the future.
+
+For general information on user enrollment, new user information, PBS job scheduler, etc. then there are user guides in https://help.nscc.sg/user-guide/

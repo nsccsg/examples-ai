@@ -1,0 +1,43 @@
+#!/bin/sh
+
+### The following requests all resources on 1 DGX-1 node
+#PBS -l select=1:ncpus=40:ngpus=8
+
+### The "select=1" specifies the number of nodes
+### The "ncpus=40:ngpus=8" asks for acccess to all 8 GPU cards
+
+### Specify amount of time required 
+#PBS -l walltime=0:05:00
+
+### Select DGX queue
+#PBS -q dgx
+
+### Specify project code
+#PBS -P 41000001
+
+### Specify name for job
+#PBS -N mxnet
+
+### Standard output by default goes to file $PBS_JOBNAME.o$PBS_JOBID
+### Standard error by default goes to file $PBS_JOBNAME.e$PBS_JOBID
+### To merge standard output and error use the following
+#PBS -j oe
+
+### Start of commands to be run
+
+# Docker image to use for container
+#   To see available images run command: nscc-docker images
+#   If image is not present, email help@nscc.sg to request pulling image into repository on all DGX nodes
+image="nvcr.io/nvidia/mxnet:18.08-py2"
+
+# Change to directory where job was submitted
+cd "$PBS_O_WORKDIR" || exit $?
+
+# The "nscc-docker run $image" command runs the following Docker command: 
+#    nvidia-docker -u $UID:$GID -v /home:/home -v /raid:/raid --rm -i --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 $image /bin/sh
+# See full list of options with "nscc-docker run -h"
+# 
+# Environment variables set in the job script will not be visible inside the container
+# The directory that the container starts in will probably be different from the current directory
+# The "< stdin" syntax means that the container will read a list of commands from the file called "stdin" in this directory
+nscc-docker run $image < stdin > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
