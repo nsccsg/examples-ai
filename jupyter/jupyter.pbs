@@ -1,0 +1,66 @@
+#!/bin/sh
+
+### The following requests all resources on 1 DGX-1 node
+#PBS -l select=1:ncpus=40:ngpus=8
+
+### The "select=1" specifies the number of nodes
+### The "ncpus=40:ngpus=8" is used by PBS for scheduling and accounting purposes
+### (all jobs running on a node can see all resources on a node)
+
+### Specify amount of time required (maximum 24 hours)
+#PBS -l walltime=1:00:00
+
+### Select correct queue
+###  fj1 for A*STAR users
+###  fj2 for NTU users
+###  fj3 for NUS users
+###  fj4 for AI.SG users
+#PBS -q fj1
+
+### Specify project code for DGX pilot phase
+#PBS -P 41000001
+
+### Specify name for job
+#PBS -N jupyter
+
+### Standard output by default goes to file $PBS_JOBNAME.o$PBS_JOBID
+### Standard error by default goes to file $PBS_JOBNAME.e$PBS_JOBID
+### To merge standard output and error use the following
+#PBS -j oe
+
+### Start of commands to be run
+
+# Change to directory where job was submitted
+cd "$PBS_O_WORKDIR" || exit $?
+
+# Docker image to use for container
+#   To see available images run command: nvidia-docker-images
+#   If a different container required, email help@nscc.sg to request pulling image into repository 
+image="nvcr.io/nvidia/tensorflow:18.04-py3"
+
+# Add /usr/local/bin to PATH to find docker wrapper commands
+PATH="$PATH:/usr/local/bin" ; export PATH
+
+# Change to directory where job was submitted
+cd "$PBS_O_WORKDIR" || exit $?
+
+# The "nvidia-docker-run+ports $image" command runs the following Docker command: 
+#    nvidia-docker -u $UID:$GID -v /home:/home --rm -i --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 -p 8888:8888 -p 5901:5901 $image /bin/sh
+# Run VNC server inside container
+nscc-docker run --ports $image << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
+echo Container starts in the directory:
+pwd
+# We can do the following if using "<<EOF" to pass commands as it is expanded by the job shell
+cd $PBS_O_WORKDIR
+HOME=$HOME
+USER=$USER
+export HOME USER
+pip install --user jupyter
+PATH=$HOME/.local/bin:$PATH
+export PATH
+jupyter notebook --ip=0.0.0.0 --port=8888
+EOF
+
+### On local machine use ssh port forwarding to tunnel to DGX (replace X with 1 to 6)
+# ssh -L8888:dgx410X:8888 aspire.nscc.sg
+### On local machine go to http://localhost:8888 and use token from container

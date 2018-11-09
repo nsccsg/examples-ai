@@ -1,0 +1,42 @@
+
+The first three test inputs are designed to gave the basic information required to use the DGX nodes effectively.
+The rest of the examples cover more advanced topics.
+
+The project code is either 41000001 for stakeholders or 22270170 for non-stakeholders
+
+# copy files to a directory in project folder:
+project=41000001 # or 22270170
+location=/home/projects/$project/$USER/examples
+cp -a /home/projects/ai/examples $location
+#
+# submit first basic example
+cd $location/1-basic-job && \
+ sed -i "s/-P 41000001/-P $project/" submit.pbs && \
+ qsub submit.pbs
+#
+# run a training job
+cd $location/2-mxnet-training && \
+ sed -i "s/-P 41000001/-P $project/" train.pbs && \
+ qsub train.pbs
+#
+# install a python package inside container
+cd $location/3-pip-install && \
+ sed -i "s/-P 41000001/-P $project/" pip.pbs && \
+ qsub pip.pbs
+
+The following commands checks status of your jobs:
+ qstat 
+
+The kill a job use (replace 000000.wlm01 with job id):
+ qdel 000000.wlm01
+
+Once jobs have finished check */*.o[0-9]* to see standard output and error from jobs.
+Reference output is available in the directory "reference-output" in each of the test cases.
+
+Please use the job scripts as templates for your own workflows.
+
+You can see your home and project directories on the DGX nodes and in Docker containers, the Lustre scratch directory is accessible within Docker containers if you use "nscc-docker run --lustre".
+
+For general information on user enrollment, new user information, projects, PBS job scheduler, etc. then consult the user guides at https://help.nscc.sg/user-guide/
+
+If you are having any problems running these examples then the NSCC Service Desk can be contacted by email at help@nscc.sg or by using the portal at https://servicedesk.nscc.sg/

@@ -1,0 +1,55 @@
+Ignoring @/caffe2/caffe2/contrib/nccl:nccl_ops as it is not a valid file.
+Ignoring @/caffe2/caffe2/contrib/gloo:gloo_ops as it is not a valid file.
+Ignoring @/caffe2/caffe2/contrib/gloo:gloo_ops_gpu as it is not a valid file.
+Testing after epoch 0.000000/1.000000 ... loss=0.899741, top-1=0.001056, top-5=0.004564, images/sec=1040
+Epoch 0.019982/1.000000, iteration 100, lr=0.000500, loss=0.862715, images/sec=2171
+Epoch 0.039963/1.000000, iteration 200, lr=0.000500, loss=0.862096, images/sec=2776
+Epoch 0.059945/1.000000, iteration 300, lr=0.000500, loss=0.859186, images/sec=2765
+Epoch 0.079927/1.000000, iteration 400, lr=0.000500, loss=0.864289, images/sec=2762
+Epoch 0.099909/1.000000, iteration 500, lr=0.000500, loss=0.860870, images/sec=2757
+Epoch 0.119890/1.000000, iteration 600, lr=0.000500, loss=0.851768, images/sec=2753
+Epoch 0.139872/1.000000, iteration 700, lr=0.000500, loss=0.848749, images/sec=2752
+Epoch 0.159854/1.000000, iteration 800, lr=0.000500, loss=0.854134, images/sec=2750
+Epoch 0.179836/1.000000, iteration 900, lr=0.000500, loss=0.845422, images/sec=2749
+Epoch 0.199817/1.000000, iteration 1000, lr=0.000500, loss=0.829932, images/sec=2750
+Epoch 0.219799/1.000000, iteration 1100, lr=0.000500, loss=0.836824, images/sec=2746
+Epoch 0.239781/1.000000, iteration 1200, lr=0.000500, loss=0.784330, images/sec=2743
+Epoch 0.259763/1.000000, iteration 1300, lr=0.000500, loss=0.815744, images/sec=2740
+Epoch 0.279744/1.000000, iteration 1400, lr=0.000500, loss=0.787333, images/sec=2733
+Epoch 0.299726/1.000000, iteration 1500, lr=0.000500, loss=0.824090, images/sec=2737
+Epoch 0.319708/1.000000, iteration 1600, lr=0.000500, loss=0.761066, images/sec=2738
+Epoch 0.339690/1.000000, iteration 1700, lr=0.000500, loss=0.738902, images/sec=2742
+Epoch 0.359671/1.000000, iteration 1800, lr=0.000500, loss=0.786709, images/sec=2747
+Epoch 0.379653/1.000000, iteration 1900, lr=0.000500, loss=0.836349, images/sec=2740
+Epoch 0.399635/1.000000, iteration 2000, lr=0.000500, loss=0.785155, images/sec=2745
+Epoch 0.419616/1.000000, iteration 2100, lr=0.000500, loss=0.739522, images/sec=2746
+Epoch 0.439598/1.000000, iteration 2200, lr=0.000500, loss=0.723207, images/sec=2747
+Epoch 0.459580/1.000000, iteration 2300, lr=0.000500, loss=0.700402, images/sec=2738
+Epoch 0.479562/1.000000, iteration 2400, lr=0.000500, loss=0.762173, images/sec=2742
+Epoch 0.499543/1.000000, iteration 2500, lr=0.000500, loss=0.741104, images/sec=2740
+Epoch 0.519525/1.000000, iteration 2600, lr=0.000500, loss=0.723973, images/sec=2731
+Epoch 0.539507/1.000000, iteration 2700, lr=0.000500, loss=0.747328, images/sec=2740
+Epoch 0.559489/1.000000, iteration 2800, lr=0.000500, loss=0.693707, images/sec=2733
+Epoch 0.579470/1.000000, iteration 2900, lr=0.000500, loss=0.765675, images/sec=2727
+Epoch 0.599452/1.000000, iteration 3000, lr=0.000500, loss=0.684472, images/sec=2735
+Epoch 0.619434/1.000000, iteration 3100, lr=0.000500, loss=0.691701, images/sec=2737
+Epoch 0.639416/1.000000, iteration 3200, lr=0.000500, loss=0.701274, images/sec=2731
+Epoch 0.659397/1.000000, iteration 3300, lr=0.000500, loss=0.707620, images/sec=2734
+Epoch 0.679379/1.000000, iteration 3400, lr=0.000500, loss=0.648318, images/sec=2732
+Epoch 0.699361/1.000000, iteration 3500, lr=0.000500, loss=0.726700, images/sec=2733
+Epoch 0.719342/1.000000, iteration 3600, lr=0.000500, loss=0.671528, images/sec=2734
+Epoch 0.739324/1.000000, iteration 3700, lr=0.000500, loss=0.687530, images/sec=2732
+Epoch 0.759306/1.000000, iteration 3800, lr=0.000500, loss=0.730560, images/sec=2743
+Epoch 0.779288/1.000000, iteration 3900, lr=0.000500, loss=0.715379, images/sec=2737
+Epoch 0.799269/1.000000, iteration 4000, lr=0.000500, loss=0.695204, images/sec=2734
+Epoch 0.819251/1.000000, iteration 4100, lr=0.000500, loss=0.680540, images/sec=2734
+Epoch 0.839233/1.000000, iteration 4200, lr=0.000500, loss=0.687493, images/sec=2732
+Epoch 0.859215/1.000000, iteration 4300, lr=0.000500, loss=0.660967, images/sec=2732
+Epoch 0.879196/1.000000, iteration 4400, lr=0.000500, loss=0.630825, images/sec=2735
+Epoch 0.899178/1.000000, iteration 4500, lr=0.000500, loss=0.699617, images/sec=2739
+Epoch 0.919160/1.000000, iteration 4600, lr=0.000500, loss=0.656282, images/sec=2737
+Epoch 0.939142/1.000000, iteration 4700, lr=0.000500, loss=0.657593, images/sec=2735
+Epoch 0.959123/1.000000, iteration 4800, lr=0.000500, loss=0.706969, images/sec=2739
+Epoch 0.979105/1.000000, iteration 4900, lr=0.000500, loss=0.651130, images/sec=2738
+Epoch 0.999087/1.000000, iteration 5000, lr=0.000500, loss=0.696123, images/sec=2735
+Testing after epoch 1.000086/1.000000 ... loss=0.653743, top-1=0.086595, top-5=0.216458, images/sec=8631

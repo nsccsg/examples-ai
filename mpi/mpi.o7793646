@@ -1,0 +1,32 @@
+ 0:dgx4105
+ 2:dgx4105
+ 3:dgx4105
+ 4:dgx4105
+ 5:dgx4105
+ 6:dgx4105
+ 1:dgx4105
+ 7:dgx4105
+ 8:dgx4104
+ 9:dgx4104
+10:dgx4104
+11:dgx4104
+12:dgx4104
+13:dgx4104
+14:dgx4104
+15:dgx4104
+======================================================================================
+
+			Resource Usage on 2018-10-28 15:19:01.083107:
+
+	JobId: 7793646.wlm01  
+	Project: 90000001 
+	Exit Status: 0
+	NCPUs Requested: 80				NCPUs Used: 80
+							CPU Time Used: 00:00:01
+	Memory Requested: None 				Memory Used: 3400kb
+							Vmem Used: 16396kb
+	Walltime requested: 00:10:00 			Walltime Used: 00:00:05
+	
+	Execution Nodes Used: (dgx4105:ncpus=40:ngpus=8)+(dgx4104:ncpus=40:ngpus=8)
+	
+ ======================================================================================

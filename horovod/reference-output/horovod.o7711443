@@ -1,0 +1,2012 @@
+=== PBS_NODEFILE
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4103
+dgx4103
+dgx4103
+dgx4103
+dgx4103
+dgx4103
+dgx4103
+dgx4103
+=== PBS_NODEFILE
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4103
+dgx4103
+dgx4103
+dgx4103
+dgx4103
+dgx4103
+dgx4103
+dgx4103
+dgx4103: Wed Oct 17 17:37:56 2018       
+dgx4103: +-----------------------------------------------------------------------------+
+dgx4103: | NVIDIA-SMI 384.81                 Driver Version: 384.81                    |
+dgx4103: |-------------------------------+----------------------+----------------------+
+dgx4103: | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+dgx4103: | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+dgx4103: |===============================+======================+======================|
+dgx4103: |   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+dgx4103: | N/A   48C    P0    74W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4103: +-------------------------------+----------------------+----------------------+
+dgx4103: |   1  Tesla V100-SXM2...  On   | 00000000:07:00.0 Off |                    0 |
+dgx4103: | N/A   47C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4103: +-------------------------------+----------------------+----------------------+
+dgx4103: |   2  Tesla V100-SXM2...  On   | 00000000:0A:00.0 Off |                    0 |
+dgx4103: | N/A   48C    P0    70W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4103: +-------------------------------+----------------------+----------------------+
+dgx4103: |   3  Tesla V100-SXM2...  On   | 00000000:0B:00.0 Off |                    0 |
+dgx4103: | N/A   41C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4103: +-------------------------------+----------------------+----------------------+
+dgx4103: |   4  Tesla V100-SXM2...  On   | 00000000:85:00.0 Off |                    0 |
+dgx4103: | N/A   46C    P0    71W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4103: +-------------------------------+----------------------+----------------------+
+dgx4103: |   5  Tesla V100-SXM2...  On   | 00000000:86:00.0 Off |                    0 |
+dgx4103: | N/A   45C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4103: +-------------------------------+----------------------+----------------------+
+dgx4103: |   6  Tesla V100-SXM2...  On   | 00000000:89:00.0 Off |                    0 |
+dgx4103: | N/A   49C    P0    71W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4103: +-------------------------------+----------------------+----------------------+
+dgx4103: |   7  Tesla V100-SXM2...  On   | 00000000:8A:00.0 Off |                    0 |
+dgx4103: | N/A   42C    P0    44W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4103: +-------------------------------+----------------------+----------------------+
+dgx4103:                                                                                
+dgx4103: +-----------------------------------------------------------------------------+
+dgx4103: | Processes:                                                       GPU Memory |
+dgx4103: |  GPU       PID   Type   Process name                             Usage      |
+dgx4103: |=============================================================================|
+dgx4103: |  No running processes found                                                 |
+dgx4103: +-----------------------------------------------------------------------------+
+dgx4105: Wed Oct 17 17:37:57 2018       
+dgx4105: +-----------------------------------------------------------------------------+
+dgx4105: | NVIDIA-SMI 384.81                 Driver Version: 384.81                    |
+dgx4105: |-------------------------------+----------------------+----------------------+
+dgx4105: | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+dgx4105: | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+dgx4105: |===============================+======================+======================|
+dgx4105: |   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+dgx4105: | N/A   49C    P0    75W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   1  Tesla V100-SXM2...  On   | 00000000:07:00.0 Off |                    0 |
+dgx4105: | N/A   51C    P0    74W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   2  Tesla V100-SXM2...  On   | 00000000:0A:00.0 Off |                    0 |
+dgx4105: | N/A   50C    P0    75W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   3  Tesla V100-SXM2...  On   | 00000000:0B:00.0 Off |                    0 |
+dgx4105: | N/A   44C    P0    69W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   4  Tesla V100-SXM2...  On   | 00000000:85:00.0 Off |                    0 |
+dgx4105: | N/A   46C    P0    73W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   5  Tesla V100-SXM2...  On   | 00000000:86:00.0 Off |                    0 |
+dgx4105: | N/A   48C    P0    71W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   6  Tesla V100-SXM2...  On   | 00000000:89:00.0 Off |                    0 |
+dgx4105: | N/A   51C    P0    75W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   7  Tesla V100-SXM2...  On   | 00000000:8A:00.0 Off |                    0 |
+dgx4105: | N/A   46C    P0    72W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105:                                                                                
+dgx4105: +-----------------------------------------------------------------------------+
+dgx4105: | Processes:                                                       GPU Memory |
+dgx4105: |  GPU       PID   Type   Process name                             Usage      |
+dgx4105: |=============================================================================|
+dgx4105: |  No running processes found                                                 |
+dgx4105: +-----------------------------------------------------------------------------+
+=== mpi.x
+ 0:dgx4105
+ 3:dgx4105
+ 4:dgx4105
+ 5:dgx4105
+ 6:dgx4105
+ 7:dgx4105
+ 1:dgx4105
+ 2:dgx4105
+10:dgx4103
+ 9:dgx4103
+12:dgx4103
+13:dgx4103
+14:dgx4103
+ 8:dgx4103
+11:dgx4103
+15:dgx4103
+=== mpi.x
+=== mpi_nx2_latbw
+[0<->1]		1.13us		4433.318779 (MillionBytes/sec)
+[0<->2]		0.61us		8976.517518 (MillionBytes/sec)
+[0<->3]		1.12us		4443.273087 (MillionBytes/sec)
+[0<->4]		0.61us		8973.089848 (MillionBytes/sec)
+[0<->5]		1.13us		4306.789161 (MillionBytes/sec)
+[0<->6]		0.62us		8678.271085 (MillionBytes/sec)
+[0<->7]		1.12us		4449.385973 (MillionBytes/sec)
+[0<->8]		1.87us		1448.267776 (MillionBytes/sec)
+[0<->9]		1.76us		1396.731885 (MillionBytes/sec)
+[0<->10]		1.75us		1326.725324 (MillionBytes/sec)
+[0<->11]		1.77us		1418.384171 (MillionBytes/sec)
+[0<->12]		1.83us		1421.331526 (MillionBytes/sec)
+[0<->13]		1.82us		1429.742433 (MillionBytes/sec)
+[0<->14]		1.81us		1009.967544 (MillionBytes/sec)
+[0<->15]		1.81us		1432.659568 (MillionBytes/sec)
+[8<->0]		1.76us		9762.316379 (MillionBytes/sec)
+[8<->1]		1.78us		1005.584062 (MillionBytes/sec)
+[8<->2]		1.76us		1395.427138 (MillionBytes/sec)
+[8<->3]		1.75us		1394.842971 (MillionBytes/sec)
+[8<->4]		1.78us		962.802834 (MillionBytes/sec)
+[8<->5]		1.77us		1395.413486 (MillionBytes/sec)
+[8<->6]		1.79us		1045.283720 (MillionBytes/sec)
+[8<->7]		1.77us		1396.768955 (MillionBytes/sec)
+[8<->9]		1.18us		4393.778024 (MillionBytes/sec)
+[8<->10]		0.71us		9050.545030 (MillionBytes/sec)
+[8<->11]		1.21us		4485.233717 (MillionBytes/sec)
+[8<->12]		0.73us		9033.391574 (MillionBytes/sec)
+[8<->13]		1.21us		4491.959612 (MillionBytes/sec)
+[8<->14]		0.72us		9004.275116 (MillionBytes/sec)
+[8<->15]		1.21us		4497.977717 (MillionBytes/sec)
+=== mpi_nx2_latbw
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+Script arguments:
+  --num_iter 200
+  --use_dali False
+  --iter_unit batch
+  --batch_size 64
+  --data_dir /raid/datasets/resnet
+  --display_every 10
+  --layers 152
+  --precision fp16
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp11g7k8_s
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmps__8f8e4
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpdmcr3l2m
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp1hth_7p5
+Training
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpyr567x93
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmphsboh3l0
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpr15u6aa3
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpn2x_9wdb
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmptg3d_xk9
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp2qpivz7n
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp1o6wrt0t
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp0blbctr6
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp7_gx6rxo
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpd5_4px64
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpyrlj05oo
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpv7z6rm87
+Training
+Training
+Training
+Training
+2018-10-17 09:38:39.788941: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:39.789009: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 5
+2018-10-17 09:38:40.977628: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:40.977678: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 3
+2018-10-17 09:38:41.017882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:41.017935: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 4
+2018-10-17 09:38:41.119639: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:41.119688: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 2
+2018-10-17 09:38:41.374817: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:41.374908: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 1
+2018-10-17 09:38:41.677933: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:41.677985: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-10-17 09:38:41.683432: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:41.683504: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-10-17 09:38:42.062974: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:42.063034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 3
+2018-10-17 09:38:42.118051: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:42.118105: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 7
+2018-10-17 09:38:42.714279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:42.714340: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      5 
+2018-10-17 09:38:42.714365: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 5:   N 
+2018-10-17 09:38:42.729116: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2018-10-17 09:38:42.872618: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:42.872662: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 1
+2018-10-17 09:38:43.391885: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:43.391924: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 6
+2018-10-17 09:38:43.477233: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:43.477273: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      4 
+2018-10-17 09:38:43.477298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 4:   N 
+2018-10-17 09:38:43.492152: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2018-10-17 09:38:43.656903: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:43.656948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      2 
+2018-10-17 09:38:43.656981: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N 
+2018-10-17 09:38:43.665369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2018-10-17 09:38:43.842592: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:43.842634: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 4
+2018-10-17 09:38:43.926120: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:43.926159: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      3 
+2018-10-17 09:38:43.926167: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 3:   N 
+2018-10-17 09:38:43.941308: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2018-10-17 09:38:44.074551: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:44.074602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 2
+2018-10-17 09:38:44.153580: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:44.153635: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-10-17 09:38:44.153659: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-10-17 09:38:44.161890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2018-10-17 09:38:44.186301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:44.186339: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      1 
+2018-10-17 09:38:44.186347: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   N 
+2018-10-17 09:38:44.186777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2018-10-17 09:38:44.295206: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:44.295264: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-10-17 09:38:44.295272: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-10-17 09:38:44.295698: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2018-10-17 09:38:44.473989: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:44.474024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      7 
+2018-10-17 09:38:44.474032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 7:   N 
+2018-10-17 09:38:44.474444: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2018-10-17 09:38:44.709115: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:44.709173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      3 
+2018-10-17 09:38:44.709181: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 3:   N 
+2018-10-17 09:38:44.723480: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2018-10-17 09:38:44.849297: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:44.849370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 6
+2018-10-17 09:38:44.916367: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:44.916420: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 5
+2018-10-17 09:38:45.129778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:38:45.129826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 7
+2018-10-17 09:38:45.219933: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:45.219971: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      6 
+2018-10-17 09:38:45.219979: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 6:   N 
+2018-10-17 09:38:45.220431: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2018-10-17 09:38:45.319440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:45.319485: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      1 
+2018-10-17 09:38:45.319494: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   N 
+2018-10-17 09:38:45.319953: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2018-10-17 09:38:45.388821: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:45.388862: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      4 
+2018-10-17 09:38:45.388872: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 4:   N 
+2018-10-17 09:38:45.389329: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2018-10-17 09:38:45.460036: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:45.460076: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      2 
+2018-10-17 09:38:45.460102: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N 
+2018-10-17 09:38:45.460558: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2018-10-17 09:38:46.342582: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:46.342635: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      6 
+2018-10-17 09:38:46.342661: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 6:   N 
+2018-10-17 09:38:46.343192: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2018-10-17 09:38:46.484918: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:46.484964: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      5 
+2018-10-17 09:38:46.484973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 5:   N 
+2018-10-17 09:38:46.485453: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2018-10-17 09:38:46.616337: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:38:46.616383: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      7 
+2018-10-17 09:38:46.616392: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 7:   N 
+2018-10-17 09:38:46.616847: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2018-10-17 09:40:47.657351: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4498 of 10000
+2018-10-17 09:40:47.667064: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4497 of 10000
+2018-10-17 09:40:47.665854: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4529 of 10000
+2018-10-17 09:40:47.671827: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4386 of 10000
+2018-10-17 09:40:47.684260: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4579 of 10000
+2018-10-17 09:40:47.682446: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4454 of 10000
+2018-10-17 09:40:47.688916: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4551 of 10000
+2018-10-17 09:40:47.687941: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4447 of 10000
+2018-10-17 09:40:47.689804: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4470 of 10000
+2018-10-17 09:40:47.695354: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4546 of 10000
+2018-10-17 09:40:47.701281: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4592 of 10000
+2018-10-17 09:40:47.714393: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4362 of 10000
+2018-10-17 09:40:47.738514: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4464 of 10000
+2018-10-17 09:40:47.777707: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4379 of 10000
+2018-10-17 09:40:47.782544: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4267 of 10000
+2018-10-17 09:40:47.787132: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4442 of 10000
+2018-10-17 09:40:55.624381: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:55.622234: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:55.626881: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:55.660216: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:55.673160: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:55.691985: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:55.750187: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:55.792958: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:55.827381: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:55.899963: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:56.009660: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:56.045420: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:56.310734: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:56.352449: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:40:56.382024: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+  Step Epoch Img/sec   Loss  LR
+2018-10-17 09:40:56.608390: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+dgx4105:79914:80384 [0] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79914:80384 [0] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:79914:80384 [0] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:79914:80384 [0] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:79914:80384 [0] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:79914:80384 [0] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:79914:80384 [0] INFO Using internal Network IB
+dgx4105:79914:80384 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:79914:80384 [0] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79914:80384 [0] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:79914:80384 [0] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:79914:80384 [0] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:79914:80384 [0] INFO NET/Socket : 4 interfaces found
+NCCL version 2.2.13+cuda9.0
+dgx4105:79936:80382 [7] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79936:80382 [7] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:79924:80365 [5] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79924:80365 [5] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:79919:80376 [3] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79919:80376 [3] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:79917:80370 [2] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79917:80370 [2] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:79921:80381 [4] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79921:80381 [4] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:79929:80380 [6] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79929:80380 [6] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:79915:80361 [1] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79915:80361 [1] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:79936:80382 [7] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:79924:80365 [5] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:79919:80376 [3] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:79917:80370 [2] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:79921:80381 [4] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:79929:80380 [6] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:79915:80361 [1] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:79936:80382 [7] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:79924:80365 [5] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:79919:80376 [3] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:79929:80380 [6] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:79921:80381 [4] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:79917:80370 [2] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:79915:80361 [1] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:79924:80365 [5] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:79936:80382 [7] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:79919:80376 [3] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:79921:80381 [4] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:79917:80370 [2] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:79929:80380 [6] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:79915:80361 [1] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:79924:80365 [5] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:79924:80365 [5] INFO Using internal Network IB
+dgx4105:79924:80365 [5] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:79936:80382 [7] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:79936:80382 [7] INFO Using internal Network IB
+dgx4105:79936:80382 [7] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:79919:80376 [3] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:79919:80376 [3] INFO Using internal Network IB
+dgx4105:79919:80376 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:79917:80370 [2] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:79917:80370 [2] INFO Using internal Network IB
+dgx4105:79929:80380 [6] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:79917:80370 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:79929:80380 [6] INFO Using internal Network IB
+dgx4105:79929:80380 [6] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:79921:80381 [4] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:79921:80381 [4] INFO Using internal Network IB
+dgx4105:79921:80381 [4] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:79915:80361 [1] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:79915:80361 [1] INFO Using internal Network IB
+dgx4105:79915:80361 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:71618:72261 [2] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71618:72261 [2] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:71622:72266 [4] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71622:72266 [4] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:71628:72269 [6] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71628:72269 [6] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:71615:72257 [0] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71615:72257 [0] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:71620:72277 [3] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71620:72277 [3] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:71633:72280 [7] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71633:72280 [7] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:71624:72279 [5] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71624:72279 [5] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:71616:72276 [1] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71616:72276 [1] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:71618:72261 [2] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:71622:72266 [4] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:71628:72269 [6] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:71615:72257 [0] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:71633:72280 [7] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:71624:72279 [5] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:71616:72276 [1] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:71620:72277 [3] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:71618:72261 [2] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:71622:72266 [4] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:71628:72269 [6] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:71615:72257 [0] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:71616:72276 [1] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:71624:72279 [5] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:71620:72277 [3] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:71622:72266 [4] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:71618:72261 [2] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:71615:72257 [0] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:71628:72269 [6] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:71633:72280 [7] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:71624:72279 [5] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:71616:72276 [1] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:71620:72277 [3] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:71618:72261 [2] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:71618:72261 [2] INFO Using internal Network IB
+dgx4103:71618:72261 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:71622:72266 [4] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:71622:72266 [4] INFO Using internal Network IB
+dgx4103:71622:72266 [4] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:71615:72257 [0] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:71615:72257 [0] INFO Using internal Network IB
+dgx4103:71615:72257 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:71624:72279 [5] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:71624:72279 [5] INFO Using internal Network IB
+dgx4103:71624:72279 [5] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:71616:72276 [1] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:71633:72280 [7] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:71616:72276 [1] INFO Using internal Network IB
+dgx4103:71616:72276 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:71628:72269 [6] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:71628:72269 [6] INFO Using internal Network IB
+dgx4103:71628:72269 [6] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:71620:72277 [3] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:71620:72277 [3] INFO Using internal Network IB
+dgx4103:71620:72277 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:71633:72280 [7] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:71633:72280 [7] INFO Using internal Network IB
+dgx4103:71633:72280 [7] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:79914:80384 [0] INFO comm 0x2b74e40178b0 rank 0 nranks 16
+dgx4105:79914:80384 [0] INFO CUDA Dev 0, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4105:79936:80382 [7] INFO comm 0x2ad6640186b0 rank 7 nranks 16
+dgx4105:79936:80382 [7] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79936:80382 [7] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:79936:80382 [7] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:79936:80382 [7] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:79936:80382 [7] INFO NET/Socket : 4 interfaces found
+dgx4105:79936:80382 [7] INFO CUDA Dev 7, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:79919:80376 [3] INFO comm 0x2b57fa188c10 rank 3 nranks 16
+dgx4105:79919:80376 [3] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79919:80376 [3] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:79919:80376 [3] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:79919:80376 [3] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:79919:80376 [3] INFO NET/Socket : 4 interfaces found
+dgx4105:79919:80376 [3] INFO CUDA Dev 3, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4103:71618:72261 [2] INFO comm 0x7fd286287b70 rank 10 nranks 16
+dgx4103:71618:72261 [2] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71618:72261 [2] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:71618:72261 [2] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:71618:72261 [2] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:71618:72261 [2] INFO NET/Socket : 4 interfaces found
+dgx4103:71618:72261 [2] INFO CUDA Dev 2, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4105:79924:80365 [5] INFO comm 0x2adb6a21dfd0 rank 5 nranks 16
+dgx4105:79924:80365 [5] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79924:80365 [5] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:79924:80365 [5] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:79924:80365 [5] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:79924:80365 [5] INFO NET/Socket : 4 interfaces found
+dgx4105:79924:80365 [5] INFO CUDA Dev 5, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:79929:80380 [6] INFO comm 0x2b74ca21e720 rank 6 nranks 16
+dgx4105:79929:80380 [6] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79929:80380 [6] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:79929:80380 [6] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:79929:80380 [6] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:79929:80380 [6] INFO NET/Socket : 4 interfaces found
+dgx4105:79929:80380 [6] INFO CUDA Dev 6, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:79915:80361 [1] INFO comm 0x2b0d0213b8c0 rank 1 nranks 16
+dgx4105:79915:80361 [1] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79915:80361 [1] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:79915:80361 [1] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:79915:80361 [1] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:79915:80361 [1] INFO NET/Socket : 4 interfaces found
+dgx4105:79915:80361 [1] INFO CUDA Dev 1, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4105:79917:80370 [2] INFO comm 0x2af42a13f270 rank 2 nranks 16
+dgx4105:79921:80381 [4] INFO comm 0x2b7a4e21e760 rank 4 nranks 16
+dgx4105:79917:80370 [2] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79917:80370 [2] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:79917:80370 [2] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:79917:80370 [2] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:79917:80370 [2] INFO NET/Socket : 4 interfaces found
+dgx4105:79921:80381 [4] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:79921:80381 [4] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:79921:80381 [4] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:79921:80381 [4] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:79921:80381 [4] INFO NET/Socket : 4 interfaces found
+dgx4105:79917:80370 [2] INFO CUDA Dev 2, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4105:79921:80381 [4] INFO CUDA Dev 4, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:71622:72266 [4] INFO comm 0x7f7a96216700 rank 12 nranks 16
+dgx4103:71622:72266 [4] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71622:72266 [4] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:71622:72266 [4] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:71622:72266 [4] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:71622:72266 [4] INFO NET/Socket : 4 interfaces found
+dgx4103:71622:72266 [4] INFO CUDA Dev 4, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:71628:72269 [6] INFO comm 0x7fe35e214220 rank 14 nranks 16
+dgx4103:71628:72269 [6] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71628:72269 [6] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:71628:72269 [6] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:71628:72269 [6] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:71628:72269 [6] INFO NET/Socket : 4 interfaces found
+dgx4103:71628:72269 [6] INFO CUDA Dev 6, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:71615:72257 [0] INFO comm 0x7f82c8010990 rank 8 nranks 16
+dgx4103:71615:72257 [0] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71615:72257 [0] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:71615:72257 [0] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:71615:72257 [0] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:71615:72257 [0] INFO NET/Socket : 4 interfaces found
+dgx4103:71615:72257 [0] INFO CUDA Dev 0, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4103:71624:72279 [5] INFO comm 0x7f5dee2136b0 rank 13 nranks 16
+dgx4103:71624:72279 [5] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71624:72279 [5] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:71624:72279 [5] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:71624:72279 [5] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:71624:72279 [5] INFO NET/Socket : 4 interfaces found
+dgx4103:71624:72279 [5] INFO CUDA Dev 5, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:71616:72276 [1] INFO comm 0x7fd846285940 rank 9 nranks 16
+dgx4103:71620:72277 [3] INFO comm 0x7fcbd6213760 rank 11 nranks 16
+dgx4103:71633:72280 [7] INFO comm 0x7fd99e214b40 rank 15 nranks 16
+dgx4103:71616:72276 [1] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71616:72276 [1] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:71616:72276 [1] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:71616:72276 [1] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:71616:72276 [1] INFO NET/Socket : 4 interfaces found
+dgx4103:71633:72280 [7] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71633:72280 [7] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:71633:72280 [7] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:71633:72280 [7] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:71633:72280 [7] INFO NET/Socket : 4 interfaces found
+dgx4103:71620:72277 [3] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:71620:72277 [3] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:71620:72277 [3] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:71620:72277 [3] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:71620:72277 [3] INFO NET/Socket : 4 interfaces found
+dgx4103:71616:72276 [1] INFO CUDA Dev 1, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4103:71620:72277 [3] INFO CUDA Dev 3, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4103:71633:72280 [7] INFO CUDA Dev 7, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:79914:80384 [0] INFO Using 256 threads
+dgx4105:79914:80384 [0] INFO Min Comp Cap 7
+dgx4105:79914:80384 [0] INFO NCCL_SINGLE_RING_THRESHOLD=262144
+dgx4105:79914:80384 [0] INFO Ring 00 :    0   3   1   5   4   7  14  10   8  11   9  13  12  15   6   2
+dgx4105:79914:80384 [0] INFO Ring 01 :    0   1   2   3   7   6   5  12   8   9  10  11  15  14  13   4
+dgx4105:79914:80384 [0] INFO Ring 02 :    0   4   5   6   7   3  10   9   8  12  13  14  15  11   2   1
+dgx4105:79914:80384 [0] INFO Ring 03 :    0   3   2   6   4   7   5   1   8  11  10  14  12  15  13   9
+dgx4103:71628:72269 [6] INFO 7 -> 14 via NET/IB/0/GDRDMA
+dgx4105:79929:80380 [6] INFO 15 -> 6 via NET/IB/0/GDRDMA
+dgx4105:79924:80365 [5] INFO Ring 00 : 5[5] -> 4[4] via P2P/IPC
+dgx4103:71622:72266 [4] INFO Ring 00 : 12[4] -> 15[7] via P2P/IPC
+dgx4103:71628:72269 [6] INFO Ring 00 : 14[6] -> 10[2] via P2P/IPC
+dgx4103:71618:72261 [2] INFO Ring 00 : 10[2] -> 8[0] via P2P/IPC
+dgx4103:71624:72279 [5] INFO Ring 00 : 13[5] -> 12[4] via P2P/IPC
+dgx4103:71616:72276 [1] INFO Ring 00 : 9[1] -> 13[5] via P2P/IPC
+dgx4103:71620:72277 [3] INFO Ring 00 : 11[3] -> 9[1] via P2P/IPC
+dgx4103:71615:72257 [0] INFO Ring 00 : 8[0] -> 11[3] via P2P/IPC
+dgx4105:79915:80361 [1] INFO Ring 00 : 1[1] -> 5[5] via P2P/IPC
+dgx4105:79929:80380 [6] INFO Ring 00 : 6[6] -> 2[2] via P2P/IPC
+dgx4105:79917:80370 [2] INFO Ring 00 : 2[2] -> 0[0] via P2P/IPC
+dgx4105:79921:80381 [4] INFO Ring 00 : 4[4] -> 7[7] via P2P/IPC
+dgx4105:79914:80384 [0] INFO Ring 00 : 0[0] -> 3[3] via P2P/IPC
+dgx4105:79919:80376 [3] INFO Ring 00 : 3[3] -> 1[1] via P2P/IPC
+dgx4103:71633:72280 [7] INFO NET/IB: Dev 0 Port 1 qpn 4802 mtu 5 LID 632
+dgx4105:79936:80382 [7] INFO NET/IB: Dev 0 Port 1 qpn 10199 mtu 5 LID 631
+dgx4103:71622:72266 [4] INFO 5 -> 12 via NET/IB/1/GDRDMA
+dgx4105:79921:80381 [4] INFO 13 -> 4 via NET/IB/1/GDRDMA
+dgx4103:71615:72257 [0] INFO Ring 01 : 8[0] -> 9[1] via P2P/IPC
+dgx4103:71616:72276 [1] INFO Ring 01 : 9[1] -> 10[2] via P2P/IPC
+dgx4103:71618:72261 [2] INFO Ring 01 : 10[2] -> 11[3] via P2P/IPC
+dgx4103:71622:72266 [4] INFO Ring 01 : 12[4] -> 8[0] via P2P/IPC
+dgx4103:71620:72277 [3] INFO Ring 01 : 11[3] -> 15[7] via P2P/IPC
+dgx4103:71633:72280 [7] INFO Ring 01 : 15[7] -> 14[6] via P2P/IPC
+dgx4103:71628:72269 [6] INFO Ring 01 : 14[6] -> 13[5] via P2P/IPC
+dgx4105:79921:80381 [4] INFO Ring 01 : 4[4] -> 0[0] via P2P/IPC
+dgx4105:79914:80384 [0] INFO Ring 01 : 0[0] -> 1[1] via P2P/IPC
+dgx4105:79915:80361 [1] INFO Ring 01 : 1[1] -> 2[2] via P2P/IPC
+dgx4105:79917:80370 [2] INFO Ring 01 : 2[2] -> 3[3] via P2P/IPC
+dgx4105:79919:80376 [3] INFO Ring 01 : 3[3] -> 7[7] via P2P/IPC
+dgx4105:79936:80382 [7] INFO Ring 01 : 7[7] -> 6[6] via P2P/IPC
+dgx4105:79929:80380 [6] INFO Ring 01 : 6[6] -> 5[5] via P2P/IPC
+dgx4105:79924:80365 [5] INFO NET/IB: Dev 1 Port 1 qpn 11584 mtu 5 LID 626
+dgx4103:71624:72279 [5] INFO NET/IB: Dev 1 Port 1 qpn 6727 mtu 5 LID 628
+dgx4103:71618:72261 [2] INFO 3 -> 10 via NET/IB/2/GDRDMA
+dgx4105:79917:80370 [2] INFO 11 -> 2 via NET/IB/2/GDRDMA
+dgx4103:71615:72257 [0] INFO Ring 02 : 8[0] -> 12[4] via P2P/IPC
+dgx4103:71618:72261 [2] INFO Ring 02 : 10[2] -> 9[1] via P2P/IPC
+dgx4103:71616:72276 [1] INFO Ring 02 : 9[1] -> 8[0] via P2P/IPC
+dgx4103:71628:72269 [6] INFO Ring 02 : 14[6] -> 15[7] via P2P/IPC
+dgx4103:71624:72279 [5] INFO Ring 02 : 13[5] -> 14[6] via P2P/IPC
+dgx4103:71633:72280 [7] INFO Ring 02 : 15[7] -> 11[3] via P2P/IPC
+dgx4103:71622:72266 [4] INFO Ring 02 : 12[4] -> 13[5] via P2P/IPC
+dgx4105:79917:80370 [2] INFO Ring 02 : 2[2] -> 1[1] via P2P/IPC
+dgx4105:79915:80361 [1] INFO Ring 02 : 1[1] -> 0[0] via P2P/IPC
+dgx4105:79929:80380 [6] INFO Ring 02 : 6[6] -> 7[7] via P2P/IPC
+dgx4105:79936:80382 [7] INFO Ring 02 : 7[7] -> 3[3] via P2P/IPC
+dgx4105:79924:80365 [5] INFO Ring 02 : 5[5] -> 6[6] via P2P/IPC
+dgx4105:79914:80384 [0] INFO Ring 02 : 0[0] -> 4[4] via P2P/IPC
+dgx4105:79921:80381 [4] INFO Ring 02 : 4[4] -> 5[5] via P2P/IPC
+dgx4105:79919:80376 [3] INFO NET/IB: Dev 2 Port 1 qpn 9615 mtu 5 LID 629
+dgx4103:71620:72277 [3] INFO NET/IB: Dev 2 Port 1 qpn 4452 mtu 5 LID 625
+dgx4103:71615:72257 [0] INFO 1 -> 8 via NET/IB/3/GDRDMA
+dgx4105:79914:80384 [0] INFO 9 -> 0 via NET/IB/3/GDRDMA
+dgx4103:71615:72257 [0] INFO Ring 03 : 8[0] -> 11[3] via P2P/IPC
+dgx4105:79914:80384 [0] INFO Ring 03 : 0[0] -> 3[3] via P2P/IPC
+dgx4103:71622:72266 [4] INFO Ring 03 : 12[4] -> 15[7] via P2P/IPC
+dgx4103:71624:72279 [5] INFO Ring 03 : 13[5] -> 9[1] via P2P/IPC
+dgx4103:71628:72269 [6] INFO Ring 03 : 14[6] -> 12[4] via P2P/IPC
+dgx4103:71620:72277 [3] INFO Ring 03 : 11[3] -> 10[2] via P2P/IPC
+dgx4105:79921:80381 [4] INFO Ring 03 : 4[4] -> 7[7] via P2P/IPC
+dgx4103:71633:72280 [7] INFO Ring 03 : 15[7] -> 13[5] via P2P/IPC
+dgx4103:71618:72261 [2] INFO Ring 03 : 10[2] -> 14[6] via P2P/IPC
+dgx4105:79924:80365 [5] INFO Ring 03 : 5[5] -> 1[1] via P2P/IPC
+dgx4105:79929:80380 [6] INFO Ring 03 : 6[6] -> 4[4] via P2P/IPC
+dgx4105:79936:80382 [7] INFO Ring 03 : 7[7] -> 5[5] via P2P/IPC
+dgx4105:79919:80376 [3] INFO Ring 03 : 3[3] -> 2[2] via P2P/IPC
+dgx4105:79917:80370 [2] INFO Ring 03 : 2[2] -> 6[6] via P2P/IPC
+dgx4105:79915:80361 [1] INFO NET/IB: Dev 3 Port 1 qpn 11312 mtu 5 LID 624
+dgx4103:71616:72276 [1] INFO NET/IB: Dev 3 Port 1 qpn 6259 mtu 5 LID 623
+dgx4105:79914:80384 [0] INFO Launch mode Parallel
+     1   0.0    53.5  7.818 10.510 2.00000
+    10   0.0   552.1  7.517 10.206 1.99968
+    20   0.0  3421.3  7.811 10.482 1.99933
+    30   0.0  3385.3  6.981  9.609 1.99897
+    40   0.0  3426.2  6.861  9.432 1.99861
+    50   0.0  3369.2  6.865  9.370 1.99826
+    60   0.0  3321.1  6.964  9.408 1.99790
+    70   0.1  3371.4  6.745  9.127 1.99755
+    80   0.1  3449.1  6.779  9.092 1.99719
+    90   0.1  3407.6  6.772  9.011 1.99684
+   100   0.1  3432.1  6.671  8.837 1.99648
+   110   0.1  3449.9  6.581  8.674 1.99613
+   120   0.1  3462.9  6.612  8.633 1.99577
+   130   0.1  3415.3  6.686  8.637 1.99542
+   140   0.1  3404.1  6.533  8.416 1.99506
+   150   0.1  3420.6  6.769  8.587 1.99471
+   160   0.1  3441.2  6.589  8.344 1.99436
+   170   0.1  3393.8  6.560  8.252 1.99400
+   180   0.1  3368.3  6.497  8.129 1.99365
+   190   0.2  3453.6  6.599  8.176 1.99329
+   200   0.2  1207.5  6.400  7.924 1.99294
+
+real	4m33.758s
+user	50m22.156s
+sys	6m5.024s
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+Script arguments:
+  --batch_size 64
+  --layers 152
+  --display_every 10
+  --use_dali False
+  --num_iter 200
+  --iter_unit batch
+  --data_dir /raid/datasets/resnet
+  --precision fp16
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpiwbbhvdh
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpyxmub908
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp78wwhr1b
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpyigo38ck
+Training
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpm7ygz7qx
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmppt5c8idu
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp119_s8pg
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpff44n8p1
+Training
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpz6k3zfo6
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpkd83swk2
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpeu3mw026
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpp9vee8fs
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp0jno50a9
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp1nkf8thw
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpfk09s4zw
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpxkdohobu
+Training
+Training
+Training
+Training
+2018-10-17 09:43:13.241545: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:13.241593: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 7
+2018-10-17 09:43:13.663118: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:13.663154: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 2
+2018-10-17 09:43:15.024363: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:15.024435: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 4
+2018-10-17 09:43:15.033636: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:15.033682: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 3
+2018-10-17 09:43:15.421607: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:15.421649: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 1
+2018-10-17 09:43:15.429926: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:15.429977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 5
+2018-10-17 09:43:15.794743: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:15.794808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-10-17 09:43:15.913928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:15.914004: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      2 
+2018-10-17 09:43:15.914030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N 
+2018-10-17 09:43:15.921739: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2018-10-17 09:43:16.489995: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:16.490059: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      7 
+2018-10-17 09:43:16.490067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 7:   N 
+2018-10-17 09:43:16.505391: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2018-10-17 09:43:16.873797: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:16.873871: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 4
+2018-10-17 09:43:16.926759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:16.926797: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 1
+2018-10-17 09:43:17.222342: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:17.222414: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 6
+2018-10-17 09:43:17.300305: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:17.300343: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 6
+2018-10-17 09:43:17.347370: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:17.347436: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 7
+2018-10-17 09:43:17.360115: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:17.360150: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 2
+2018-10-17 09:43:17.420889: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:17.420948: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-10-17 09:43:17.798586: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:17.798625: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      3 
+2018-10-17 09:43:17.798633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 3:   N 
+2018-10-17 09:43:17.799080: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2018-10-17 09:43:17.895111: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:17.895155: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 3
+2018-10-17 09:43:17.912799: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:17.912834: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      4 
+2018-10-17 09:43:17.912841: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 4:   N 
+2018-10-17 09:43:17.913304: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2018-10-17 09:43:17.944124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:17.944167: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      5 
+2018-10-17 09:43:17.944175: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 5:   N 
+2018-10-17 09:43:17.944676: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2018-10-17 09:43:18.130343: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:18.130382: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-10-17 09:43:18.130390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-10-17 09:43:18.130834: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2018-10-17 09:43:18.196987: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:18.197032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      1 
+2018-10-17 09:43:18.197041: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   N 
+2018-10-17 09:43:18.197496: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2018-10-17 09:43:18.593325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:18.593372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      1 
+2018-10-17 09:43:18.593380: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   N 
+2018-10-17 09:43:18.593833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2018-10-17 09:43:18.596827: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:18.596863: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      4 
+2018-10-17 09:43:18.596869: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 4:   N 
+2018-10-17 09:43:18.603372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2018-10-17 09:43:18.726673: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:18.726731: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      6 
+2018-10-17 09:43:18.726755: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 6:   N 
+2018-10-17 09:43:18.727225: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2018-10-17 09:43:18.751360: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:18.751402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      2 
+2018-10-17 09:43:18.751427: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N 
+2018-10-17 09:43:18.751938: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2018-10-17 09:43:18.969295: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:18.969335: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      6 
+2018-10-17 09:43:18.969343: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 6:   N 
+2018-10-17 09:43:18.969777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2018-10-17 09:43:19.064257: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:19.064300: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-10-17 09:43:19.064307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-10-17 09:43:19.064751: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2018-10-17 09:43:19.127759: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:19.127803: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      7 
+2018-10-17 09:43:19.127811: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 7:   N 
+2018-10-17 09:43:19.128296: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2018-10-17 09:43:19.356050: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:19.356134: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      3 
+2018-10-17 09:43:19.356143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 3:   N 
+2018-10-17 09:43:19.356653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2018-10-17 09:43:20.428671: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:43:20.428768: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 5
+2018-10-17 09:43:21.774796: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:43:21.774845: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      5 
+2018-10-17 09:43:21.774853: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 5:   N 
+2018-10-17 09:43:21.775332: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2018-10-17 09:45:16.444720: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4577 of 10000
+2018-10-17 09:45:16.447851: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4574 of 10000
+2018-10-17 09:45:16.454296: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4508 of 10000
+2018-10-17 09:45:16.464533: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4273 of 10000
+2018-10-17 09:45:16.465674: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4520 of 10000
+2018-10-17 09:45:16.467175: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4629 of 10000
+2018-10-17 09:45:16.468238: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4434 of 10000
+2018-10-17 09:45:16.475946: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4460 of 10000
+2018-10-17 09:45:16.481976: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4257 of 10000
+2018-10-17 09:45:16.477736: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4482 of 10000
+2018-10-17 09:45:16.480226: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4586 of 10000
+2018-10-17 09:45:16.500547: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4371 of 10000
+2018-10-17 09:45:16.527262: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4371 of 10000
+2018-10-17 09:45:16.553508: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4473 of 10000
+2018-10-17 09:45:16.568623: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4161 of 10000
+2018-10-17 09:45:16.569233: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4421 of 10000
+2018-10-17 09:45:24.357885: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.428444: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.447329: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.458328: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.483044: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.589285: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.622518: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.680305: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.688753: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.783643: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.843646: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:24.888640: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:25.040019: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:25.103987: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:45:25.123907: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+  Step Epoch Img/sec   Loss  LR
+2018-10-17 09:45:25.471133: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+dgx4105:11495:11985 [0] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11495:11985 [0] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:11495:11985 [0] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:11495:11985 [0] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:11495:11985 [0] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:11495:11985 [0] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:11495:11985 [0] INFO Using internal Network IB
+dgx4105:11495:11985 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:11495:11985 [0] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11495:11985 [0] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:11495:11985 [0] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:11495:11985 [0] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:11495:11985 [0] INFO NET/Socket : 4 interfaces found
+NCCL version 2.2.13+cuda9.0
+dgx4105:11526:11981 [7] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11526:11981 [7] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:11500:11963 [3] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11500:11963 [3] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:11496:11975 [1] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11496:11975 [1] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:11510:11973 [5] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11510:11973 [5] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:11502:11986 [4] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11502:11986 [4] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:11498:11966 [2] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11498:11966 [2] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:11519:11978 [6] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11519:11978 [6] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:11526:11981 [7] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:11500:11963 [3] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:11496:11975 [1] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:11510:11973 [5] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:11519:11978 [6] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:11498:11966 [2] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:11502:11986 [4] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:11526:11981 [7] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:11500:11963 [3] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:11510:11973 [5] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:11496:11975 [1] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:11502:11986 [4] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:11519:11978 [6] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:11498:11966 [2] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:11526:11981 [7] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:11500:11963 [3] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:11496:11975 [1] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:11510:11973 [5] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:11502:11986 [4] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:11519:11978 [6] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:11498:11966 [2] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:11500:11963 [3] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:11526:11981 [7] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:11526:11981 [7] INFO Using internal Network IB
+dgx4105:11526:11981 [7] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:11500:11963 [3] INFO Using internal Network IB
+dgx4105:11500:11963 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:11510:11973 [5] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:11510:11973 [5] INFO Using internal Network IB
+dgx4105:11510:11973 [5] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:11496:11975 [1] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:11496:11975 [1] INFO Using internal Network IB
+dgx4105:11496:11975 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:11519:11978 [6] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:11519:11978 [6] INFO Using internal Network IB
+dgx4105:11519:11978 [6] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:11502:11986 [4] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:11502:11986 [4] INFO Using internal Network IB
+dgx4105:11502:11986 [4] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:11498:11966 [2] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:11498:11966 [2] INFO Using internal Network IB
+dgx4105:11498:11966 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:3242:3923 [2] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3242:3923 [2] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:3239:3915 [0] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3239:3915 [0] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:3250:3928 [6] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3250:3928 [6] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:3246:3920 [4] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3246:3920 [4] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:3240:3939 [1] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3240:3939 [1] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:3248:3937 [5] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3248:3937 [5] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:3244:3941 [3] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3244:3941 [3] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:3260:3930 [7] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3260:3930 [7] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:3242:3923 [2] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:3239:3915 [0] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:3250:3928 [6] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:3246:3920 [4] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:3240:3939 [1] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:3248:3937 [5] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:3244:3941 [3] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:3260:3930 [7] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:3242:3923 [2] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:3250:3928 [6] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:3239:3915 [0] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:3246:3920 [4] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:3248:3937 [5] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:3244:3941 [3] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:3240:3939 [1] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:3260:3930 [7] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:3250:3928 [6] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:3239:3915 [0] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:3242:3923 [2] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:3246:3920 [4] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:3248:3937 [5] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:3240:3939 [1] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:3244:3941 [3] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:3260:3930 [7] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:3239:3915 [0] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:3239:3915 [0] INFO Using internal Network IB
+dgx4103:3239:3915 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:3242:3923 [2] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:3242:3923 [2] INFO Using internal Network IB
+dgx4103:3242:3923 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:3250:3928 [6] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:3250:3928 [6] INFO Using internal Network IB
+dgx4103:3250:3928 [6] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:3246:3920 [4] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:3246:3920 [4] INFO Using internal Network IB
+dgx4103:3246:3920 [4] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:3248:3937 [5] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:3248:3937 [5] INFO Using internal Network IB
+dgx4103:3248:3937 [5] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:3240:3939 [1] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:3244:3941 [3] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:3244:3941 [3] INFO Using internal Network IB
+dgx4103:3244:3941 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:3240:3939 [1] INFO Using internal Network IB
+dgx4103:3240:3939 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:3260:3930 [7] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:3260:3930 [7] INFO Using internal Network IB
+dgx4103:3260:3930 [7] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:11495:11985 [0] INFO comm 0x2b34bc124960 rank 0 nranks 16
+dgx4105:11495:11985 [0] INFO CUDA Dev 0, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4105:11500:11963 [3] INFO comm 0x2b0266170db0 rank 3 nranks 16
+dgx4105:11500:11963 [3] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11500:11963 [3] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:11500:11963 [3] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:11500:11963 [3] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:11500:11963 [3] INFO NET/Socket : 4 interfaces found
+dgx4105:11500:11963 [3] INFO CUDA Dev 3, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4105:11526:11981 [7] INFO comm 0x2acc4001a2b0 rank 7 nranks 16
+dgx4105:11526:11981 [7] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11526:11981 [7] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:11526:11981 [7] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:11526:11981 [7] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:11526:11981 [7] INFO NET/Socket : 4 interfaces found
+dgx4105:11526:11981 [7] INFO CUDA Dev 7, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:11496:11975 [1] INFO comm 0x2af24a1339e0 rank 1 nranks 16
+dgx4105:11496:11975 [1] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11496:11975 [1] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:11496:11975 [1] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:11496:11975 [1] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:11496:11975 [1] INFO NET/Socket : 4 interfaces found
+dgx4105:11496:11975 [1] INFO CUDA Dev 1, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4105:11498:11966 [2] INFO comm 0x2b0b8a137c30 rank 2 nranks 16
+dgx4105:11498:11966 [2] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11498:11966 [2] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:11498:11966 [2] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:11498:11966 [2] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:11498:11966 [2] INFO NET/Socket : 4 interfaces found
+dgx4105:11498:11966 [2] INFO CUDA Dev 2, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4103:3246:3920 [4] INFO comm 0x7f33d620d8d0 rank 12 nranks 16
+dgx4105:11510:11973 [5] INFO comm 0x2b711a228dd0 rank 5 nranks 16
+dgx4103:3246:3920 [4] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3246:3920 [4] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:3246:3920 [4] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:3246:3920 [4] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:3246:3920 [4] INFO NET/Socket : 4 interfaces found
+dgx4105:11510:11973 [5] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11510:11973 [5] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:11510:11973 [5] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:11510:11973 [5] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:11510:11973 [5] INFO NET/Socket : 4 interfaces found
+dgx4105:11510:11973 [5] INFO CUDA Dev 5, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:11502:11986 [4] INFO comm 0x2b4e9621bdb0 rank 4 nranks 16
+dgx4105:11519:11978 [6] INFO comm 0x2b560a22c5b0 rank 6 nranks 16
+dgx4105:11502:11986 [4] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11502:11986 [4] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:11502:11986 [4] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:11502:11986 [4] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:11502:11986 [4] INFO NET/Socket : 4 interfaces found
+dgx4105:11519:11978 [6] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:11519:11978 [6] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:11519:11978 [6] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:11519:11978 [6] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:11519:11978 [6] INFO NET/Socket : 4 interfaces found
+dgx4105:11502:11986 [4] INFO CUDA Dev 4, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:11519:11978 [6] INFO CUDA Dev 6, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:3246:3920 [4] INFO CUDA Dev 4, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:3242:3923 [2] INFO comm 0x7f5d8a271260 rank 10 nranks 16
+dgx4103:3242:3923 [2] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3242:3923 [2] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:3242:3923 [2] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:3242:3923 [2] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:3242:3923 [2] INFO NET/Socket : 4 interfaces found
+dgx4103:3242:3923 [2] INFO CUDA Dev 2, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4103:3250:3928 [6] INFO comm 0x7f70e220dc70 rank 14 nranks 16
+dgx4103:3250:3928 [6] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3250:3928 [6] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:3250:3928 [6] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:3250:3928 [6] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:3250:3928 [6] INFO NET/Socket : 4 interfaces found
+dgx4103:3239:3915 [0] INFO comm 0x7f0d50025b10 rank 8 nranks 16
+dgx4103:3239:3915 [0] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3239:3915 [0] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:3239:3915 [0] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:3239:3915 [0] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:3239:3915 [0] INFO NET/Socket : 4 interfaces found
+dgx4103:3250:3928 [6] INFO CUDA Dev 6, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:3239:3915 [0] INFO CUDA Dev 0, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4103:3244:3941 [3] INFO comm 0x7fc7c6203e80 rank 11 nranks 16
+dgx4103:3244:3941 [3] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3244:3941 [3] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:3244:3941 [3] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:3244:3941 [3] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:3244:3941 [3] INFO NET/Socket : 4 interfaces found
+dgx4103:3244:3941 [3] INFO CUDA Dev 3, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4103:3248:3937 [5] INFO comm 0x7ff9c620d4f0 rank 13 nranks 16
+dgx4103:3248:3937 [5] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3248:3937 [5] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:3248:3937 [5] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:3248:3937 [5] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:3248:3937 [5] INFO NET/Socket : 4 interfaces found
+dgx4103:3260:3930 [7] INFO comm 0x7f08422148e0 rank 15 nranks 16
+dgx4103:3260:3930 [7] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3260:3930 [7] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:3260:3930 [7] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:3260:3930 [7] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:3260:3930 [7] INFO NET/Socket : 4 interfaces found
+dgx4103:3248:3937 [5] INFO CUDA Dev 5, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:3240:3939 [1] INFO comm 0x7f72e2272520 rank 9 nranks 16
+dgx4103:3240:3939 [1] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:3240:3939 [1] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:3240:3939 [1] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:3240:3939 [1] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:3240:3939 [1] INFO NET/Socket : 4 interfaces found
+dgx4103:3260:3930 [7] INFO CUDA Dev 7, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:3240:3939 [1] INFO CUDA Dev 1, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4105:11495:11985 [0] INFO Using 256 threads
+dgx4105:11495:11985 [0] INFO Min Comp Cap 7
+dgx4105:11495:11985 [0] INFO NCCL_SINGLE_RING_THRESHOLD=262144
+dgx4105:11495:11985 [0] INFO Ring 00 :    0   3   1   5   4   7  14  10   8  11   9  13  12  15   6   2
+dgx4105:11495:11985 [0] INFO Ring 01 :    0   1   2   3   7   6   5  12   8   9  10  11  15  14  13   4
+dgx4105:11495:11985 [0] INFO Ring 02 :    0   4   5   6   7   3  10   9   8  12  13  14  15  11   2   1
+dgx4105:11495:11985 [0] INFO Ring 03 :    0   3   2   6   4   7   5   1   8  11  10  14  12  15  13   9
+dgx4103:3250:3928 [6] INFO 7 -> 14 via NET/IB/0/GDRDMA
+dgx4105:11519:11978 [6] INFO 15 -> 6 via NET/IB/0/GDRDMA
+dgx4103:3242:3923 [2] INFO Ring 00 : 10[2] -> 8[0] via P2P/IPC
+dgx4105:11498:11966 [2] INFO Ring 00 : 2[2] -> 0[0] via P2P/IPC
+dgx4103:3240:3939 [1] INFO Ring 00 : 9[1] -> 13[5] via P2P/IPC
+dgx4103:3250:3928 [6] INFO Ring 00 : 14[6] -> 10[2] via P2P/IPC
+dgx4103:3239:3915 [0] INFO Ring 00 : 8[0] -> 11[3] via P2P/IPC
+dgx4103:3244:3941 [3] INFO Ring 00 : 11[3] -> 9[1] via P2P/IPC
+dgx4103:3248:3937 [5] INFO Ring 00 : 13[5] -> 12[4] via P2P/IPC
+dgx4103:3246:3920 [4] INFO Ring 00 : 12[4] -> 15[7] via P2P/IPC
+dgx4105:11496:11975 [1] INFO Ring 00 : 1[1] -> 5[5] via P2P/IPC
+dgx4105:11500:11963 [3] INFO Ring 00 : 3[3] -> 1[1] via P2P/IPC
+dgx4105:11519:11978 [6] INFO Ring 00 : 6[6] -> 2[2] via P2P/IPC
+dgx4105:11510:11973 [5] INFO Ring 00 : 5[5] -> 4[4] via P2P/IPC
+dgx4105:11495:11985 [0] INFO Ring 00 : 0[0] -> 3[3] via P2P/IPC
+dgx4105:11502:11986 [4] INFO Ring 00 : 4[4] -> 7[7] via P2P/IPC
+dgx4103:3260:3930 [7] INFO NET/IB: Dev 0 Port 1 qpn 4942 mtu 5 LID 632
+dgx4105:11526:11981 [7] INFO NET/IB: Dev 0 Port 1 qpn 10335 mtu 5 LID 631
+dgx4103:3246:3920 [4] INFO 5 -> 12 via NET/IB/1/GDRDMA
+dgx4105:11502:11986 [4] INFO 13 -> 4 via NET/IB/1/GDRDMA
+dgx4103:3239:3915 [0] INFO Ring 01 : 8[0] -> 9[1] via P2P/IPC
+dgx4103:3240:3939 [1] INFO Ring 01 : 9[1] -> 10[2] via P2P/IPC
+dgx4103:3246:3920 [4] INFO Ring 01 : 12[4] -> 8[0] via P2P/IPC
+dgx4103:3242:3923 [2] INFO Ring 01 : 10[2] -> 11[3] via P2P/IPC
+dgx4103:3244:3941 [3] INFO Ring 01 : 11[3] -> 15[7] via P2P/IPC
+dgx4103:3260:3930 [7] INFO Ring 01 : 15[7] -> 14[6] via P2P/IPC
+dgx4103:3250:3928 [6] INFO Ring 01 : 14[6] -> 13[5] via P2P/IPC
+dgx4105:11502:11986 [4] INFO Ring 01 : 4[4] -> 0[0] via P2P/IPC
+dgx4105:11495:11985 [0] INFO Ring 01 : 0[0] -> 1[1] via P2P/IPC
+dgx4105:11496:11975 [1] INFO Ring 01 : 1[1] -> 2[2] via P2P/IPC
+dgx4105:11498:11966 [2] INFO Ring 01 : 2[2] -> 3[3] via P2P/IPC
+dgx4105:11500:11963 [3] INFO Ring 01 : 3[3] -> 7[7] via P2P/IPC
+dgx4105:11526:11981 [7] INFO Ring 01 : 7[7] -> 6[6] via P2P/IPC
+dgx4105:11519:11978 [6] INFO Ring 01 : 6[6] -> 5[5] via P2P/IPC
+dgx4105:11510:11973 [5] INFO NET/IB: Dev 1 Port 1 qpn 11751 mtu 5 LID 626
+dgx4103:3248:3937 [5] INFO NET/IB: Dev 1 Port 1 qpn 6894 mtu 5 LID 628
+dgx4103:3242:3923 [2] INFO 3 -> 10 via NET/IB/2/GDRDMA
+dgx4105:11498:11966 [2] INFO 11 -> 2 via NET/IB/2/GDRDMA
+dgx4103:3242:3923 [2] INFO Ring 02 : 10[2] -> 9[1] via P2P/IPC
+dgx4103:3240:3939 [1] INFO Ring 02 : 9[1] -> 8[0] via P2P/IPC
+dgx4103:3239:3915 [0] INFO Ring 02 : 8[0] -> 12[4] via P2P/IPC
+dgx4105:11498:11966 [2] INFO Ring 02 : 2[2] -> 1[1] via P2P/IPC
+dgx4103:3248:3937 [5] INFO Ring 02 : 13[5] -> 14[6] via P2P/IPC
+dgx4103:3250:3928 [6] INFO Ring 02 : 14[6] -> 15[7] via P2P/IPC
+dgx4103:3260:3930 [7] INFO Ring 02 : 15[7] -> 11[3] via P2P/IPC
+dgx4105:11496:11975 [1] INFO Ring 02 : 1[1] -> 0[0] via P2P/IPC
+dgx4103:3246:3920 [4] INFO Ring 02 : 12[4] -> 13[5] via P2P/IPC
+dgx4105:11495:11985 [0] INFO Ring 02 : 0[0] -> 4[4] via P2P/IPC
+dgx4105:11519:11978 [6] INFO Ring 02 : 6[6] -> 7[7] via P2P/IPC
+dgx4105:11526:11981 [7] INFO Ring 02 : 7[7] -> 3[3] via P2P/IPC
+dgx4105:11510:11973 [5] INFO Ring 02 : 5[5] -> 6[6] via P2P/IPC
+dgx4105:11502:11986 [4] INFO Ring 02 : 4[4] -> 5[5] via P2P/IPC
+dgx4105:11500:11963 [3] INFO NET/IB: Dev 2 Port 1 qpn 9746 mtu 5 LID 629
+dgx4103:3244:3941 [3] INFO NET/IB: Dev 2 Port 1 qpn 4579 mtu 5 LID 625
+dgx4103:3239:3915 [0] INFO 1 -> 8 via NET/IB/3/GDRDMA
+dgx4105:11495:11985 [0] INFO 9 -> 0 via NET/IB/3/GDRDMA
+dgx4103:3239:3915 [0] INFO Ring 03 : 8[0] -> 11[3] via P2P/IPC
+dgx4105:11495:11985 [0] INFO Ring 03 : 0[0] -> 3[3] via P2P/IPC
+dgx4103:3246:3920 [4] INFO Ring 03 : 12[4] -> 15[7] via P2P/IPC
+dgx4105:11502:11986 [4] INFO Ring 03 : 4[4] -> 7[7] via P2P/IPC
+dgx4103:3248:3937 [5] INFO Ring 03 : 13[5] -> 9[1] via P2P/IPC
+dgx4105:11510:11973 [5] INFO Ring 03 : 5[5] -> 1[1] via P2P/IPC
+dgx4103:3250:3928 [6] INFO Ring 03 : 14[6] -> 12[4] via P2P/IPC
+dgx4103:3260:3930 [7] INFO Ring 03 : 15[7] -> 13[5] via P2P/IPC
+dgx4105:11519:11978 [6] INFO Ring 03 : 6[6] -> 4[4] via P2P/IPC
+dgx4103:3244:3941 [3] INFO Ring 03 : 11[3] -> 10[2] via P2P/IPC
+dgx4105:11526:11981 [7] INFO Ring 03 : 7[7] -> 5[5] via P2P/IPC
+dgx4103:3242:3923 [2] INFO Ring 03 : 10[2] -> 14[6] via P2P/IPC
+dgx4105:11500:11963 [3] INFO Ring 03 : 3[3] -> 2[2] via P2P/IPC
+dgx4105:11498:11966 [2] INFO Ring 03 : 2[2] -> 6[6] via P2P/IPC
+dgx4105:11496:11975 [1] INFO NET/IB: Dev 3 Port 1 qpn 11479 mtu 5 LID 624
+dgx4103:3240:3939 [1] INFO NET/IB: Dev 3 Port 1 qpn 6426 mtu 5 LID 623
+dgx4105:11495:11985 [0] INFO Launch mode Parallel
+     1   0.0    52.8  7.579 10.270 2.00000
+    10   0.0   554.8  8.078 10.766 1.99968
+    20   0.0  3413.2  7.180  9.845 1.99933
+    30   0.0  3372.2  6.953  9.581 1.99897
+    40   0.0  3407.1  6.915  9.495 1.99861
+    50   0.0  3425.4  6.825  9.335 1.99826
+    60   0.0  3413.3  6.710  9.141 1.99790
+    70   0.1  3358.5  6.673  9.027 1.99755
+    80   0.1  3425.5  6.676  8.950 1.99719
+    90   0.1  3419.8  6.520  8.718 1.99684
+   100   0.1  3381.4  6.333  8.455 1.99648
+   110   0.1  3438.9  6.473  8.523 1.99613
+   120   0.1  3415.3  6.622  8.604 1.99577
+   130   0.1  3414.0  6.627  8.544 1.99542
+   140   0.1  3414.9  6.203  8.057 1.99506
+   150   0.1  3378.7  6.025  7.819 1.99471
+   160   0.1  3444.5  6.229  7.965 1.99436
+   170   0.1  3425.0  6.135  7.815 1.99400
+   180   0.1  3441.2  5.844  7.470 1.99365
+   190   0.2  3412.4  6.044  7.619 1.99329
+   200   0.2  1216.8  6.126  7.652 1.99294
+
+real	4m28.848s
+user	49m48.948s
+sys	6m3.160s
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+Script arguments:
+  --display_every 10
+  --data_dir /raid/datasets/resnet
+  --batch_size 64
+  --use_dali False
+  --iter_unit batch
+  --precision fp16
+  --layers 152
+  --num_iter 200
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp367sh_rv
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp904pfzqq
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpm0dzxi38
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp1fuy91s9
+Training
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp0zi76vu8
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpsgczze8u
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp82gh4ode
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpnuk3i91x
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpzlzxkpcp
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp6_5btocf
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp63ek8k6q
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp8n27oslj
+Training
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp66tozw97
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpvllcyxk5
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpeqt00kla
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpnbao0dqf
+Training
+Training
+Training
+Training
+2018-10-17 09:47:42.710057: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:42.710093: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 4
+2018-10-17 09:47:42.927669: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:42.927705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 7
+2018-10-17 09:47:43.372657: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:43.372704: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 5
+2018-10-17 09:47:43.599380: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:43.599417: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-10-17 09:47:44.843198: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:44.843298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 4
+2018-10-17 09:47:44.844427: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:44.844483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 3
+2018-10-17 09:47:44.892990: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:44.893050: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 2
+2018-10-17 09:47:45.154540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:45.154615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-10-17 09:47:45.222467: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:45.222517: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 1
+2018-10-17 09:47:45.576882: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:45.576939: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      4 
+2018-10-17 09:47:45.576947: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 4:   N 
+2018-10-17 09:47:45.591243: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2018-10-17 09:47:45.856319: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:45.856408: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 6
+2018-10-17 09:47:45.881390: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:45.881436: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      7 
+2018-10-17 09:47:45.881443: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 7:   N 
+2018-10-17 09:47:45.895173: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2018-10-17 09:47:46.052725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:46.052816: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 3
+2018-10-17 09:47:46.247777: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:46.247824: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 6
+2018-10-17 09:47:46.333338: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:46.333399: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 1
+2018-10-17 09:47:46.348973: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:46.349039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      5 
+2018-10-17 09:47:46.349061: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 5:   N 
+2018-10-17 09:47:46.349601: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2018-10-17 09:47:46.682826: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:46.687020: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-10-17 09:47:46.687060: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-10-17 09:47:46.695833: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2018-10-17 09:47:46.771478: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:46.771516: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 2
+2018-10-17 09:47:47.112335: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:47.112411: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 5
+2018-10-17 09:47:47.132478: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:47.132540: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      3 
+2018-10-17 09:47:47.132548: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 3:   N 
+2018-10-17 09:47:47.133012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2018-10-17 09:47:47.149642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:47.149678: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      4 
+2018-10-17 09:47:47.149685: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 4:   N 
+2018-10-17 09:47:47.150136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2018-10-17 09:47:47.186209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 09:47:47.186275: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 7
+2018-10-17 09:47:47.202855: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:47.202897: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-10-17 09:47:47.202905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-10-17 09:47:47.203371: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2018-10-17 09:47:47.248266: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:47.248316: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      1 
+2018-10-17 09:47:47.248325: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   N 
+2018-10-17 09:47:47.248800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2018-10-17 09:47:47.556553: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:47.556599: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      2 
+2018-10-17 09:47:47.556606: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N 
+2018-10-17 09:47:47.557077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2018-10-17 09:47:47.910886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:47.910928: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      6 
+2018-10-17 09:47:47.910953: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 6:   N 
+2018-10-17 09:47:47.911459: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2018-10-17 09:47:47.942248: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:47.942306: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      6 
+2018-10-17 09:47:47.942314: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 6:   N 
+2018-10-17 09:47:47.942814: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2018-10-17 09:47:48.120595: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:48.120642: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      2 
+2018-10-17 09:47:48.120668: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N 
+2018-10-17 09:47:48.121145: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2018-10-17 09:47:48.211046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:48.211107: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      3 
+2018-10-17 09:47:48.211133: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 3:   N 
+2018-10-17 09:47:48.211615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2018-10-17 09:47:48.293337: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:48.293383: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      1 
+2018-10-17 09:47:48.293418: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   N 
+2018-10-17 09:47:48.293890: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2018-10-17 09:47:48.574461: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:48.574502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      5 
+2018-10-17 09:47:48.574510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 5:   N 
+2018-10-17 09:47:48.575064: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2018-10-17 09:47:48.639748: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 09:47:48.639792: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      7 
+2018-10-17 09:47:48.639800: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 7:   N 
+2018-10-17 09:47:48.640234: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2018-10-17 09:49:35.611478: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4573 of 10000
+2018-10-17 09:49:35.617434: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4461 of 10000
+2018-10-17 09:49:35.620972: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4557 of 10000
+2018-10-17 09:49:35.628096: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4319 of 10000
+2018-10-17 09:49:35.633375: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4689 of 10000
+2018-10-17 09:49:35.635307: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4305 of 10000
+2018-10-17 09:49:35.632645: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4439 of 10000
+2018-10-17 09:49:35.633038: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4534 of 10000
+2018-10-17 09:49:35.634841: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4553 of 10000
+2018-10-17 09:49:35.639380: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4479 of 10000
+2018-10-17 09:49:35.644984: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4598 of 10000
+2018-10-17 09:49:35.681835: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4471 of 10000
+2018-10-17 09:49:35.691295: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4368 of 10000
+2018-10-17 09:49:35.724582: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4421 of 10000
+2018-10-17 09:49:35.724819: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4357 of 10000
+2018-10-17 09:49:35.740685: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4412 of 10000
+2018-10-17 09:49:43.413607: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:43.573550: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:43.571547: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:43.581309: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:43.619117: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:43.648030: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:43.749255: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:43.757164: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:43.779377: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:43.911054: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:43.961814: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:44.019092: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:44.251352: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:44.388661: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 09:49:44.406512: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+  Step Epoch Img/sec   Loss  LR
+2018-10-17 09:49:44.463436: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+dgx4105:24285:24753 [0] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24285:24753 [0] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:24285:24753 [0] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:24285:24753 [0] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:24285:24753 [0] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:24285:24753 [0] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:24285:24753 [0] INFO Using internal Network IB
+dgx4105:24285:24753 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:24285:24753 [0] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24285:24753 [0] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:24285:24753 [0] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:24285:24753 [0] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:24285:24753 [0] INFO NET/Socket : 4 interfaces found
+NCCL version 2.2.13+cuda9.0
+dgx4105:24292:24754 [4] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24292:24754 [4] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:24302:24752 [6] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24302:24752 [6] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:24288:24739 [2] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24288:24739 [2] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:24296:24733 [5] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24296:24733 [5] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:24318:24746 [7] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24318:24746 [7] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:24286:24755 [1] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24286:24755 [1] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:24290:24745 [3] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24290:24745 [3] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4105:24292:24754 [4] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:24302:24752 [6] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:24288:24739 [2] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:24296:24733 [5] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:24318:24746 [7] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:24286:24755 [1] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:24290:24745 [3] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4105:24292:24754 [4] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:24302:24752 [6] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:24288:24739 [2] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:24296:24733 [5] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:24318:24746 [7] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:24286:24755 [1] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:24290:24745 [3] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4105:24292:24754 [4] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:24302:24752 [6] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:24288:24739 [2] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:24296:24733 [5] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:24318:24746 [7] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:24286:24755 [1] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:24302:24752 [6] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:24302:24752 [6] INFO Using internal Network IB
+dgx4105:24302:24752 [6] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:24290:24745 [3] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4105:24292:24754 [4] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:24292:24754 [4] INFO Using internal Network IB
+dgx4105:24292:24754 [4] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:24288:24739 [2] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:24288:24739 [2] INFO Using internal Network IB
+dgx4105:24288:24739 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:24296:24733 [5] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:24296:24733 [5] INFO Using internal Network IB
+dgx4105:24296:24733 [5] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:24318:24746 [7] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:24318:24746 [7] INFO Using internal Network IB
+dgx4105:24318:24746 [7] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:24286:24755 [1] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:24286:24755 [1] INFO Using internal Network IB
+dgx4105:24286:24755 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:24290:24745 [3] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4105:24290:24745 [3] INFO Using internal Network IB
+dgx4105:24290:24745 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:16561:17196 [6] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16561:17196 [6] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:16555:17210 [3] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16555:17210 [3] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:16559:17209 [5] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16559:17209 [5] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:16557:17199 [4] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16557:17199 [4] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:16567:17212 [7] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16567:17212 [7] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:16553:17187 [2] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16553:17187 [2] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:16550:17191 [0] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16550:17191 [0] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:16551:17204 [1] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16551:17204 [1] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4103:16561:17196 [6] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:16557:17199 [4] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:16559:17209 [5] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:16555:17210 [3] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:16553:17187 [2] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:16550:17191 [0] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:16567:17212 [7] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:16561:17196 [6] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:16551:17204 [1] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4103:16557:17199 [4] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:16561:17196 [6] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:16555:17210 [3] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:16550:17191 [0] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:16553:17187 [2] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:16559:17209 [5] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:16567:17212 [7] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:16551:17204 [1] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4103:16557:17199 [4] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:16561:17196 [6] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:16561:17196 [6] INFO Using internal Network IB
+dgx4103:16561:17196 [6] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:16550:17191 [0] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:16555:17210 [3] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:16553:17187 [2] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:16559:17209 [5] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:16567:17212 [7] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:16551:17204 [1] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4103:16557:17199 [4] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:16557:17199 [4] INFO Using internal Network IB
+dgx4103:16557:17199 [4] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:16553:17187 [2] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:16553:17187 [2] INFO Using internal Network IB
+dgx4103:16553:17187 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:16550:17191 [0] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:16550:17191 [0] INFO Using internal Network IB
+dgx4103:16550:17191 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:16559:17209 [5] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:16559:17209 [5] INFO Using internal Network IB
+dgx4103:16559:17209 [5] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:16555:17210 [3] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:16555:17210 [3] INFO Using internal Network IB
+dgx4103:16555:17210 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:16567:17212 [7] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:16567:17212 [7] INFO Using internal Network IB
+dgx4103:16567:17212 [7] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4103:16551:17204 [1] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4103:16551:17204 [1] INFO Using internal Network IB
+dgx4103:16551:17204 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4105:24285:24753 [0] INFO comm 0x2abbc8011c40 rank 0 nranks 16
+dgx4105:24285:24753 [0] INFO CUDA Dev 0, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4105:24288:24739 [2] INFO comm 0x2b9e9a13b180 rank 2 nranks 16
+dgx4105:24288:24739 [2] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24288:24739 [2] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:24288:24739 [2] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:24288:24739 [2] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:24288:24739 [2] INFO NET/Socket : 4 interfaces found
+dgx4105:24288:24739 [2] INFO CUDA Dev 2, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4103:16561:17196 [6] INFO comm 0x7f75de20ea60 rank 14 nranks 16
+dgx4103:16561:17196 [6] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16561:17196 [6] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:16561:17196 [6] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:16561:17196 [6] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:16561:17196 [6] INFO NET/Socket : 4 interfaces found
+dgx4103:16561:17196 [6] INFO CUDA Dev 6, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:24302:24752 [6] INFO comm 0x2b878e21b3a0 rank 6 nranks 16
+dgx4105:24302:24752 [6] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24302:24752 [6] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:24302:24752 [6] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:24302:24752 [6] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:24302:24752 [6] INFO NET/Socket : 4 interfaces found
+dgx4105:24302:24752 [6] INFO CUDA Dev 6, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:24292:24754 [4] INFO comm 0x2b802e219b40 rank 4 nranks 16
+dgx4105:24292:24754 [4] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24292:24754 [4] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:24292:24754 [4] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:24292:24754 [4] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:24292:24754 [4] INFO NET/Socket : 4 interfaces found
+dgx4105:24292:24754 [4] INFO CUDA Dev 4, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:24318:24746 [7] INFO comm 0x2b89b4013320 rank 7 nranks 16
+dgx4105:24296:24733 [5] INFO comm 0x2ac296218b00 rank 5 nranks 16
+dgx4105:24318:24746 [7] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24318:24746 [7] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:24318:24746 [7] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:24318:24746 [7] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:24318:24746 [7] INFO NET/Socket : 4 interfaces found
+dgx4105:24296:24733 [5] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24296:24733 [5] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:24296:24733 [5] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:24296:24733 [5] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:24296:24733 [5] INFO NET/Socket : 4 interfaces found
+dgx4105:24318:24746 [7] INFO CUDA Dev 7, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:24296:24733 [5] INFO CUDA Dev 5, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:24286:24755 [1] INFO comm 0x2ac35a136520 rank 1 nranks 16
+dgx4105:24290:24745 [3] INFO comm 0x2ba126183300 rank 3 nranks 16
+dgx4105:24286:24755 [1] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24286:24755 [1] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:24286:24755 [1] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:24286:24755 [1] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:24286:24755 [1] INFO NET/Socket : 4 interfaces found
+dgx4105:24290:24745 [3] INFO NET : Using interface ib0:192.168.162.5<0>
+dgx4105:24290:24745 [3] INFO NET : Using interface ib1:192.168.162.15<0>
+dgx4105:24290:24745 [3] INFO NET : Using interface ib2:192.168.162.25<0>
+dgx4105:24290:24745 [3] INFO NET : Using interface ib3:192.168.162.35<0>
+dgx4105:24290:24745 [3] INFO NET/Socket : 4 interfaces found
+dgx4105:24286:24755 [1] INFO CUDA Dev 1, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4105:24290:24745 [3] INFO CUDA Dev 3, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4103:16557:17199 [4] INFO comm 0x7f3b8a20dd20 rank 12 nranks 16
+dgx4103:16557:17199 [4] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16557:17199 [4] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:16557:17199 [4] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:16557:17199 [4] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:16557:17199 [4] INFO NET/Socket : 4 interfaces found
+dgx4103:16557:17199 [4] INFO CUDA Dev 4, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:16553:17187 [2] INFO comm 0x7fda8a280310 rank 10 nranks 16
+dgx4103:16553:17187 [2] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16553:17187 [2] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:16553:17187 [2] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:16553:17187 [2] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:16553:17187 [2] INFO NET/Socket : 4 interfaces found
+dgx4103:16553:17187 [2] INFO CUDA Dev 2, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4103:16550:17191 [0] INFO comm 0x7f1c24014690 rank 8 nranks 16
+dgx4103:16550:17191 [0] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16550:17191 [0] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:16550:17191 [0] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:16550:17191 [0] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:16550:17191 [0] INFO NET/Socket : 4 interfaces found
+dgx4103:16550:17191 [0] INFO CUDA Dev 0, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4103:16555:17210 [3] INFO comm 0x7efd8e20f070 rank 11 nranks 16
+dgx4103:16555:17210 [3] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16555:17210 [3] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:16555:17210 [3] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:16555:17210 [3] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:16555:17210 [3] INFO NET/Socket : 4 interfaces found
+dgx4103:16555:17210 [3] INFO CUDA Dev 3, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PIX) mlx5_0/1(PHB) 
+dgx4103:16551:17204 [1] INFO comm 0x7fb7de27f4c0 rank 9 nranks 16
+dgx4103:16551:17204 [1] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16551:17204 [1] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:16551:17204 [1] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:16551:17204 [1] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:16551:17204 [1] INFO NET/Socket : 4 interfaces found
+dgx4103:16567:17212 [7] INFO comm 0x7f232221fe60 rank 15 nranks 16
+dgx4103:16551:17204 [1] INFO CUDA Dev 1, IB Ports : mlx5_3/1(SOC) mlx5_2/1(SOC) mlx5_1/1(PHB) mlx5_0/1(PIX) 
+dgx4103:16567:17212 [7] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16567:17212 [7] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:16567:17212 [7] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:16567:17212 [7] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:16567:17212 [7] INFO NET/Socket : 4 interfaces found
+dgx4103:16559:17209 [5] INFO comm 0x7f2f0a20ea90 rank 13 nranks 16
+dgx4103:16559:17209 [5] INFO NET : Using interface ib0:192.168.162.3<0>
+dgx4103:16559:17209 [5] INFO NET : Using interface ib1:192.168.162.13<0>
+dgx4103:16559:17209 [5] INFO NET : Using interface ib2:192.168.162.23<0>
+dgx4103:16559:17209 [5] INFO NET : Using interface ib3:192.168.162.33<0>
+dgx4103:16559:17209 [5] INFO NET/Socket : 4 interfaces found
+dgx4103:16567:17212 [7] INFO CUDA Dev 7, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4103:16559:17209 [5] INFO CUDA Dev 5, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4105:24285:24753 [0] INFO Using 256 threads
+dgx4105:24285:24753 [0] INFO Min Comp Cap 7
+dgx4105:24285:24753 [0] INFO NCCL_SINGLE_RING_THRESHOLD=262144
+dgx4105:24285:24753 [0] INFO Ring 00 :    0   3   1   5   4   7  14  10   8  11   9  13  12  15   6   2
+dgx4105:24285:24753 [0] INFO Ring 01 :    0   1   2   3   7   6   5  12   8   9  10  11  15  14  13   4
+dgx4105:24285:24753 [0] INFO Ring 02 :    0   4   5   6   7   3  10   9   8  12  13  14  15  11   2   1
+dgx4105:24285:24753 [0] INFO Ring 03 :    0   3   2   6   4   7   5   1   8  11  10  14  12  15  13   9
+dgx4105:24302:24752 [6] INFO 15 -> 6 via NET/IB/0/GDRDMA
+dgx4103:16561:17196 [6] INFO 7 -> 14 via NET/IB/0/GDRDMA
+dgx4103:16553:17187 [2] INFO Ring 00 : 10[2] -> 8[0] via P2P/IPC
+dgx4105:24288:24739 [2] INFO Ring 00 : 2[2] -> 0[0] via P2P/IPC
+dgx4103:16555:17210 [3] INFO Ring 00 : 11[3] -> 9[1] via P2P/IPC
+dgx4103:16551:17204 [1] INFO Ring 00 : 9[1] -> 13[5] via P2P/IPC
+dgx4105:24302:24752 [6] INFO Ring 00 : 6[6] -> 2[2] via P2P/IPC
+dgx4105:24296:24733 [5] INFO Ring 00 : 5[5] -> 4[4] via P2P/IPC
+dgx4105:24286:24755 [1] INFO Ring 00 : 1[1] -> 5[5] via P2P/IPC
+dgx4103:16561:17196 [6] INFO Ring 00 : 14[6] -> 10[2] via P2P/IPC
+dgx4103:16550:17191 [0] INFO Ring 00 : 8[0] -> 11[3] via P2P/IPC
+dgx4103:16559:17209 [5] INFO Ring 00 : 13[5] -> 12[4] via P2P/IPC
+dgx4105:24290:24745 [3] INFO Ring 00 : 3[3] -> 1[1] via P2P/IPC
+dgx4103:16557:17199 [4] INFO Ring 00 : 12[4] -> 15[7] via P2P/IPC
+dgx4105:24292:24754 [4] INFO Ring 00 : 4[4] -> 7[7] via P2P/IPC
+dgx4105:24285:24753 [0] INFO Ring 00 : 0[0] -> 3[3] via P2P/IPC
+dgx4105:24318:24746 [7] INFO NET/IB: Dev 0 Port 1 qpn 10471 mtu 5 LID 631
+dgx4103:16567:17212 [7] INFO NET/IB: Dev 0 Port 1 qpn 5082 mtu 5 LID 632
+dgx4105:24292:24754 [4] INFO 13 -> 4 via NET/IB/1/GDRDMA
+dgx4103:16557:17199 [4] INFO 5 -> 12 via NET/IB/1/GDRDMA
+dgx4105:24292:24754 [4] INFO Ring 01 : 4[4] -> 0[0] via P2P/IPC
+dgx4105:24286:24755 [1] INFO Ring 01 : 1[1] -> 2[2] via P2P/IPC
+dgx4103:16551:17204 [1] INFO Ring 01 : 9[1] -> 10[2] via P2P/IPC
+dgx4105:24285:24753 [0] INFO Ring 01 : 0[0] -> 1[1] via P2P/IPC
+dgx4103:16550:17191 [0] INFO Ring 01 : 8[0] -> 9[1] via P2P/IPC
+dgx4105:24288:24739 [2] INFO Ring 01 : 2[2] -> 3[3] via P2P/IPC
+dgx4105:24290:24745 [3] INFO Ring 01 : 3[3] -> 7[7] via P2P/IPC
+dgx4103:16553:17187 [2] INFO Ring 01 : 10[2] -> 11[3] via P2P/IPC
+dgx4105:24318:24746 [7] INFO Ring 01 : 7[7] -> 6[6] via P2P/IPC
+dgx4103:16557:17199 [4] INFO Ring 01 : 12[4] -> 8[0] via P2P/IPC
+dgx4105:24302:24752 [6] INFO Ring 01 : 6[6] -> 5[5] via P2P/IPC
+dgx4103:16555:17210 [3] INFO Ring 01 : 11[3] -> 15[7] via P2P/IPC
+dgx4103:16567:17212 [7] INFO Ring 01 : 15[7] -> 14[6] via P2P/IPC
+dgx4103:16561:17196 [6] INFO Ring 01 : 14[6] -> 13[5] via P2P/IPC
+dgx4105:24296:24733 [5] INFO NET/IB: Dev 1 Port 1 qpn 11918 mtu 5 LID 626
+dgx4103:16559:17209 [5] INFO NET/IB: Dev 1 Port 1 qpn 7061 mtu 5 LID 628
+dgx4103:16553:17187 [2] INFO 3 -> 10 via NET/IB/2/GDRDMA
+dgx4105:24288:24739 [2] INFO 11 -> 2 via NET/IB/2/GDRDMA
+dgx4103:16553:17187 [2] INFO Ring 02 : 10[2] -> 9[1] via P2P/IPC
+dgx4105:24288:24739 [2] INFO Ring 02 : 2[2] -> 1[1] via P2P/IPC
+dgx4103:16550:17191 [0] INFO Ring 02 : 8[0] -> 12[4] via P2P/IPC
+dgx4103:16551:17204 [1] INFO Ring 02 : 9[1] -> 8[0] via P2P/IPC
+dgx4105:24286:24755 [1] INFO Ring 02 : 1[1] -> 0[0] via P2P/IPC
+dgx4105:24285:24753 [0] INFO Ring 02 : 0[0] -> 4[4] via P2P/IPC
+dgx4105:24302:24752 [6] INFO Ring 02 : 6[6] -> 7[7] via P2P/IPC
+dgx4105:24318:24746 [7] INFO Ring 02 : 7[7] -> 3[3] via P2P/IPC
+dgx4105:24296:24733 [5] INFO Ring 02 : 5[5] -> 6[6] via P2P/IPC
+dgx4103:16561:17196 [6] INFO Ring 02 : 14[6] -> 15[7] via P2P/IPC
+dgx4103:16559:17209 [5] INFO Ring 02 : 13[5] -> 14[6] via P2P/IPC
+dgx4103:16567:17212 [7] INFO Ring 02 : 15[7] -> 11[3] via P2P/IPC
+dgx4105:24292:24754 [4] INFO Ring 02 : 4[4] -> 5[5] via P2P/IPC
+dgx4103:16557:17199 [4] INFO Ring 02 : 12[4] -> 13[5] via P2P/IPC
+dgx4105:24290:24745 [3] INFO NET/IB: Dev 2 Port 1 qpn 9877 mtu 5 LID 629
+dgx4103:16555:17210 [3] INFO NET/IB: Dev 2 Port 1 qpn 4706 mtu 5 LID 625
+dgx4103:16550:17191 [0] INFO 1 -> 8 via NET/IB/3/GDRDMA
+dgx4105:24285:24753 [0] INFO 9 -> 0 via NET/IB/3/GDRDMA
+dgx4105:24285:24753 [0] INFO Ring 03 : 0[0] -> 3[3] via P2P/IPC
+dgx4103:16550:17191 [0] INFO Ring 03 : 8[0] -> 11[3] via P2P/IPC
+dgx4105:24292:24754 [4] INFO Ring 03 : 4[4] -> 7[7] via P2P/IPC
+dgx4105:24296:24733 [5] INFO Ring 03 : 5[5] -> 1[1] via P2P/IPC
+dgx4105:24302:24752 [6] INFO Ring 03 : 6[6] -> 4[4] via P2P/IPC
+dgx4105:24318:24746 [7] INFO Ring 03 : 7[7] -> 5[5] via P2P/IPC
+dgx4105:24290:24745 [3] INFO Ring 03 : 3[3] -> 2[2] via P2P/IPC
+dgx4103:16557:17199 [4] INFO Ring 03 : 12[4] -> 15[7] via P2P/IPC
+dgx4103:16559:17209 [5] INFO Ring 03 : 13[5] -> 9[1] via P2P/IPC
+dgx4105:24288:24739 [2] INFO Ring 03 : 2[2] -> 6[6] via P2P/IPC
+dgx4103:16561:17196 [6] INFO Ring 03 : 14[6] -> 12[4] via P2P/IPC
+dgx4103:16567:17212 [7] INFO Ring 03 : 15[7] -> 13[5] via P2P/IPC
+dgx4103:16555:17210 [3] INFO Ring 03 : 11[3] -> 10[2] via P2P/IPC
+dgx4103:16553:17187 [2] INFO Ring 03 : 10[2] -> 14[6] via P2P/IPC
+dgx4103:16551:17204 [1] INFO NET/IB: Dev 3 Port 1 qpn 6593 mtu 5 LID 623
+dgx4105:24286:24755 [1] INFO NET/IB: Dev 3 Port 1 qpn 11646 mtu 5 LID 624
+dgx4105:24285:24753 [0] INFO Launch mode Parallel
+     1   0.0    53.7  7.821 10.512 2.00000
+    10   0.0   557.5  7.355 10.045 1.99968
+    20   0.0  3392.0  6.937  9.604 1.99933
+    30   0.0  3373.7  6.948  9.566 1.99897
+    40   0.0  3353.5  6.808  9.356 1.99861
+    50   0.0  3428.2  6.867  9.339 1.99826
+    60   0.0  3404.5  6.763  9.158 1.99790
+    70   0.1  3415.6  6.817  9.137 1.99755
+    80   0.1  3324.3  6.550  8.793 1.99719
+    90   0.1  3421.9  6.750  8.917 1.99684
+   100   0.1  3419.3  6.692  8.783 1.99648
+   110   0.1  3385.1  6.573  8.593 1.99613
+   120   0.1  3463.2  6.473  8.423 1.99577
+   130   0.1  3459.5  6.501  8.385 1.99542
+   140   0.1  3420.5  6.294  8.116 1.99506
+   150   0.1  3410.5  6.212  7.975 1.99471
+   160   0.1  3419.1  6.261  7.965 1.99436
+   170   0.1  3434.6  6.191  7.839 1.99400
+   180   0.1  3360.4  6.227  7.821 1.99365
+   190   0.2  3408.9  6.256  7.799 1.99329
+   200   0.2  1192.7  6.105  7.599 1.99294
+
+real	4m19.015s
+user	49m58.588s
+sys	5m49.824s
+======================================================================================
+
+			Resource Usage on 2018-10-17 17:51:27.090521:
+
+	JobId: 7711443.wlm01  
+	Project: 90000001 
+	Exit Status: 0
+	NCPUs Requested: 80				NCPUs Used: 80
+							CPU Time Used: 02:48:39
+	Memory Requested: None 				Memory Used: 43988204kb
+							Vmem Used: 451280224kb
+	Walltime requested: 01:00:00 			Walltime Used: 00:13:29
+	
+	Execution Nodes Used: (dgx4105:ncpus=40:ngpus=8)+(dgx4103:ncpus=40:ngpus=8)
+	
+ ======================================================================================

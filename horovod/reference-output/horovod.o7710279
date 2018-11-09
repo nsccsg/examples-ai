@@ -1,0 +1,415 @@
+=== PBS_NODEFILE
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4101
+dgx4101
+dgx4101
+dgx4101
+dgx4101
+dgx4101
+dgx4101
+dgx4101
+=== PBS_NODEFILE
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4105
+dgx4101
+dgx4101
+dgx4101
+dgx4101
+dgx4101
+dgx4101
+dgx4101
+dgx4101
+dgx4101: Wed Oct 17 13:46:55 2018       
+dgx4101: +-----------------------------------------------------------------------------+
+dgx4101: | NVIDIA-SMI 384.81                 Driver Version: 384.81                    |
+dgx4101: |-------------------------------+----------------------+----------------------+
+dgx4101: | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+dgx4101: | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+dgx4101: |===============================+======================+======================|
+dgx4101: |   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+dgx4101: | N/A   40C    P0    47W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4101: +-------------------------------+----------------------+----------------------+
+dgx4101: |   1  Tesla V100-SXM2...  On   | 00000000:07:00.0 Off |                    0 |
+dgx4101: | N/A   42C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4101: +-------------------------------+----------------------+----------------------+
+dgx4101: |   2  Tesla V100-SXM2...  On   | 00000000:0A:00.0 Off |                    0 |
+dgx4101: | N/A   40C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4101: +-------------------------------+----------------------+----------------------+
+dgx4101: |   3  Tesla V100-SXM2...  On   | 00000000:0B:00.0 Off |                    0 |
+dgx4101: | N/A   39C    P0    42W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4101: +-------------------------------+----------------------+----------------------+
+dgx4101: |   4  Tesla V100-SXM2...  On   | 00000000:85:00.0 Off |                    0 |
+dgx4101: | N/A   39C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4101: +-------------------------------+----------------------+----------------------+
+dgx4101: |   5  Tesla V100-SXM2...  On   | 00000000:86:00.0 Off |                    0 |
+dgx4101: | N/A   40C    P0    42W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4101: +-------------------------------+----------------------+----------------------+
+dgx4101: |   6  Tesla V100-SXM2...  On   | 00000000:89:00.0 Off |                    0 |
+dgx4101: | N/A   40C    P0    49W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4101: +-------------------------------+----------------------+----------------------+
+dgx4101: |   7  Tesla V100-SXM2...  On   | 00000000:8A:00.0 Off |                    0 |
+dgx4101: | N/A   39C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4101: +-------------------------------+----------------------+----------------------+
+dgx4101:                                                                                
+dgx4101: +-----------------------------------------------------------------------------+
+dgx4101: | Processes:                                                       GPU Memory |
+dgx4101: |  GPU       PID   Type   Process name                             Usage      |
+dgx4101: |=============================================================================|
+dgx4101: |  No running processes found                                                 |
+dgx4101: +-----------------------------------------------------------------------------+
+dgx4105: Wed Oct 17 13:46:56 2018       
+dgx4105: +-----------------------------------------------------------------------------+
+dgx4105: | NVIDIA-SMI 384.81                 Driver Version: 384.81                    |
+dgx4105: |-------------------------------+----------------------+----------------------+
+dgx4105: | GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+dgx4105: | Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+dgx4105: |===============================+======================+======================|
+dgx4105: |   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+dgx4105: | N/A   40C    P0    44W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   1  Tesla V100-SXM2...  On   | 00000000:07:00.0 Off |                    0 |
+dgx4105: | N/A   40C    P0    44W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   2  Tesla V100-SXM2...  On   | 00000000:0A:00.0 Off |                    0 |
+dgx4105: | N/A   39C    P0    44W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   3  Tesla V100-SXM2...  On   | 00000000:0B:00.0 Off |                    0 |
+dgx4105: | N/A   38C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   4  Tesla V100-SXM2...  On   | 00000000:85:00.0 Off |                    0 |
+dgx4105: | N/A   38C    P0    46W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   5  Tesla V100-SXM2...  On   | 00000000:86:00.0 Off |                    0 |
+dgx4105: | N/A   39C    P0    44W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   6  Tesla V100-SXM2...  On   | 00000000:89:00.0 Off |                    0 |
+dgx4105: | N/A   40C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105: |   7  Tesla V100-SXM2...  On   | 00000000:8A:00.0 Off |                    0 |
+dgx4105: | N/A   38C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
+dgx4105: +-------------------------------+----------------------+----------------------+
+dgx4105:                                                                                
+dgx4105: +-----------------------------------------------------------------------------+
+dgx4105: | Processes:                                                       GPU Memory |
+dgx4105: |  GPU       PID   Type   Process name                             Usage      |
+dgx4105: |=============================================================================|
+dgx4105: |  No running processes found                                                 |
+dgx4105: +-----------------------------------------------------------------------------+
+[dgx4105:43754] Warning: could not find environment variable "NCCL_DEBUG"
+[dgx4105:43754] Warning: could not find environment variable "SINGULARITYENV_NCCL_DEBUG"
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+Script arguments:
+  --num_iter 200
+  --data_dir /raid/datasets/resnet
+  --use_dali False
+  --layers 152
+  --batch_size 64
+  --display_every 10
+  --precision fp16
+  --iter_unit batch
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmph4rmvm18
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpmvqs4p06
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpbzgv6bh8
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp_x4aqlme
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpbgo8luin
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpm_o4bzmo
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpazvw87r8
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpam0h83eq
+Training
+Training
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpeei_oeif
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpo8mflgr6
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpxq2rh6nu
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp6dtg7qok
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpejixpltt
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp3hoxd50g
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp51_767vn
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp40r8weju
+Training
+Training
+Training
+2018-10-17 05:47:33.059112: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:33.059150: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 3
+2018-10-17 05:47:33.213054: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:33.213095: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 7
+2018-10-17 05:47:33.773709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:33.773747: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 5
+2018-10-17 05:47:34.134180: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:34.134245: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 5
+2018-10-17 05:47:34.913463: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:34.913510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 4
+2018-10-17 05:47:35.716442: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:35.716486: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      3 
+2018-10-17 05:47:35.716520: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 3:   N 
+2018-10-17 05:47:35.717557: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2018-10-17 05:47:35.783407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:35.783445: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      7 
+2018-10-17 05:47:35.783452: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 7:   N 
+2018-10-17 05:47:35.799371: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2018-10-17 05:47:36.013076: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:36.013149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 7
+2018-10-17 05:47:36.201279: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:36.201318: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 6
+2018-10-17 05:47:36.302318: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:36.302365: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      5 
+2018-10-17 05:47:36.302372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 5:   N 
+2018-10-17 05:47:36.303690: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2018-10-17 05:47:36.638161: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:36.638235: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 2
+2018-10-17 05:47:36.986301: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:36.986380: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-10-17 05:47:37.029593: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:06:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:37.029658: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-10-17 05:47:37.058054: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:37.058107: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      5 
+2018-10-17 05:47:37.058132: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 5:   N 
+2018-10-17 05:47:37.061471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 5, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2018-10-17 05:47:37.370399: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:37.370471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 2
+2018-10-17 05:47:37.627514: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:37.627556: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 1
+2018-10-17 05:47:37.747968: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:37.748036: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      4 
+2018-10-17 05:47:37.748045: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 4:   N 
+2018-10-17 05:47:37.748603: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2018-10-17 05:47:37.818348: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:07:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:37.818404: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 1
+2018-10-17 05:47:37.853687: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:37.853754: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 4
+2018-10-17 05:47:37.928509: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:0b:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:37.928546: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 3
+2018-10-17 05:47:38.094471: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-17 05:47:38.094528: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 6
+2018-10-17 05:47:38.258931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:38.258971: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      7 
+2018-10-17 05:47:38.258978: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 7:   N 
+2018-10-17 05:47:38.259407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 7, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2018-10-17 05:47:38.377181: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:38.377221: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      6 
+2018-10-17 05:47:38.377229: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 6:   N 
+2018-10-17 05:47:38.377735: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2018-10-17 05:47:38.733637: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:38.733680: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-10-17 05:47:38.733687: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-10-17 05:47:38.734138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2018-10-17 05:47:38.870309: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:38.870356: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      2 
+2018-10-17 05:47:38.870381: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N 
+2018-10-17 05:47:38.870894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2018-10-17 05:47:38.935121: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:38.935156: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      2 
+2018-10-17 05:47:38.935165: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N 
+2018-10-17 05:47:38.935620: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0a:00.0, compute capability: 7.0)
+2018-10-17 05:47:38.969849: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:38.969896: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      1 
+2018-10-17 05:47:38.969922: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   N 
+2018-10-17 05:47:38.970445: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2018-10-17 05:47:39.127501: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:39.127545: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-10-17 05:47:39.127553: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-10-17 05:47:39.127979: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:06:00.0, compute capability: 7.0)
+2018-10-17 05:47:39.363077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:39.363116: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      1 
+2018-10-17 05:47:39.363124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   N 
+2018-10-17 05:47:39.363558: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:07:00.0, compute capability: 7.0)
+2018-10-17 05:47:39.381500: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:39.381554: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      3 
+2018-10-17 05:47:39.381561: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 3:   N 
+2018-10-17 05:47:39.381981: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:0b:00.0, compute capability: 7.0)
+2018-10-17 05:47:39.412282: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:39.412321: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      4 
+2018-10-17 05:47:39.412329: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 4:   N 
+2018-10-17 05:47:39.412809: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 4, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2018-10-17 05:47:39.493901: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-17 05:47:39.493944: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      6 
+2018-10-17 05:47:39.493969: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 6:   N 
+2018-10-17 05:47:39.494424: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 6, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+2018-10-17 05:49:29.464962: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4528 of 10000
+2018-10-17 05:49:29.468702: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4541 of 10000
+2018-10-17 05:49:29.467627: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4607 of 10000
+2018-10-17 05:49:29.470218: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4527 of 10000
+2018-10-17 05:49:29.476438: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4443 of 10000
+2018-10-17 05:49:29.476371: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4369 of 10000
+2018-10-17 05:49:29.476994: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4483 of 10000
+2018-10-17 05:49:29.481102: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4496 of 10000
+2018-10-17 05:49:29.481325: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4302 of 10000
+2018-10-17 05:49:29.479697: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4546 of 10000
+2018-10-17 05:49:29.481936: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4606 of 10000
+2018-10-17 05:49:29.481141: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4411 of 10000
+2018-10-17 05:49:29.486993: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4432 of 10000
+2018-10-17 05:49:29.487625: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4294 of 10000
+2018-10-17 05:49:29.489696: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4547 of 10000
+2018-10-17 05:49:29.519124: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:95] Filling up shuffle buffer (this may take a while): 4400 of 10000
+2018-10-17 05:49:37.379129: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.432282: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.490728: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.541034: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.543705: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.580137: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.581388: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.620757: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.636907: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.636955: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.648813: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.662591: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.689232: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.728496: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.831004: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+2018-10-17 05:49:37.894022: I tensorflow/core/kernels/data/shuffle_dataset_op.cc:131] Shuffle buffer filled.
+  Step Epoch Img/sec   Loss  LR
+     1   0.0    62.4  7.678 10.371 2.00000
+    10   0.0   638.4  7.254  9.944 1.99968
+    20   0.0  3461.7  7.231  9.894 1.99933
+    30   0.0  3483.1  7.089  9.721 1.99897
+    40   0.0  3434.6  6.921  9.514 1.99861
+    50   0.0  3455.8  6.956  9.486 1.99826
+    60   0.0  3495.7  6.957  9.412 1.99790
+    70   0.1  3440.0  6.840  9.214 1.99755
+    80   0.1  3526.8  6.713  9.006 1.99719
+    90   0.1  3468.8  6.684  8.895 1.99684
+   100   0.1  3509.0  6.674  8.805 1.99648
+   110   0.1  3491.8  6.622  8.677 1.99613
+   120   0.1  3439.4  6.599  8.580 1.99577
+   130   0.1  3456.3  6.473  8.384 1.99542
+   140   0.1  3517.3  6.511  8.355 1.99506
+   150   0.1  3484.1  6.403  8.182 1.99471
+   160   0.1  3489.9  6.492  8.210 1.99436
+   170   0.1  3468.5  6.221  7.879 1.99400
+   180   0.1  3479.0  6.290  7.891 1.99365
+   190   0.2  3478.2  6.328  7.875 1.99329
+   200   0.2  1215.2  6.260  7.755 1.99294
+======================================================================================
+
+			Resource Usage on 2018-10-17 13:51:14.760351:
+
+	JobId: 7710279.wlm01  
+	Project: 90000001 
+	Exit Status: 0
+	NCPUs Requested: 80				NCPUs Used: 80
+							CPU Time Used: 00:54:06
+	Memory Requested: None 				Memory Used: 44002676kb
+							Vmem Used: 450671624kb
+	Walltime requested: 01:00:00 			Walltime Used: 00:04:18
+	
+	Execution Nodes Used: (dgx4105:ncpus=40:ngpus=8)+(dgx4101:ncpus=40:ngpus=8)
+	
+ ======================================================================================

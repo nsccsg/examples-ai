@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -l select=2:ncpus=40:ngpus=8:mpiprocs=8:ompthreads=5
+#PBS -l walltime=0:10:00
+#PBS -q dgx
+#PBS -P 99999999
+#PBS -N mpi
+#PBS -j oe
+
+
+cd "$PBS_O_WORKDIR" || exit $?
+
+if [ ! -x mpi-hello ] ; then mpicc -o mpi-hello mpi-hello.c ; fi
+mpirun ./mpi-hello

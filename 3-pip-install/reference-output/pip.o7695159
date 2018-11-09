@@ -1,0 +1,61 @@
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 18.08 (build 604096)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017 The TensorFlow Authors.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+5dc7a4e0647e
+Wed Oct 10 06:32:04 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 384.81                 Driver Version: 384.81                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:86:00.0 Off |                    0 |
+| N/A   44C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+/workspace
+/home/projects/ai/pip_install
+should fail:
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ImportError: No module named 'keras'
+PATH in job shell
+PATH=/bin:/usr/bin:/usr/local/bin:/opt/singularity/bin:/home/app/dgx/openmpi-3.1.1-gnu/bin:/usr/local/bin:/home/app/dgx/openmpi-3.1.1-gnu/bin:/opt/pbs/bin:/opt/singularity/bin:/home/adm/sup/fsg3/bin
+PATH inside container
+PATH=/usr/local/mpi/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/workspace/.local/bin
+install keras inside container
+should work:
+Using TensorFlow backend.
+Imported keras
+======================================================================================
+
+			Resource Usage on 2018-10-10 14:32:15.727417:
+
+	JobId: 7695159.wlm01  
+	Project: 90000001 
+	Exit Status: 0
+	NCPUs Requested: 5				NCPUs Used: 5
+							CPU Time Used: 00:00:00
+	Memory Requested: None 				Memory Used: 26024kb
+							Vmem Used: 533392kb
+	Walltime requested: 00:05:00 			Walltime Used: 00:00:13
+	
+	Execution Nodes Used: (dgx4106:ncpus=5:ngpus=1)
+	
+ ======================================================================================

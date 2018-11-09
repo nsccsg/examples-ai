@@ -1,0 +1,14 @@
+# Container starting directory determined by settings in Docker image
+# For NVIDIA NGC containers this is normally /workspace
+echo Container starts in the directory:
+pwd
+# change directory to correct location if required
+datadir=/home/projects/ai/datasets/mxnet480
+python /opt/mxnet/example/image-classification/train_imagenet.py \
+ --gpu 0,1,2,3,4,5,6,7 \
+ --batch-size 512 --num-epochs 1 \
+ --data-train $datadir/train_480_100k.rec \
+ --data-train-idx $datadir/train_480_100k.idx \
+ --disp-batches 10 --network resnet-v1 \
+ --num-layers 50 --data-nthreads 32 --min-random-scale 0.533 --max-random-shear-ratio 0 --max-random-rotate-angle 0 --kv-store nccl_allreduce
+

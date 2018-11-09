@@ -1,0 +1,47 @@
+Waiting for Lustre to be mounted
+Checking missing packages...
+debconf: delaying package configuration, since apt-utils is not installed
+Updating system environment...
+depmod -aeF /boot/System.map-4.4.0-97-generic 4.4.0-97-generic
+Mounting Lustre...
+Lustre mounted
+
+Starting job
+About to launch [/usr/local/bin/nvidia_entrypoint.sh]
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 18.06 (build 512350)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017 The TensorFlow Authors.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+
+Job finished
+
+Waiting for Lustre to be unmounted
+
+
+/ddn/scripts/nsenter.sh: line 6: 40972 Killed                  nsenter -t $CONT_PID -m -u -i -n -p $@
+[1]+  Running                 lustre_containers &
+======================================================================================
+
+			Resource Usage on 2018-08-23 22:46:27.774558:
+
+	JobId: 7555190.wlm01  
+	Project: 41000001 
+	Exit Status: 0
+	NCPUs Requested: 40				NCPUs Used: 40
+							CPU Time Used: 00:00:02
+	Memory Requested: None 				Memory Used: 45672kb
+							Vmem Used: 3968504kb
+	Walltime requested: 12:00:00 			Walltime Used: 05:12:31
+	
+	Execution Nodes Used: (dgx4104:ncpus=40:ngpus=8)
+	
+ ======================================================================================

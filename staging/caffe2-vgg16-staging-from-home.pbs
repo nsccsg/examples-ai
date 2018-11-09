@@ -1,0 +1,47 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=40:ngpus=8
+#PBS -l walltime=1:00:00
+#PBS -q fj5
+#PBS -P 41000001
+#PBS -N caffe2-vgg16
+#PBS -j oe
+set -x
+ulimit 022
+env
+nvidia-smi
+
+# Caffe2 (VGG16) Imagenet 2012 256x256
+
+# Docker image to use
+image="nvcr.io/nvidia/caffe2:18.06-py3"
+# Dataset
+d=lmdb-256x256-raw
+# Batch size
+batch=256
+
+# Change to directory where job was submitted
+if [ x"$PBS_O_WORKDIR" != x ] ; then
+ cd "$PBS_O_WORKDIR" || exit $?
+fi
+
+# Workspace in local SSD
+data="/raid/datasets/$d"
+if [ ! -d "$data/ilsvrc12_train_lmdb" ] ; then
+ rm -rf "$data" && mkdir "$data" || exit $?
+ rsync -a "/home/projects/41000001/datasets/$d/" "$data/"
+fi
+
+tag="$d.batch.$batch.$PBS_JOBID"
+stdout="$PWD/stdout.$tag"
+stderr="$PWD/stderr.$tag"
+nvidia-smi
+nvidia-docker-run $image << EOF
+  # Container starts in the directory /workspace
+  python nvidia-examples/imagenet/train_vgg.py \
+   --all-gpus \
+   --batch-size $batch \
+   --dtype=float16 \
+   --enable-tensor-core \
+   --train-lmdb $data/ilsvrc12_train_lmdb \
+   --test-lmdb $data/ilsvrc12_val_lmdb > "$stdout" 2> "$stderr"
+EOF

@@ -1,0 +1,51 @@
+#!/bin/sh
+
+### The following requests all resources on 1 DGX-1 node
+#PBS -l select=1:ncpus=40:ngpus=8
+
+### The "select=1" specifies the number of nodes
+### The "ncpus=40:ngpus=8" is used by PBS for scheduling and accounting purposes
+### (all jobs running on a node can see all resources on a node)
+
+### Specify amount of time required
+#PBS -l walltime=1:00:00
+
+### Select correct queue
+#PBS -q dgx
+
+### Specify project code for DGX pilot phase
+#PBS -P 41000001
+
+### Specify name for job
+#PBS -N vnc
+
+### Standard output by default goes to file $PBS_JOBNAME.o$PBS_JOBID
+### Standard error by default goes to file $PBS_JOBNAME.e$PBS_JOBID
+### To merge standard output and error use the following
+#PBS -j oe
+
+### Start of commands to be run
+
+# Change to directory where job was submitted
+cd "$PBS_O_WORKDIR" || exit $?
+
+# Docker Image with VNC installed
+image="sbic/tensorflow_custom_vnc:18.04-py3-1.1"
+
+# The "nscc-docker run --ports $image" command runs the following Docker command: 
+#    nvidia-docker -u $UID:$GID -v /raid:/raid -v /home:/home --rm -i --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 -p 8888:8888 -p 5901:5901 $image /bin/sh
+# Run VNC server inside container
+nscc-docker run --ports $image << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
+USER=$USER
+HOME=$HOME
+export USER HOME
+vncserver :1
+# Replace following lines with actual commands to run
+sleep 3600
+EOF
+
+# To connect to VNC either use:
+# 1. Use a reverse proxy, or:
+# 2. Use qstat to see where job is running and ssh port forwarding to connect to port 5901 on that node
+
+# You can alternatively use "nscc-docker run --net=host" (host networking) rather than "nscc-docker run --ports" (private network with port mapping)

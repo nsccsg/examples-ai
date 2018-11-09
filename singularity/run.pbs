@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -N singularity
+#PBS -l select=1:ncpus=40:ngpus=8
+#PBS -q dgx
+#PBS -l walltime=1:00:00
+#PBS -j oe
+### Specify correct Project ID:
+#PBS -P 99999999
+set -e
+env
+nvidia-smi
+cd "$PBS_O_WORKDIR"
+SINGULARITY_IMAGES=/home/projects/ai/singularity
+singularity exec --nv $SINGULARITY_IMAGES/nvcr.io/nvidia/mxnet:18.08-py2.simg /bin/bash < stdin > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID

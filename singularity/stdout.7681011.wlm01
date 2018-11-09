@@ -1,0 +1,111 @@
+Singularity: Invoking an interactive shell within container...
+
+[0muid=11013(fsg3) gid=11001(fujitsu) groups=11001(fujitsu),100000(gpu-gromacs),110000(cpmd),110029(nscc-proj),21170165(21170165),41000001(41000001)
+Filesystem                             1K-blocks          Used    Available Use% Mounted on
+OverlayFS                                   1024             0         1024   0% /
+/dev/sda2                              460346440     282008416    154930664  65% /tmp
+192.168.160.103:/home/projects     3735614914560 3021699121152 713915793408  81% /home/projects
+/dev/sdb1                             7440067060     357036900   6708049608   6% /raid
+udev                                   264115832             0    264115832   0% /dev
+tmpfs                                  264137956             4    264137952   1% /dev/shm
+192.168.160.103:/home/adm/sup/fsg3 3735614914560 3021699121152 713915793408  81% /home/adm/sup/fsg3
+tmpfs                                      16384             8        16376   1% /etc/group
+tmpfs                                   52827592        239380     52588212   1% /etc/resolv.conf
+MANPATH=:/opt/pbs/share/man:/home/adm/sup/fsg3/usr/share/man
+CUDNN_VERSION=7.2.0
+NVIDIA_MXNET_VERSION=18.08
+CUDA_VERSION_WAR1936603=9.0.176_384.81
+SHELL=/bin/bash
+NCCL_PKG_VERSION=2.2.13-1+cuda9.0
+PBS_JOBNAME=128_dgx_singularity
+LIBRARY_PATH=/usr/local/cuda/lib64/stubs:
+PBS_ENVIRONMENT=PBS_BATCH
+PBS_O_WORKDIR=/home/projects/benchmarks/workload/run/2018/10/08/09/25/12/128_dgx_singularity
+LC_ALL=C.UTF-8
+NCPUS=40
+PBS_TASKNUM=1
+USER=fsg3
+PYTHONIOENCODING=utf-8
+LS_COLORS=ex=0;32:ln=0;36:
+LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/lib:/.singularity.d/libs
+PBS_O_HOME=/home/adm/sup/fsg3
+SINGULARITY_NAME=mxnet:18.08-py2.simg
+TRT_LIB_VERSION=4.1.2
+TRT_CL=GA-cl-24324298
+PBS_MOMPORT=15003
+PBS_O_QUEUE=dgx
+TRT_VERSION=4.0.1.6
+NVIDIA_BUILD_ID=599768
+ONNX_NAMESPACE=onnx
+PBS_O_LOGNAME=fsg3
+PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+PBS_O_LANG=en_US.UTF-8
+PBS_JOBCOOKIE=00000000635DC478000000004BDB16AE
+CUBLAS_PKG_VERSION=9-0=9.0.425-1
+PWD=/home/projects/benchmarks/workload/run/2018/10/08/09/25/12/128_dgx_singularity
+NCCL_DISABLE_CHECKS=1
+PBS_NODENUM=0
+PBS_JOBDIR=/home/adm/sup/fsg3
+CUDA_PKG_VERSION=9-0=9.0.176-1
+CUDA_VERSION=9.0.176
+PBS_O_SHELL=/bin/bash
+MXNET_CUDNN_AUTOTUNE_DEFAULT=2
+PBS_JOBID=7681011.wlm01
+ENVIRONMENT=BATCH
+HOME=/home/adm/sup/fsg3
+SHLVL=3
+PBS_O_HOST=nscc01
+RAID=/raid/adm/sup/fsg3
+NCCL_VERSION=2.2.13
+MXNET_HOME=/opt/mxnet
+CUBLAS_VERSION_WAR1936603=9.0.425_384.144
+LOGNAME=fsg3
+MXNET_VERSION=1.2.0+
+PBS_QUEUE=dgx-48g-04h
+OMP_NUM_THREADS=40
+PBS_O_MAIL=/var/spool/mail/fsg3
+SINGULARITY_CONTAINER=mxnet:18.08-py2.simg
+CUDNN_VERSION_BUILD=7.2.1.38
+PBS_O_SYSTEM=Linux
+PBS_NODEFILE=/var/spool/pbs/aux/7681011.wlm01
+PBS_O_PATH=/app/pbs/bin:/app/pbs/bin:/app/pbs/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ibutils/bin:/sbin:/usr/sbin:/opt/pbs/bin:/app/nsccadmin/bin:/home/adm/sup/fsg3/bin:/app/pbs/bin:/opt/pbs/bin
+_=/usr/bin/env
+unlimited
+Mon Oct  8 01:25:38 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 384.81                 Driver Version: 384.81                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  Off  | 00000000:06:00.0 Off |                    0 |
+| N/A   40C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  Off  | 00000000:07:00.0 Off |                    0 |
+| N/A   40C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2...  Off  | 00000000:0A:00.0 Off |                    0 |
+| N/A   39C    P0    44W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2...  Off  | 00000000:0B:00.0 Off |                    0 |
+| N/A   38C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla V100-SXM2...  Off  | 00000000:85:00.0 Off |                    0 |
+| N/A   38C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla V100-SXM2...  Off  | 00000000:86:00.0 Off |                    0 |
+| N/A   39C    P0    44W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla V100-SXM2...  Off  | 00000000:89:00.0 Off |                    0 |
+| N/A   40C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla V100-SXM2...  Off  | 00000000:8A:00.0 Off |                    0 |
+| N/A   39C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+

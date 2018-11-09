@@ -1,0 +1,93 @@
+#!/bin/bash
+#PBS -l select=2:ncpus=40:ngpus=8:mpiprocs=8
+#PBS -l walltime=1:00:00
+#PBS -q dgx
+#PBS -P 90000001
+#PBS -N horovod
+#PBS -j oe
+
+# Tensorflow Resnet Imagenet
+
+# Number of layers in CNN
+layers=152
+# batch size
+batch=64
+# NFS(1) or SSD(0)
+nfs=0
+
+# Singularity image to use
+image="/home/projects/ai/singularity/nvcr.io/nvidia/tensorflow:18.08-py3.simg"
+
+#dataset
+dataset=resnet
+
+# Change to directory where job was submitted
+if [ x"$PBS_O_WORKDIR" != x ] ; then
+ cd "$PBS_O_WORKDIR" || exit $?
+fi
+
+if [ $nfs -eq 1 ] ; then
+# dataset in NFS
+data="/home/projects/41000001/datasets/imagenet/$dataset"
+else
+# dataset in local SSD
+data="/raid/datasets/$dataset"
+fi
+
+echo === PBS_NODEFILE
+cat $PBS_NODEFILE
+echo === PBS_NODEFILE
+
+## This MPI is not aware of job scheduler
+## manually create host file
+hostfile="hostfile.$PBS_JOBID"
+WCOLL="wcoll.$PBS_JOBID"
+export WCOLL
+sort $PBS_NODEFILE | uniq > $WCOLL
+((np=0))
+for h in `cat $WCOLL` ; do
+n=`grep -cx "$h" "$PBS_NODEFILE"`
+echo $h slots=$n
+((np=np+n))
+done > $hostfile
+
+
+# For multinode jobs the execjob_prologue hook must run on the sister MoM in the other vnodes
+# This happens in two circumstances
+#   An MPI application which is tightly integrated with PBS is used
+#   A process is launched from the sister MoM with pbs-attach or tm_spawn
+#      (which happens when pbsdsh is used)
+#
+# This MPI is not tightly integrated so need this:
+pbsdsh hostname
+
+# gets hosts from $WCOLL
+PDSH_RCMD_TYPE=ssh ; export PDSH_RCMD_TYPE=ssh
+/home/app/dgx/usr/bin/pdsh -f 1 nvidia-smi
+
+# Test MPI hostnames and latency/bandwidth
+for x in mpi.x mpi_nx2_latbw ; do
+echo === $x
+/usr/local/mpi/bin/mpirun \
+ -np $np --hostfile $hostfile \
+ --mca btl_openib_warn_default_gid_prefix 0 \
+ /opt/singularity/bin/singularity exec --nv $image \
+ $PWD/$x
+echo === $x
+done
+
+# Main run
+for iter in 0 1 2 ; do
+SINGULARITYENV_NCCL_DEBUG=INFO ; export SINGULARITYENV_NCCL_DEBUG
+time /usr/local/mpi/bin/mpirun \
+ -np $np --hostfile $hostfile \
+ --mca btl_openib_warn_default_gid_prefix 0 \
+ -x SINGULARITYENV_NCCL_DEBUG \
+ /opt/singularity/bin/singularity exec --nv $image \
+  python /workspace/nvidia-examples/cnn/resnet.py \
+   --layers $layers \
+   -b $batch \
+   -i 200 \
+   -u batch \
+   --data_dir $data
+done

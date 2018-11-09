@@ -1,0 +1,6 @@
+Example of building a custom Docker image
+
+0. Create an account on Docker Hub (https://hub.docker.com)
+1. Modify Dockerfile
+2. Build image following template in 0-build
+3. Push image to Docker Hub

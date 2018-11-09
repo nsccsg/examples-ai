@@ -1,0 +1,40 @@
+Waiting for Lustre to be mounted
+Checking missing packages...
+debconf: delaying package configuration, since apt-utils is not installed
+Updating system environment...
+depmod -aeF /boot/System.map-4.4.0-97-generic 4.4.0-97-generic
+Mounting Lustre...
+Lustre mounted
+
+Starting job
+About to launch [/usr/local/bin/nvidia_entrypoint.sh]
+                                                                                                                                                
+================
+== TensorFlow ==
+================
+
+NVIDIA Release 18.06 (build 512350)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+Copyright 2017 The TensorFlow Authors.  All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+=>> PBS: job killed: walltime 3635 exceeded limit 3600
+======================================================================================
+
+			Resource Usage on 2018-08-23 16:37:29.582780:
+
+	JobId: 7554925.wlm01  
+	Project: 41000001 
+	Exit Status: 271
+	NCPUs Requested: 40				NCPUs Used: 40
+							CPU Time Used: 00:00:00
+	Memory Requested: None 				Memory Used: 45280kb
+							Vmem Used: 3596452kb
+	Walltime requested: 01:00:00 			Walltime Used: 01:00:37
+	
+	Execution Nodes Used: (dgx4104:ncpus=40:ngpus=8)
+	
+ ======================================================================================

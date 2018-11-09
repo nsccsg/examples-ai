@@ -1,0 +1,10 @@
+
+Connect to VNC running inside a Docker container
+
+Basic steps:
+ 1. Install vncserver software inside Docker image, build and publish (Dockerfile & 0-build)
+ 2. On login node run vncpasswd command to set a password on the VNC server
+ 2. Run image and start VNC server on display :1 (port 5901) inside container (edit vnc.pbs and submit job)
+ 4. Use ssh port forwarding to tunnel from local machine to DGX where job is running (find host name with "qstat -wan")
+ 5. Use VNC client on local machine to connect to localhost:1
+

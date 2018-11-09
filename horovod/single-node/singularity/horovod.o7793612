@@ -1,0 +1,410 @@
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+PY 3.5.2 (default, Nov 23 2017, 16:37:01) 
+[GCC 5.4.0 20160609]
+TF 1.9.0
+TF 1.9.0
+--------------------------------------------------------------------------
+WARNING: There are more than one active ports on host 'dgx4106', but the
+default subnet GID prefix was detected on more than one of these
+ports.  If these ports are connected to different physical IB
+networks, this configuration will fail in Open MPI.  This version of
+Open MPI requires that every physically separate IB subnet that is
+used between connected MPI processes must have different subnet ID
+values.
+
+Please see this FAQ entry for more details:
+
+  http://www.open-mpi.org/faq/?category=openfabrics#ofa-default-subnet-gid
+
+NOTE: You can turn off this warning by setting the MCA parameter
+      btl_openib_warn_default_gid_prefix to 0.
+--------------------------------------------------------------------------
+Script arguments:
+  --use_dali False
+  --layers 152
+  --iter_unit batch
+  --num_iter 2000
+  --data_dir /home/projects/41000001/datasets/imagenet/resnet
+  --batch_size 64
+  --display_every 10
+  --precision fp16
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpx78jwt5t
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpepg971nw
+Training
+Training
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpd96erei7
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmppuy3js0z
+Training
+Training
+[dgx4106:69256] 11 more processes have sent help message help-mpi-btl-openib.txt / default subnet prefix
+[dgx4106:69256] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+2018-10-25 11:01:10.032584: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:85:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-25 11:01:10.032622: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 0
+2018-10-25 11:01:10.519559: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:8a:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-25 11:01:10.519645: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 3
+2018-10-25 11:01:10.694039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:86:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-25 11:01:10.694096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 1
+2018-10-25 11:01:11.526004: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1392] Found device 0 with properties: 
+name: Tesla V100-SXM2-16GB major: 7 minor: 0 memoryClockRate(GHz): 1.53
+pciBusID: 0000:89:00.0
+totalMemory: 15.77GiB freeMemory: 15.36GiB
+2018-10-25 11:01:11.526043: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1471] Adding visible gpu devices: 2
+2018-10-25 11:01:11.659073: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-25 11:01:11.659130: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      0 
+2018-10-25 11:01:11.659138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   N 
+2018-10-25 11:01:11.659611: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 0, name: Tesla V100-SXM2-16GB, pci bus id: 0000:85:00.0, compute capability: 7.0)
+2018-10-25 11:01:11.680369: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-25 11:01:11.680407: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      1 
+2018-10-25 11:01:11.680423: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 1:   N 
+2018-10-25 11:01:11.680802: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 1, name: Tesla V100-SXM2-16GB, pci bus id: 0000:86:00.0, compute capability: 7.0)
+2018-10-25 11:01:11.693333: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-25 11:01:11.693357: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      3 
+2018-10-25 11:01:11.693364: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 3:   N 
+2018-10-25 11:01:11.693713: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 3, name: Tesla V100-SXM2-16GB, pci bus id: 0000:8a:00.0, compute capability: 7.0)
+2018-10-25 11:01:11.846854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:952] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-10-25 11:01:11.846892: I tensorflow/core/common_runtime/gpu/gpu_device.cc:958]      2 
+2018-10-25 11:01:11.846917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 2:   N 
+2018-10-25 11:01:11.847299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1084] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 11306 MB memory) -> physical GPU (device: 2, name: Tesla V100-SXM2-16GB, pci bus id: 0000:89:00.0, compute capability: 7.0)
+  Step Epoch Img/sec   Loss  LR
+dgx4106:69261:69358 [0] INFO NET : Using interface ib0:192.168.162.6<0>
+dgx4106:69261:69358 [0] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4106:69261:69358 [0] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4106:69261:69358 [0] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4106:69261:69358 [0] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4106:69261:69358 [0] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4106:69261:69358 [0] INFO Using internal Network IB
+dgx4106:69261:69358 [0] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4106:69261:69358 [0] INFO NET : Using interface ib0:192.168.162.6<0>
+dgx4106:69261:69358 [0] INFO NET : Using interface ib1:192.168.162.16<0>
+dgx4106:69261:69358 [0] INFO NET : Using interface ib2:192.168.162.26<0>
+dgx4106:69261:69358 [0] INFO NET : Using interface ib3:192.168.162.36<0>
+dgx4106:69261:69358 [0] INFO NET/Socket : 4 interfaces found
+NCCL version 2.2.13+cuda9.0
+dgx4106:69263:69361 [2] INFO NET : Using interface ib0:192.168.162.6<0>
+dgx4106:69263:69361 [2] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4106:69264:69360 [3] INFO NET : Using interface ib0:192.168.162.6<0>
+dgx4106:69264:69360 [3] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4106:69262:69359 [1] INFO NET : Using interface ib0:192.168.162.6<0>
+dgx4106:69262:69359 [1] INFO NET/IB : Using interface ib0 for sideband communication
+dgx4106:69263:69361 [2] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4106:69264:69360 [3] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4106:69262:69359 [1] INFO NET/IB: [0] mlx5_3:1/IB 
+dgx4106:69263:69361 [2] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4106:69262:69359 [1] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4106:69264:69360 [3] INFO NET/IB: [1] mlx5_2:1/IB 
+dgx4106:69263:69361 [2] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4106:69262:69359 [1] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4106:69264:69360 [3] INFO NET/IB: [2] mlx5_1:1/IB 
+dgx4106:69263:69361 [2] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4106:69263:69361 [2] INFO Using internal Network IB
+dgx4106:69263:69361 [2] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4106:69262:69359 [1] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4106:69262:69359 [1] INFO Using internal Network IB
+dgx4106:69262:69359 [1] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4106:69264:69360 [3] INFO NET/IB: [3] mlx5_0:1/IB 
+dgx4106:69264:69360 [3] INFO Using internal Network IB
+dgx4106:69264:69360 [3] INFO Using NCCL Low-latency algorithm for sizes below 16384
+dgx4106:69262:69359 [1] INFO comm 0x2b1f460a7570 rank 1 nranks 4
+dgx4106:69262:69359 [1] INFO NET : Using interface ib0:192.168.162.6<0>
+dgx4106:69262:69359 [1] INFO NET : Using interface ib1:192.168.162.16<0>
+dgx4106:69262:69359 [1] INFO NET : Using interface ib2:192.168.162.26<0>
+dgx4106:69262:69359 [1] INFO NET : Using interface ib3:192.168.162.36<0>
+dgx4106:69262:69359 [1] INFO NET/Socket : 4 interfaces found
+dgx4106:69262:69359 [1] INFO CUDA Dev 1, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4106:69261:69358 [0] INFO comm 0x2aaf5a0863a0 rank 0 nranks 4
+dgx4106:69261:69358 [0] INFO CUDA Dev 0, IB Ports : mlx5_3/1(PHB) mlx5_2/1(PIX) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4106:69264:69360 [3] INFO comm 0x2b5ece0543a0 rank 3 nranks 4
+dgx4106:69264:69360 [3] INFO NET : Using interface ib0:192.168.162.6<0>
+dgx4106:69264:69360 [3] INFO NET : Using interface ib1:192.168.162.16<0>
+dgx4106:69264:69360 [3] INFO NET : Using interface ib2:192.168.162.26<0>
+dgx4106:69264:69360 [3] INFO NET : Using interface ib3:192.168.162.36<0>
+dgx4106:69264:69360 [3] INFO NET/Socket : 4 interfaces found
+dgx4106:69263:69361 [2] INFO comm 0x2b2ba608e270 rank 2 nranks 4
+dgx4106:69264:69360 [3] INFO CUDA Dev 3, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4106:69263:69361 [2] INFO NET : Using interface ib0:192.168.162.6<0>
+dgx4106:69263:69361 [2] INFO NET : Using interface ib1:192.168.162.16<0>
+dgx4106:69263:69361 [2] INFO NET : Using interface ib2:192.168.162.26<0>
+dgx4106:69263:69361 [2] INFO NET : Using interface ib3:192.168.162.36<0>
+dgx4106:69263:69361 [2] INFO NET/Socket : 4 interfaces found
+dgx4106:69263:69361 [2] INFO CUDA Dev 2, IB Ports : mlx5_3/1(PIX) mlx5_2/1(PHB) mlx5_1/1(SOC) mlx5_0/1(SOC) 
+dgx4106:69261:69358 [0] INFO Using 256 threads
+dgx4106:69261:69358 [0] INFO Min Comp Cap 7
+dgx4106:69261:69358 [0] INFO NCCL_SINGLE_RING_THRESHOLD=262144
+dgx4106:69261:69358 [0] INFO Ring 00 :    0   1   2   3
+dgx4106:69261:69358 [0] INFO Ring 01 :    0   2   1   3
+dgx4106:69261:69358 [0] INFO Ring 02 :    0   3   1   2
+dgx4106:69261:69358 [0] INFO Ring 03 :    0   3   2   1
+dgx4106:69261:69358 [0] INFO Ring 04 :    0   1   2   3
+dgx4106:69261:69358 [0] INFO Ring 05 :    0   2   1   3
+dgx4106:69261:69358 [0] INFO Ring 06 :    0   3   1   2
+dgx4106:69261:69358 [0] INFO Ring 07 :    0   3   2   1
+dgx4106:69262:69359 [1] INFO Ring 00 : 1[1] -> 2[2] via P2P/IPC
+dgx4106:69264:69360 [3] INFO Ring 00 : 3[3] -> 0[0] via P2P/IPC
+dgx4106:69261:69358 [0] INFO Ring 00 : 0[0] -> 1[1] via P2P/IPC
+dgx4106:69263:69361 [2] INFO Ring 00 : 2[2] -> 3[3] via P2P/IPC
+dgx4106:69261:69358 [0] INFO Ring 01 : 0[0] -> 2[2] via P2P/IPC
+dgx4106:69262:69359 [1] INFO Ring 01 : 1[1] -> 3[3] via P2P/IPC
+dgx4106:69263:69361 [2] INFO Ring 01 : 2[2] -> 1[1] via P2P/IPC
+dgx4106:69264:69360 [3] INFO Ring 01 : 3[3] -> 0[0] via P2P/IPC
+dgx4106:69261:69358 [0] INFO Ring 02 : 0[0] -> 3[3] via P2P/IPC
+dgx4106:69263:69361 [2] INFO Ring 02 : 2[2] -> 0[0] via P2P/IPC
+dgx4106:69262:69359 [1] INFO Ring 02 : 1[1] -> 2[2] via P2P/IPC
+dgx4106:69264:69360 [3] INFO Ring 02 : 3[3] -> 1[1] via P2P/IPC
+dgx4106:69263:69361 [2] INFO Ring 03 : 2[2] -> 1[1] via P2P/IPC
+dgx4106:69261:69358 [0] INFO Ring 03 : 0[0] -> 3[3] via P2P/IPC
+dgx4106:69262:69359 [1] INFO Ring 03 : 1[1] -> 0[0] via P2P/IPC
+dgx4106:69264:69360 [3] INFO Ring 03 : 3[3] -> 2[2] via P2P/IPC
+dgx4106:69264:69360 [3] INFO Ring 04 : 3[3] -> 0[0] via P2P/IPC
+dgx4106:69261:69358 [0] INFO Ring 04 : 0[0] -> 1[1] via P2P/IPC
+dgx4106:69263:69361 [2] INFO Ring 04 : 2[2] -> 3[3] via P2P/IPC
+dgx4106:69262:69359 [1] INFO Ring 04 : 1[1] -> 2[2] via P2P/IPC
+dgx4106:69261:69358 [0] INFO Ring 05 : 0[0] -> 2[2] via P2P/IPC
+dgx4106:69262:69359 [1] INFO Ring 05 : 1[1] -> 3[3] via P2P/IPC
+dgx4106:69263:69361 [2] INFO Ring 05 : 2[2] -> 1[1] via P2P/IPC
+dgx4106:69264:69360 [3] INFO Ring 05 : 3[3] -> 0[0] via P2P/IPC
+dgx4106:69261:69358 [0] INFO Ring 06 : 0[0] -> 3[3] via P2P/IPC
+dgx4106:69262:69359 [1] INFO Ring 06 : 1[1] -> 2[2] via P2P/IPC
+dgx4106:69263:69361 [2] INFO Ring 06 : 2[2] -> 0[0] via P2P/IPC
+dgx4106:69264:69360 [3] INFO Ring 06 : 3[3] -> 1[1] via P2P/IPC
+dgx4106:69261:69358 [0] INFO Ring 07 : 0[0] -> 3[3] via P2P/IPC
+dgx4106:69262:69359 [1] INFO Ring 07 : 1[1] -> 0[0] via P2P/IPC
+dgx4106:69263:69361 [2] INFO Ring 07 : 2[2] -> 1[1] via P2P/IPC
+dgx4106:69264:69360 [3] INFO Ring 07 : 3[3] -> 2[2] via P2P/IPC
+dgx4106:69261:69358 [0] INFO Launch mode Parallel
+     1   0.0    20.1  7.628 10.319 2.00000
+    10   0.0   185.1  7.718 10.411 1.99992
+    20   0.0   909.8  7.277  9.963 1.99983
+    30   0.0   915.0  7.172  9.843 1.99974
+    40   0.0   923.2  7.050  9.708 1.99965
+    50   0.0   923.5  7.085  9.725 1.99956
+    60   0.0   914.2  6.964  9.555 1.99948
+    70   0.0   924.9  6.892  9.411 1.99939
+    80   0.0   918.1  6.988  9.426 1.99930
+    90   0.0   913.9  7.036  9.398 1.99921
+   100   0.0   914.1  6.923  9.210 1.99912
+   110   0.0   912.5  6.909  9.119 1.99903
+   120   0.0   924.1  6.865  8.999 1.99894
+   130   0.0   926.4  6.780  8.846 1.99885
+   140   0.0   914.7  6.911  8.913 1.99877
+   150   0.0   915.3  6.872  8.812 1.99868
+   160   0.0   920.6  6.836  8.715 1.99859
+   170   0.0   904.7  6.829  8.652 1.99850
+   180   0.0   929.7  6.955  8.728 1.99841
+   190   0.0   922.6  6.946  8.669 1.99832
+   200   0.0   927.6  6.781  8.453 1.99823
+   210   0.0   911.5  6.828  8.448 1.99814
+   220   0.0   920.3  6.730  8.297 1.99806
+   230   0.0   918.6  6.728  8.249 1.99797
+   240   0.0   931.6  6.691  8.165 1.99788
+   250   0.0   910.1  6.763  8.202 1.99779
+   260   0.1   931.6  6.898  8.303 1.99770
+   270   0.1   920.8  6.855  8.222 1.99761
+   280   0.1   917.0  6.778  8.109 1.99752
+   290   0.1   913.5  6.649  7.943 1.99743
+   300   0.1   931.5  6.807  8.062 1.99735
+   310   0.1   921.3  6.729  7.947 1.99726
+   320   0.1   922.1  6.760  7.941 1.99717
+   330   0.1   928.9  6.822  7.965 1.99708
+   340   0.1   915.1  6.590  7.696 1.99699
+   350   0.1   919.2  6.687  7.757 1.99690
+   360   0.1   915.2  6.675  7.711 1.99681
+   370   0.1   929.6  6.618  7.621 1.99672
+   380   0.1   930.3  6.717  7.689 1.99664
+   390   0.1   924.0  6.743  7.684 1.99655
+   400   0.1   913.9  6.718  7.628 1.99646
+   410   0.1   911.9  6.769  7.649 1.99637
+   420   0.1   915.5  6.656  7.507 1.99628
+   430   0.1   918.0  6.614  7.437 1.99619
+   440   0.1   899.6  6.796  7.593 1.99610
+   450   0.1   903.9  6.636  7.408 1.99601
+   460   0.1   917.1  6.820  7.567 1.99593
+   470   0.1   904.9  6.547  7.271 1.99584
+   480   0.1   917.2  6.725  7.426 1.99575
+   490   0.1   917.6  6.603  7.286 1.99566
+   500   0.1   914.8  6.581  7.244 1.99557
+   510   0.1   925.6  6.573  7.217 1.99548
+   520   0.1   930.8  6.651  7.276 1.99539
+   530   0.1   914.6  6.546  7.154 1.99530
+   540   0.1   927.3  6.639  7.230 1.99522
+   550   0.1   933.6  6.534  7.108 1.99513
+   560   0.1   926.5  6.480  7.038 1.99504
+   570   0.1   932.5  6.519  7.063 1.99495
+   580   0.1   913.3  6.508  7.038 1.99486
+   590   0.1   920.9  6.429  6.946 1.99477
+   600   0.1   907.8  6.615  7.119 1.99468
+   610   0.1   919.8  6.540  7.032 1.99459
+   620   0.1   913.0  6.604  7.085 1.99451
+   630   0.1   926.0  6.360  6.829 1.99442
+   640   0.1   935.6  6.599  7.058 1.99433
+   650   0.1   930.8  6.318  6.767 1.99424
+   660   0.1   936.0  6.343  6.783 1.99415
+   670   0.1   921.3  6.227  6.657 1.99406
+   680   0.1   931.1  6.268  6.690 1.99397
+   690   0.1   931.3  6.336  6.749 1.99389
+   700   0.1   913.4  6.462  6.869 1.99380
+   710   0.1   911.3  6.359  6.758 1.99371
+   720   0.1   927.7  6.481  6.873 1.99362
+   730   0.1   918.9  6.287  6.673 1.99353
+   740   0.1   921.3  6.326  6.706 1.99344
+   750   0.1   917.1  6.292  6.666 1.99335
+   760   0.2   918.9  6.453  6.822 1.99326
+   770   0.2   912.4  6.254  6.617 1.99318
+   780   0.2   918.3  6.429  6.787 1.99309
+   790   0.2   916.0  6.156  6.509 1.99300
+   800   0.2   931.3  6.708  7.057 1.99291
+   810   0.2   917.0  6.175  6.519 1.99282
+   820   0.2   911.4  6.495  6.835 1.99273
+   830   0.2   909.0  6.057  6.394 1.99264
+   840   0.2   911.8  6.309  6.642 1.99256
+   850   0.2   916.5  6.202  6.531 1.99247
+   860   0.2   913.3  5.997  6.323 1.99238
+   870   0.2   914.9  6.202  6.524 1.99229
+   880   0.2   913.8  6.242  6.562 1.99220
+   890   0.2   913.4  6.270  6.587 1.99211
+   900   0.2   911.4  6.060  6.373 1.99202
+   910   0.2   912.0  6.280  6.591 1.99193
+   920   0.2   913.6  5.976  6.285 1.99185
+   930   0.2   912.5  6.173  6.480 1.99176
+   940   0.2   912.1  6.071  6.375 1.99167
+   950   0.2   915.3  5.930  6.232 1.99158
+   960   0.2   913.8  6.322  6.623 1.99149
+   970   0.2   919.2  6.167  6.466 1.99140
+   980   0.2   914.4  5.856  6.153 1.99131
+   990   0.2   918.0  6.157  6.453 1.99123
+  1000   0.2   917.4  6.080  6.374 1.99114
+  1010   0.2   927.7  6.148  6.441 1.99105
+  1020   0.2   927.6  6.048  6.339 1.99096
+  1030   0.2   930.8  6.148  6.438 1.99087
+  1040   0.2   923.6  5.984  6.272 1.99078
+  1050   0.2   914.5  6.023  6.310 1.99069
+  1060   0.2   926.7  6.002  6.287 1.99061
+  1070   0.2   928.2  5.867  6.152 1.99052
+  1080   0.2   918.7  6.050  6.333 1.99043
+  1090   0.2   926.4  6.194  6.476 1.99034
+  1100   0.2   920.6  5.966  6.247 1.99025
+  1110   0.2   917.2  6.043  6.323 1.99016
+  1120   0.2   915.3  5.979  6.258 1.99007
+  1130   0.2   918.5  5.460  5.738 1.98998
+  1140   0.2   918.1  6.085  6.362 1.98990
+  1150   0.2   917.8  5.881  6.158 1.98981
+  1160   0.2   926.5  5.723  5.999 1.98972
+  1170   0.2   915.3  5.815  6.090 1.98963
+  1180   0.2   918.8  5.656  5.931 1.98954
+  1190   0.2   931.1  5.739  6.012 1.98945
+  1200   0.2   925.1  6.085  6.358 1.98936
+  1210   0.2   919.3  5.667  5.939 1.98928
+  1220   0.2   911.1  6.062  6.334 1.98919
+  1230   0.2   914.7  5.758  6.029 1.98910
+  1240   0.2   910.1  5.776  6.046 1.98901
+  1250   0.2   912.1  5.973  6.244 1.98892
+  1260   0.3   911.8  5.977  6.247 1.98883
+  1270   0.3   911.0  5.473  5.742 1.98874
+  1280   0.3   908.4  5.615  5.884 1.98866
+  1290   0.3   913.6  5.610  5.879 1.98857
+  1300   0.3   918.0  5.674  5.943 1.98848
+  1310   0.3   916.8  5.967  6.235 1.98839
+  1320   0.3   916.8  6.127  6.394 1.98830
+  1330   0.3   919.5  5.874  6.142 1.98821
+  1340   0.3   921.0  5.736  6.003 1.98812
+  1350   0.3   918.4  5.514  5.781 1.98804
+  1360   0.3   929.2  5.868  6.134 1.98795
+  1370   0.3   912.5  5.237  5.503 1.98786
+  1380   0.3   922.4  5.398  5.664 1.98777
+  1390   0.3   920.6  5.544  5.810 1.98768
+  1400   0.3   910.3  5.341  5.607 1.98759
+  1410   0.3   923.4  5.482  5.748 1.98751
+  1420   0.3   928.1  5.652  5.918 1.98742
+  1430   0.3   916.1  5.697  5.962 1.98733
+  1440   0.3   921.5  5.387  5.652 1.98724
+  1450   0.3   915.9  5.509  5.774 1.98715
+  1460   0.3   914.6  5.350  5.615 1.98706
+  1470   0.3   912.5  5.872  6.137 1.98697
+  1480   0.3   913.2  5.819  6.084 1.98689
+  1490   0.3   916.7  5.839  6.104 1.98680
+  1500   0.3   912.0  5.496  5.761 1.98671
+  1510   0.3   907.5  5.647  5.912 1.98662
+  1520   0.3   922.1  5.738  6.003 1.98653
+  1530   0.3   911.6  5.579  5.844 1.98644
+  1540   0.3   925.6  5.859  6.124 1.98635
+  1550   0.3   931.7  5.634  5.899 1.98627
+  1560   0.3   921.7  5.535  5.800 1.98618
+  1570   0.3   913.0  5.363  5.628 1.98609
+  1580   0.3   921.2  5.699  5.965 1.98600
+  1590   0.3   917.4  5.211  5.476 1.98591
+  1600   0.3   933.2  5.432  5.698 1.98582
+  1610   0.3   911.0  5.409  5.674 1.98573
+  1620   0.3   912.4  5.415  5.681 1.98565
+  1630   0.3   918.8  5.964  6.230 1.98556
+  1640   0.3   913.5  5.374  5.640 1.98547
+  1650   0.3   916.1  5.857  6.123 1.98538
+  1660   0.3   920.1  5.375  5.642 1.98529
+  1670   0.3   915.9  5.552  5.819 1.98520
+  1680   0.3   921.7  5.452  5.719 1.98512
+  1690   0.3   915.2  5.669  5.936 1.98503
+  1700   0.3   922.1  5.599  5.867 1.98494
+  1710   0.3   909.1  5.533  5.800 1.98485
+  1720   0.3   927.4  5.483  5.750 1.98476
+  1730   0.3   919.7  5.171  5.439 1.98467
+  1740   0.3   926.1  5.403  5.672 1.98458
+  1750   0.3   925.0  5.287  5.555 1.98450
+  1760   0.4   913.0  5.380  5.648 1.98441
+  1770   0.4   917.2  5.289  5.558 1.98432
+  1780   0.4   921.2  6.125  6.394 1.98423
+  1790   0.4   927.1  5.324  5.594 1.98414
+  1800   0.4   915.5  5.258  5.527 1.98405
+  1810   0.4   918.0  5.345  5.615 1.98397
+  1820   0.4   921.1  5.494  5.765 1.98388
+  1830   0.4   921.0  5.341  5.611 1.98379
+  1840   0.4   915.5  5.426  5.697 1.98370
+  1850   0.4   926.8  5.996  6.268 1.98361
+  1860   0.4   944.0  5.715  5.987 1.98352
+  1870   0.4   939.7  5.201  5.473 1.98343
+  1880   0.4   923.5  5.973  6.246 1.98335
+  1890   0.4   933.9  5.454  5.727 1.98326
+  1900   0.4   933.9  5.752  6.025 1.98317
+  1910   0.4   908.3  5.309  5.583 1.98308
+  1920   0.4   919.1  5.223  5.496 1.98299
+  1930   0.4   920.0  5.176  5.450 1.98290
+  1940   0.4   917.4  5.314  5.589 1.98282
+  1950   0.4   932.8  5.201  5.476 1.98273
+  1960   0.4   913.8  4.971  5.247 1.98264
+  1970   0.4   928.2  5.253  5.528 1.98255
+  1980   0.4   934.5  5.664  5.940 1.98246
+  1990   0.4   917.2  5.203  5.479 1.98237
+  2000   0.4   308.0  5.222  5.499 1.98228
+
+real	10m55.925s
+user	83m42.516s
+sys	5m32.532s
+======================================================================================
+
+			Resource Usage on 2018-10-25 19:11:35.021062:
+
+	JobId: 7793612.wlm01  
+	Project: 90000001 
+	Exit Status: 0
+	NCPUs Requested: 20				NCPUs Used: 20
+							CPU Time Used: 01:29:16
+	Memory Requested: None 				Memory Used: 22141112kb
+							Vmem Used: 156389724kb
+	Walltime requested: 04:00:00 			Walltime Used: 00:10:58
+	
+	Execution Nodes Used: (dgx4106:ncpus=20:ngpus=4)
+	
+ ======================================================================================

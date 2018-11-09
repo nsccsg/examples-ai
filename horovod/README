@@ -1,0 +1,14 @@
+Horovod multinode training
+
+This directory contains examples of Horovod performing:
+  Multi-node training using Singularity.
+  Single-node (multi-GPU) training using Singularity.
+  Single-node (multi-GPU) training using Docker.
+
+Performing multi-node training with Docker is more complex and requires special configuration.
+
+For single node training the mpirun command can be started inside the container.
+
+For multi-node training the mpirun command has to be started outside the container.
+In this case the same MPI library (or a compatible one) has to be used outside the container to start the MPI application and inside the container to start the individual MPI processes.
+The MPI library was copied from inside the Docker image. As this MPI library is not integrated with PBS some additional configuration within the PBS job script is required.

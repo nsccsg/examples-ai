@@ -1,0 +1,180 @@
++ ulimit 022
++ env
+MANPATH=:/opt/pbs/share/man:/home/adm/sup/fsg3/usr/share/man
+SHELL=/bin/bash
+PBS_JOBNAME=caffe2-vgg16
+TMPDIR=/var/tmp/pbs.7563782.wlm01
+PBS_ENVIRONMENT=PBS_BATCH
+PBS_O_WORKDIR=/home/projects/41000001/shared/staging
+NCPUS=40
+USER=fsg3
+PBS_TASKNUM=1
+LS_COLORS=ex=0;32:ln=0;36:
+PBS_O_HOME=/home/adm/sup/fsg3
+PBS_MOMPORT=15003
+PBS_O_QUEUE=fj5
+PATH=/bin:/usr/bin:/usr/local/bin:/opt/singularity/bin:/home/app/dgx/openmpi-3.1.1-gnu/bin:/usr/local/bin:/home/app/dgx/openmpi-3.1.1-gnu/bin:/opt/pbs/bin:/opt/singularity/bin:/home/adm/sup/fsg3/bin
+PBS_O_LOGNAME=fsg3
+PBS_O_LANG=en_US.UTF-8
+PBS_JOBCOOKIE=000000004FA8769D0000000069582735
+PWD=/home/adm/sup/fsg3
+PBS_NODENUM=0
+PBS_JOBDIR=/home/adm/sup/fsg3
+PBS_O_SHELL=/bin/bash
+PBS_JOBID=7563782.wlm01
+ENVIRONMENT=BATCH
+HOME=/home/adm/sup/fsg3
+SHLVL=2
+PBS_O_HOST=nscc01
+RAID=/raid/adm/sup/fsg3
+LOGNAME=fsg3
+PBS_QUEUE=fj5
+PBS_O_MAIL=/var/spool/mail/fsg3
+OMP_NUM_THREADS=40
+PBS_O_SYSTEM=Linux
+PBS_NODEFILE=/var/spool/pbs/aux/7563782.wlm01
+PBS_O_PATH=/app/pbs/bin:/app/pbs/bin:/app/pbs/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ibutils/bin:/sbin:/usr/sbin:/opt/pbs/bin:/app/nsccadmin/bin:/home/adm/sup/fsg3/bin
+_=/usr/bin/env
++ nvidia-smi
+Mon Aug 27 10:47:17 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 384.81                 Driver Version: 384.81                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+| N/A   40C    P0    46W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  On   | 00000000:07:00.0 Off |                    0 |
+| N/A   40C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2...  On   | 00000000:0A:00.0 Off |                    0 |
+| N/A   40C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2...  On   | 00000000:0B:00.0 Off |                    0 |
+| N/A   38C    P0    42W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla V100-SXM2...  On   | 00000000:85:00.0 Off |                    0 |
+| N/A   39C    P0    42W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla V100-SXM2...  On   | 00000000:86:00.0 Off |                    0 |
+| N/A   39C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla V100-SXM2...  On   | 00000000:89:00.0 Off |                    0 |
+| N/A   39C    P0    41W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla V100-SXM2...  On   | 00000000:8A:00.0 Off |                    0 |
+| N/A   39C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
++ image=nvcr.io/nvidia/caffe2:18.06-py3
++ d=lmdb-256x256-raw
++ batch=256
++ '[' x/home/projects/41000001/shared/staging '!=' x ']'
++ cd /home/projects/41000001/shared/staging
++ data=/raid/datasets/lmdb-256x256-raw
++ tag=lmdb-256x256-raw.batch.256.7563782.wlm01
++ stdout=/home/projects/41000001/shared/staging/stdout.lmdb-256x256-raw.batch.256.7563782.wlm01
++ stderr=/home/projects/41000001/shared/staging/stderr.lmdb-256x256-raw.batch.256.7563782.wlm01
++ nvidia-smi
+Mon Aug 27 10:47:17 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 384.81                 Driver Version: 384.81                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+| N/A   40C    P0    46W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  On   | 00000000:07:00.0 Off |                    0 |
+| N/A   40C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2...  On   | 00000000:0A:00.0 Off |                    0 |
+| N/A   39C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2...  On   | 00000000:0B:00.0 Off |                    0 |
+| N/A   38C    P0    42W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla V100-SXM2...  On   | 00000000:85:00.0 Off |                    0 |
+| N/A   39C    P0    42W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla V100-SXM2...  On   | 00000000:86:00.0 Off |                    0 |
+| N/A   39C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla V100-SXM2...  On   | 00000000:89:00.0 Off |                    0 |
+| N/A   39C    P0    41W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla V100-SXM2...  On   | 00000000:8A:00.0 Off |                    0 |
+| N/A   39C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
++ nvidia-docker-run --lustre nvcr.io/nvidia/caffe2:18.06-py3
+Waiting for Lustre to be mounted
+Checking missing packages...
+debconf: delaying package configuration, since apt-utils is not installed
+Updating system environment...
+depmod -aeF /boot/System.map-4.4.0-97-generic 4.4.0-97-generic
+Mounting Lustre...
+Lustre mounted
+
+Starting job
+About to launch [/usr/local/bin/nvidia_entrypoint.sh]
+
+============
+== Caffe2 ==
+============
+
+NVIDIA Release 18.06 (build 474750)
+
+Container image Copyright (c) 2018, NVIDIA CORPORATION.  All rights reserved.
+All contributions by Facebook: Copyright (c) 2016, 2017 Facebook Inc.
+All contributions by Google: Copyright (c) 2015 Google Inc.  All rights reserved.
+All contributions by Yangqing Jia: Copyright (c) 2015 Yangqing Jia All rights reserved.
+All contributions from Caffe: Copyright(c) 2013, 2014, 2015, the respective contributors. All rights reserved.
+All other contributions: Copyright(c) 2015, 2016, 2017, the respective contributors. All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
++ ulimit 022
++ PATH=/opt/caffe2/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/home/app/dgx/usr/bin
++ export PATH
++ rsync -a /scratch/projects/41000001/datasets/lmdb-256x256-raw/ /raid/datasets/lmdb-256x256-raw/
++ python nvidia-examples/imagenet/train_vgg.py --all-gpus --batch-size 256 --dtype=float16 --enable-tensor-core --train-lmdb /raid/datasets/lmdb-256x256-raw/ilsvrc12_train_lmdb --test-lmdb /raid/datasets/lmdb-256x256-raw/ilsvrc12_val_lmdb
+
+Job finished
+
+Waiting for Lustre to be unmounted
+
+
+[1]+  Done                    lustre_containers
+======================================================================================
+
+			Resource Usage on 2018-08-27 10:57:03.576652:
+
+	JobId: 7563782.wlm01  
+	Project: 41000001 
+	Exit Status: 0
+	NCPUs Requested: 40				NCPUs Used: 40
+							CPU Time Used: 00:00:01
+	Memory Requested: None 				Memory Used: 45708kb
+							Vmem Used: 1642280kb
+	Walltime requested: 01:00:00 			Walltime Used: 00:09:48
+	
+	Execution Nodes Used: (dgx4103:ncpus=40:ngpus=8)
+	
+ ======================================================================================

@@ -1,0 +1,7 @@
+id
+df
+env
+ulimit
+nvidia-smi
+cd /workspace/examples/image-classification
+python train_imagenet.py --benchmark 1 --gpus 0,1,2,3,4,5,6,7 --network inception-v3 --batch-size 64 --image-shape 3,299,299 --num-epochs 1 --kv-store device

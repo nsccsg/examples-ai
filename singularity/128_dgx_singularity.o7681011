@@ -1,0 +1,104 @@
+MANPATH=:/opt/pbs/share/man:/home/adm/sup/fsg3/usr/share/man
+SHELL=/bin/bash
+PBS_JOBNAME=128_dgx_singularity
+TMPDIR=/var/tmp/pbs.7681011.wlm01
+PBS_ENVIRONMENT=PBS_BATCH
+PBS_O_WORKDIR=/home/projects/benchmarks/workload/run/2018/10/08/09/25/12/128_dgx_singularity
+NCPUS=40
+USER=fsg3
+PBS_TASKNUM=1
+LS_COLORS=ex=0;32:ln=0;36:
+PBS_O_HOME=/home/adm/sup/fsg3
+PBS_MOMPORT=15003
+PBS_O_QUEUE=dgx
+PATH=/bin:/usr/bin:/usr/local/bin:/opt/singularity/bin:/home/app/dgx/openmpi-3.1.1-gnu/bin:/usr/local/bin:/home/app/dgx/openmpi-3.1.1-gnu/bin:/opt/pbs/bin:/opt/singularity/bin:/home/adm/sup/fsg3/bin
+PBS_O_LOGNAME=fsg3
+PBS_O_LANG=en_US.UTF-8
+PBS_JOBCOOKIE=00000000635DC478000000004BDB16AE
+PWD=/home/adm/sup/fsg3
+PBS_NODENUM=0
+PBS_JOBDIR=/home/adm/sup/fsg3
+PBS_O_SHELL=/bin/bash
+PBS_JOBID=7681011.wlm01
+ENVIRONMENT=BATCH
+HOME=/home/adm/sup/fsg3
+SHLVL=2
+PBS_O_HOST=nscc01
+RAID=/raid/adm/sup/fsg3
+LOGNAME=fsg3
+PBS_QUEUE=dgx-48g-04h
+PBS_O_MAIL=/var/spool/mail/fsg3
+OMP_NUM_THREADS=40
+PBS_O_SYSTEM=Linux
+PBS_NODEFILE=/var/spool/pbs/aux/7681011.wlm01
+PBS_O_PATH=/app/pbs/bin:/app/pbs/bin:/app/pbs/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ibutils/bin:/sbin:/usr/sbin:/opt/pbs/bin:/app/nsccadmin/bin:/home/adm/sup/fsg3/bin:/app/pbs/bin:/opt/pbs/bin
+_=/usr/bin/env
+Mon Oct  8 09:25:38 2018       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 384.81                 Driver Version: 384.81                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+| N/A   40C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   1  Tesla V100-SXM2...  On   | 00000000:07:00.0 Off |                    0 |
+| N/A   40C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   2  Tesla V100-SXM2...  On   | 00000000:0A:00.0 Off |                    0 |
+| N/A   39C    P0    44W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   3  Tesla V100-SXM2...  On   | 00000000:0B:00.0 Off |                    0 |
+| N/A   38C    P0    43W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   4  Tesla V100-SXM2...  On   | 00000000:85:00.0 Off |                    0 |
+| N/A   38C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   5  Tesla V100-SXM2...  On   | 00000000:86:00.0 Off |                    0 |
+| N/A   39C    P0    44W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   6  Tesla V100-SXM2...  On   | 00000000:89:00.0 Off |                    0 |
+| N/A   40C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+|   7  Tesla V100-SXM2...  On   | 00000000:8A:00.0 Off |                    0 |
+| N/A   39C    P0    45W / 300W |     10MiB / 16152MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+192.168.160.103:/home/projects     3735614914560 3021699121152 713915793408  81% /home/projects
+/dev/sdb1                             7440067060     357036900   6708049608   6% /raid
+|   0  Tesla V100-SXM2...  Off  | 00000000:06:00.0 Off |                    0 |
+|   1  Tesla V100-SXM2...  Off  | 00000000:07:00.0 Off |                    0 |
+|   2  Tesla V100-SXM2...  Off  | 00000000:0A:00.0 Off |                    0 |
+|   3  Tesla V100-SXM2...  Off  | 00000000:0B:00.0 Off |                    0 |
+|   4  Tesla V100-SXM2...  Off  | 00000000:85:00.0 Off |                    0 |
+|   5  Tesla V100-SXM2...  Off  | 00000000:86:00.0 Off |                    0 |
+|   6  Tesla V100-SXM2...  Off  | 00000000:89:00.0 Off |                    0 |
+|   7  Tesla V100-SXM2...  Off  | 00000000:8A:00.0 Off |                    0 |
+INFO:root:Epoch[0] Train-accuracy=1.000000
+check performance
+threshold: 3000.0
+metric: 2066.326
+PASS
+======================================================================================
+
+			Resource Usage on 2018-10-08 10:00:49.439126:
+
+	JobId: 7681011.wlm01  
+	Project: 90000001 
+	Exit Status: 0
+	NCPUs Requested: 40				NCPUs Used: 40
+							CPU Time Used: 06:34:26
+	Memory Requested: None 				Memory Used: 16809064kb
+							Vmem Used: 74766712kb
+	Walltime requested: 01:00:00 			Walltime Used: 00:35:11
+	
+	Execution Nodes Used: (dgx4105:ncpus=40:ngpus=8)
+	
+ ======================================================================================
