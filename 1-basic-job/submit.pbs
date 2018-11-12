@@ -34,7 +34,7 @@
 # Docker image to use for container
 #   To see available images run command: nscc-docker images
 #   If image is not present, email help@nscc.sg to request pulling image into repository on all DGX nodes
-image="nvcr.io/nvidia/cuda:9.0-cudnn7.2-devel-ubuntu16.04"
+image="nvcr.io/nvidia/cuda:latest"
 
 # Job should start in your home directory:
 pwd

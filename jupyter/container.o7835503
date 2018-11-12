@@ -1,0 +1,18 @@
+/home/adm/sup/fsg3
+/home/projects/ai/examples/jupyter
+======================================================================================
+
+			Resource Usage on 2018-11-09 20:13:19.025023:
+
+	JobId: 7835503.wlm01  
+	Project: 41000001 
+	Exit Status: 0
+	NCPUs Requested: 40				NCPUs Used: 40
+							CPU Time Used: 00:00:00
+	Memory Requested: None 				Memory Used: 20964kb
+							Vmem Used: 472288kb
+	Walltime requested: 01:00:00 			Walltime Used: 00:02:52
+	
+	Execution Nodes Used: (dgx4105:ncpus=40:ngpus=8)
+	
+ ======================================================================================

@@ -13,7 +13,7 @@ nvidia-smi
 # Caffe2 (VGG16) Imagenet 2012 256x256
 
 # Docker image to use
-image="nvcr.io/nvidia/caffe2:18.06-py3"
+image="nvcr.io/nvidia/caffe2:latest"
 # Dataset
 d=lmdb-256x256-raw
 # Batch size

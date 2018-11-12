@@ -1,1 +1,1 @@
-docker build -t nscc/$LOGNAME/tensorflow:18.04-py3 .
+docker build -t nscc/$LOGNAME/tensorflow:1.0 .

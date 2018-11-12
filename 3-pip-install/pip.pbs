@@ -18,7 +18,7 @@
 ### 41000001 is the stakeholder pilot users
 ### 22270170 is for non-stakeholder piot users
 ### Personal is for your personal lifetime quota
-#PBS -P 99999999
+#PBS -P 41000001
 
 ### Specify name for job
 #PBS -N pip
@@ -33,7 +33,7 @@
 # Docker image to use for container
 #   To see available images run command: nscc-docker images
 #   If image is not present, email help@nscc.sg to request pulling image into repository on all DGX nodes
-image="nvcr.io/nvidia/tensorflow:18.08-py3"
+image="nvcr.io/nvidia/tensorflow:latest"
 
 # Change to directory where job was submitted
 cd "$PBS_O_WORKDIR" || exit $?

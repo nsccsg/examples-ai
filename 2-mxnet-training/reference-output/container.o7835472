@@ -1,15 +1,15 @@
 ======================================================================================
 
-			Resource Usage on 2018-11-07 16:47:39.486036:
+			Resource Usage on 2018-11-09 19:42:08.150455:
 
-	JobId: 7830390.wlm01  
+	JobId: 7835472.wlm01  
 	Project: 41000001 
 	Exit Status: 0
 	NCPUs Requested: 40				NCPUs Used: 40
 							CPU Time Used: 00:00:00
-	Memory Requested: None 				Memory Used: 20836kb
-							Vmem Used: 330380kb
-	Walltime requested: 00:05:00 			Walltime Used: 00:01:29
+	Memory Requested: None 				Memory Used: 20564kb
+							Vmem Used: 198148kb
+	Walltime requested: 00:05:00 			Walltime Used: 00:01:30
 	
 	Execution Nodes Used: (dgx4102:ncpus=40:ngpus=8)
 	

@@ -9,7 +9,7 @@
 
 # Tensorflow (Resnet 50) Imagenet
 # Docker image to use
-image="nvcr.io/nvidia/tensorflow:18.06-py3"
+image="nvcr.io/nvidia/tensorflow:latest"
 # 50 layer CNN
 layers=50
 # batch size

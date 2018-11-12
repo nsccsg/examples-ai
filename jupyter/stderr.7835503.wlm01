@@ -1,0 +1,29 @@
+[I 12:10:48.167 NotebookApp] Writing notebook server cookie secret to /home/adm/sup/fsg3/.local/share/jupyter/runtime/notebook_cookie_secret
+[I 12:10:48.349 NotebookApp] Serving notebooks from local directory: /home/projects/41000001/shared/examples/jupyter
+[I 12:10:48.349 NotebookApp] The Jupyter Notebook is running at:
+[I 12:10:48.349 NotebookApp] http://(e13caf138830 or 127.0.0.1):8888/?token=087599f683e28043b774d8ddae6730caeb352e0288668ebf
+[I 12:10:48.349 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 12:10:48.353 NotebookApp] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://(e13caf138830 or 127.0.0.1):8888/?token=087599f683e28043b774d8ddae6730caeb352e0288668ebf
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: x-www-browser: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: firefox: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: iceweasel: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: seamonkey: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: mozilla: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: epiphany: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: konqueror: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: chromium-browser: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: google-chrome: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: www-browser: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: links2: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: elinks: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: links: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: lynx: not found
+/usr/bin/xdg-open: 778: /usr/bin/xdg-open: w3m: not found
+xdg-open: no method available for opening 'http://0.0.0.0:8888/tree?token=4db403e15ebbf048f54f2b2db00bf37699d05982b82cef99'
+[I 12:12:52.279 NotebookApp] 302 GET /?token=087599f683e28043b774d8ddae6730caeb352e0288668ebf (192.168.25.1) 1.04ms
+[I 12:13:17.358 NotebookApp] Shutting down on /api/shutdown request.
+[I 12:13:17.360 NotebookApp] Shutting down 0 kernels

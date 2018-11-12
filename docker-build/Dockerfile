@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/tensorflow:18.04-py3
+FROM nvcr.io/nvidia/tensorflow:latest-py3
 
 COPY keyboard /etc/default/keyboard
 
