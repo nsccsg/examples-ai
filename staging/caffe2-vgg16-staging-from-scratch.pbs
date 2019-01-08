@@ -2,9 +2,15 @@
 #PBS -l select=1:ncpus=40:ngpus=8
 #PBS -l walltime=1:00:00
 #PBS -q fj5
-#PBS -P 41000001
 #PBS -N caffe2-vgg16
 #PBS -j oe
+
+### Specify project code
+### e.g. 41000001 was the pilot project code
+###      Personal is your personal lifetime allowance
+### Job will not submit unless this is changed
+#PBS -P 99999999
+
 set -x
 ulimit 022
 env

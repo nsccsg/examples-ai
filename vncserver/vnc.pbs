@@ -13,8 +13,11 @@
 ### Select correct queue
 #PBS -q dgx
 
-### Specify project code for DGX pilot phase
-#PBS -P 41000001
+### Specify project code
+### e.g. 41000001 was the pilot project code
+###      Personal is your personal lifetime allowance
+### Job will not submit unless this is changed
+#PBS -P 99999999
 
 ### Specify name for job
 #PBS -N vnc

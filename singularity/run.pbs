@@ -4,8 +4,13 @@
 #PBS -q dgx
 #PBS -l walltime=1:00:00
 #PBS -j oe
-### Specify correct Project ID:
+
+### Specify project code
+### e.g. 41000001 was the pilot project code
+###      Personal is your personal lifetime allowance
+### Job will not submit unless this is changed
 #PBS -P 99999999
+
 set -e
 env
 nvidia-smi

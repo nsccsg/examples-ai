@@ -17,9 +17,10 @@
 #PBS -q dgx
 
 ### Specify project code
-### 41000001 is the stakeholder pilot users
-### 22270170 is for non-stakeholder piot users
-#PBS -P 41000001
+### e.g. 41000001 was the pilot project code
+###      Personal is your personal lifetime allowance
+### Job will not submit unless this is changed
+#PBS -P 99999999
 
 ### Specify name for job
 #PBS -N container

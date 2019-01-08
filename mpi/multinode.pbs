@@ -1,8 +1,15 @@
 #!/bin/bash
+### Run across 2 nodes
 #PBS -l select=2:ncpus=40:ngpus=8
 #PBS -l walltime=0:10:00
 #PBS -q dgx
+
+### Specify project code
+### e.g. 41000001 was the pilot project code
+###      Personal is your personal lifetime allowance
+### Job will not submit unless this is changed
 #PBS -P 99999999
+
 #PBS -N multinode
 #PBS -j oe
 
