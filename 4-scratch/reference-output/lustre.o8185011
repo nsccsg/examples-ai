@@ -1,0 +1,47 @@
+Job should start in your home directory:
+/home/adm/sup/fsg3
+submitted from /scratch/projects/ai/shared/example
+ls: cannot access '/scratch/projects/ai/shared/example': No such file or directory
+df: /scratch: No such file or directory
+
+=== start container
+Waiting for Lustre to be mounted
+Checking missing packages...
+debconf: delaying package configuration, since apt-utils is not installed
+Updating system environment...
+depmod -aeF /boot/System.map-4.4.0-97-generic 4.4.0-97-generic
+Mounting Lustre...
+Lustre mounted
+
+Starting job
+About to launch [/bin/bash]
+Container starts in the directory:
+/
+/scratch is mounted inside container
+drwxr-sr-x 3 fsg3 fujitsu 4096 Feb  8 06:12 /scratch/projects/ai/shared/example
+/scratch/projects/ai/shared/example
+Filesystem                                           1K-blocks          Used     Available Use% Mounted on
+192.168.156.29@o2ib,192.168.156.30@o2ib:/scratch 3068250540000 1919693856772 1117537548304  64% /scratch
+
+Job finished
+
+Waiting for Lustre to be unmounted
+
+
+[1]+  Done                    lustre_containers
+======================================================================================
+
+			Resource Usage on 2019-02-08 14:13:03.118573:
+
+	JobId: 8185011.wlm01  
+	Project: 90000001 
+	Exit Status: 0
+	NCPUs Requested: 40				NCPUs Used: 40
+							CPU Time Used: 00:00:00
+	Memory Requested: None 				Memory Used: 43124kb
+							Vmem Used: 938348kb
+	Walltime requested: 00:05:00 			Walltime Used: 00:00:48
+	
+	Execution Nodes Used: (dgx4102:ncpus=40:ngpus=8)
+	
+ ======================================================================================

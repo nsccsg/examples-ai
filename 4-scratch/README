@@ -1,0 +1,13 @@
+
+The Lustre filesystem is not mounted on the DGX nodes.
+It can be mounted inside a Docker container with
+  nscc-docker run --lustre ...
+
+The job script submit.pbs shows an example of how to run jobs in /scratch
+
+# copy job script into /scratch on login node
+cp lustre.pbs $HOME/scratch
+# change directory into /scratch
+cd $(readlink $HOME/scratch)
+# submit job
+qsub lustre.pbs
