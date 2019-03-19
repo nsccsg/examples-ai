@@ -1,6 +1,14 @@
-Example of building a custom Docker image
+Docker images
 
-0. Create an account on Docker Hub (https://hub.docker.com)
-1. Modify Dockerfile
-2. Build image following template in 0-build
-3. Push image to Docker Hub
+New images can be produced by 2 methods:
+ 1. Creating a Docker file which builds on top of one of the installed NVIDIA NGC images.
+ 2. Pulling a new image from Docker Hub.
+
+The Dockerfile used for the nscc/local/tensorflow images are in the local-py2 and local-py3 directories.
+
+They have OpenCV and some other packages installed.
+
+Normal users do not have the necessary permission to install images and the repository on each node is local so images need to be added on all nodes.
+Send an email to help@nscc.sg with either a Dockerfile or tag and they will build/pull the image and distribute to all nodes.
+
+User-specific images are normally tagged as nscc/$USER/<TAG>
