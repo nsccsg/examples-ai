@@ -2,10 +2,13 @@
 #PBS -l select=1:ncpus=40:ngpus=8
 #PBS -l walltime=12:00:00
 #PBS -q dgx
-### Specify correct Project ID:
-#PBS -P 99999999
 #PBS -N tf-resnet50
 #PBS -j oe
+### Specify project code
+### e.g. 41000001 was the pilot project code
+###      Personal is your personal lifetime allowance
+### Job will not submit unless this is changed
+#PBS -P 99999999
 
 # Tensorflow (Resnet 50) Imagenet
 # Docker image to use
