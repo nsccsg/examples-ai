@@ -2,10 +2,13 @@
 #PBS -l select=1:ncpus=20:ngpus=4:mpiprocs=4
 #PBS -l walltime=4:00:00
 #PBS -q dgx
-### Specify correct Project ID:
-#PBS -P 99999999
 #PBS -N horovod
 #PBS -j oe
+### Specify project code
+### e.g. 41000001 was the pilot project code
+###      Personal is your personal lifetime allowance
+### Job will not submit unless this is changed
+#PBS -P 99999999
 
 # Tensorflow Resnet Imagenet
 
