@@ -5,6 +5,7 @@ COPY keyboard /etc/default/keyboard
 
 COPY sources.list /etc/apt/
 RUN apt-get update && apt-get clean && apt-get install -y \
+	kmod libyaml-dev \
 	libopencv-calib3d2.4v5 \
 	libopencv-contrib2.4v5 \
 	libopencv-core2.4v5 \
