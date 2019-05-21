@@ -65,4 +65,7 @@ echo install keras inside container
 pip install -U -q --no-cache-dir --user keras
 echo should work:
 python -c "import keras;print('Imported keras')"
+
+### options to read requirements from file and disable the message warning about pip version:
+## pip install -U -q --no-cache-dir --disable-pip-version-check --user -r reqs.txt
 EOF
