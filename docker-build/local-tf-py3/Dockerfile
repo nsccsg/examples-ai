@@ -1,8 +1,9 @@
-FROM nvcr.io/nvidia/tensorflow:19.03-py3
+FROM nvcr.io/nvidia/tensorflow:19.05-py3
 
 ENV DISPLAY=localhost:1
 COPY keyboard /etc/default/keyboard
 
+RUN apt-get update && apt-get install -y apt-transport-https
 COPY sources.list /etc/apt/
 RUN apt-get update && apt-get clean && apt-get install -y \
 	kmod libyaml-dev \
@@ -37,9 +38,9 @@ RUN apt-get update && apt-get clean && apt-get install -y \
 	ed \
 	git \
 	zip \
-	unzip \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+	unzip
+#    && apt-get clean \
+#    && rm -rf /var/lib/apt/lists/*
 ### installing the following breaks python3
 #	r-base-dev \
 #	r-recommended \
@@ -58,7 +59,8 @@ RUN pip install $DEVPI_ARGS --no-cache-dir --upgrade pip && pip install $DEVPI_A
 	opencv-python \
 	pillow \
 	bokeh \
-	scikit-image
+	scikit-image \
+	visdom
 
 RUN wget -q https://github.com/fatedier/frp/releases/download/v0.20.0/frp_0.20.0_linux_amd64.tar.gz && \
 	tar -C /opt -xf frp_0.20.0_linux_amd64.tar.gz && rm -f frp_0.20.0_linux_amd64.tar.gz && \

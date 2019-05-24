@@ -2,6 +2,6 @@
 set -eo pipefail
 
 # image name
-image="nscc/local/tensorflow:19.03-py2"
+image="nscc/local/tensorflow:19.05-py3"
 
 docker build -t "$image" .

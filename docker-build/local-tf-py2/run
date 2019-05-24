@@ -1,0 +1,7 @@
+#!/bin/bash
+set -eo pipefail
+
+# image name
+image="nscc/local/tensorflow:19.05-py2"
+
+docker build -t "$image" .
