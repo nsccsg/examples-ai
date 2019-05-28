@@ -1,7 +1,7 @@
 #!/bin/bash
 #PBS -l select=1:ncpus=40:ngpus=8
 #PBS -l walltime=1:00:00
-#PBS -q fj5
+#PBS -q dgx
 #PBS -N caffe2-vgg16
 #PBS -j oe
 
@@ -11,7 +11,6 @@
 ### Job will not submit unless this is changed
 #PBS -P 99999999
 
-set -x
 ulimit 022
 env
 nvidia-smi
@@ -30,18 +29,18 @@ if [ x"$PBS_O_WORKDIR" != x ] ; then
  cd "$PBS_O_WORKDIR" || exit $?
 fi
 
-# Workspace in local SSD
-data="/raid/datasets/$d"
-if [ ! -d "$data/ilsvrc12_train_lmdb" ] ; then
- rm -rf "$data" && mkdir "$data" || exit $?
- rsync -a "/home/projects/41000001/datasets/$d/" "$data/"
-fi
+# sync data to workspace on local SSD
+raid="/raid/${HOME#/home/}"
+data="$raid/datasets/$d"
+source="/home/projects/ai/datasets/$d"
+echo sync dataset from $source to $data
+rsync -a --delete "$source/" "$data/" || exit $?
 
 tag="$d.batch.$batch.$PBS_JOBID"
 stdout="$PWD/stdout.$tag"
 stderr="$PWD/stderr.$tag"
 nvidia-smi
-nvidia-docker-run $image << EOF
+nscc-docker run $image << EOF
   # Container starts in the directory /workspace
   python nvidia-examples/imagenet/train_vgg.py \
    --all-gpus \
