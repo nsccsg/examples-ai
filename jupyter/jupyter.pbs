@@ -1,19 +1,9 @@
 #!/bin/sh
 
-### The following requests all resources on 1 DGX-1 node
-#PBS -l select=1:ncpus=40:ngpus=8
-
-### The "select=1" specifies the number of nodes
-### The "ncpus=40:ngpus=8" asks for acccess to all 8 GPU cards
-### If you request less than 8 GPU then make the ncpus value
-###   five times the ngpus value, e.g. select=1:ncpus=5:ngpus=1
-
-### Specify amount of time required
-###  Values less than 4 hours go into a higher priority queue
-#PBS -l walltime=1:00:00
-
-### Specify DGX queue
-#PBS -q dgx
+### Run in the shared test and development area
+### Note that you do not have exclusive access to the GPUs in the dgx-dev queue
+#PBS -q dgx-dev
+#PBS -l walltime=8:00:00
 
 ### Specify project code
 ### e.g. 41000001 was the pilot project code
@@ -22,7 +12,7 @@
 #PBS -P 99999999
 
 ### Specify name for job
-#PBS -N container
+#PBS -N jupyter
 
 ### Standard output by default goes to file $PBS_JOBNAME.o$PBS_JOBID
 ### Standard error by default goes to file $PBS_JOBNAME.e$PBS_JOBID
@@ -35,32 +25,40 @@
 #   To see available images run command: nscc-docker images
 #   If image is not present, email help@nscc.sg to request pulling image into repository on all DGX nodes
 image="nscc/local/tensorflow:latest"
+PORT=8888
 
-# Job should start in your home directory:
-pwd
-# Change to directory where job was submitted:
-cd "$PBS_O_WORKDIR" || exit $?
-pwd
-# Please note that when you start a Docker container then it will start in a directory defined by the image
-# You will also need to change to the correct directory inside the container
-
-# The "nscc-docker run --ports $image" command runs the following Docker command: 
-#    nvidia-docker -u $UID:$GID -v /home:/home --rm -i --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 -p 8888:8888 -p 5901:5901 $image /bin/sh
-# Run VNC server inside container
-nscc-docker run --ports $image << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
-echo Container starts in the directory:
-pwd
-# We can do the following if using "<<EOF" to pass commands as it is expanded by the job shell
+# Run using host networking so that it is easier to access the port
+# Modify port value if it clashes with other users
+nscc-docker run --net=host $image << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
+# We can do the following if using "<<EOF" to pass variable as it is expanded by the job shell
 cd $PBS_O_WORKDIR
+#
+# install any python packaages required
 export PYTHONUSERBASE=/workspace/.local
 # Escaping PYTHONUSERBASE in the next line so that it is expanded inside docker and take the value set inside the container
 mkdir -p \$PYTHONUSERBASE/bin
 export PATH=\$PATH:\$PYTHONUSERBASE/bin
-# Install Jupyter inside container
-pip install --user -q --no-cache-dir -U jupyter
-jupyter notebook --ip=0.0.0.0 --port=8888
+## pip install --user -q -U somepythonpackage
+
+# Launch JupyterLab
+export TERM=ansi
+jupyter lab --no-browser --ip=127.0.0.1 --port=$PORT \
+ --NotebookApp.terminado_settings='{"shell_command": ["/bin/bash"]}' \
+ --NotebookApp.allow_remote_access=True --FileContentsManager.delete_to_trash=False
+
 EOF
 
-### On local machine use ssh port forwarding to tunnel to DGX (replace X with 1 to 6)
-# ssh -L8888:dgx410X:8888 aspire.nscc.sg
-### On local machine go to http://localhost:8888 and use token from container
+### Notebook is now running on compute node
+### However you cannot directly access port
+### There are two methods that you can use
+### 1. ssh port forwarding
+### 2. reverse proxy (FRP, localtunnel.me, etc.)
+
+### Using reverse proxies is a security risk, user is responsible for any data loss or unauthorized access.
+
+### ssh port forwarding
+### On local machine use ssh port forwarding to tunnel to node where job is running, e.g. dgx4106:
+###   ssh -L8888:dgx4106:8888 aspire.nscc.sg
+### On local machine go to http://localhost:8888 and use token from found in file stderr.$PBS_JOBID
+### Alternatively, pass a pre-determined token using --NotebookApp.token=...
+

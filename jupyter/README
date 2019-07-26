@@ -1,3 +1,16 @@
+Jupyter Notebooks
 
-Test to see if it is possible to connect to a Jupyter notebook running inside a Docker container
+It is possible to run a Jupyter notebook inside a Docker container.
+However there is no direct network access to compute nodes from outside NSCC
 
+There are two methods that you can use
+1. ssh port forwarding
+2. reverse proxy 
+
+Using reverse proxies is a security risk and not recommended.
+The user is responsible for any data loss or unauthorized access caused by use of proxies.
+
+The safer method is to use ssh port forwarding to connect a port on your local machine through an ssh tunnel.
+On local machine create an ssh tunnel to the port on the node where job is running, e.g. dgx4106:
+   ssh -fN -L8888:dgx4106:8888 aspire.nscc.sg
+Then go to http://localhost:8888 in a browser on your local machine and use the token to authenticate.
