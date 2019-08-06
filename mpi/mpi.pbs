@@ -16,5 +16,7 @@
 
 cd "$PBS_O_WORKDIR" || exit $?
 
+# MPI in /usr/local/mpi is not integrated with MPI, build your own:
+PATH="/home/app/dgx/openmpi-3.1.1-gnu/bin:$PATH" ; export PATH
 if [ ! -x mpi-hello ] ; then mpicc -o mpi-hello mpi-hello.c ; fi
 mpirun ./mpi-hello
