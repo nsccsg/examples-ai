@@ -25,7 +25,6 @@ Reference output is available in the directory "reference-output" in each of the
 # Repeat for the other examples:
 2-mxnet-training	run a training job
 3-pip-install		install a python package inside a running container
-4-scratch		use the Lustre filesystem inside container
 
 There is also other infomation in the examples:
 docker-build		building custom images
@@ -36,8 +35,6 @@ mpi			a multinode MPI example
 staging			using the local SSD /raid filesystem on the nodes
 
 Please use the job scripts as templates for your own workflows.
-
-You can see your home and project directories on the DGX nodes and in Docker containers, the Lustre scratch directory is accessible within Docker containers if you use "nscc-docker run --lustre".
 
 For general information on user enrollment, new user information, projects, PBS job scheduler, etc. then consult the user guides at https://help.nscc.sg/user-guide/
 
