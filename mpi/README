@@ -5,6 +5,6 @@ MPI has been installed on the DGX nodes and should be in the default PATH
 This MPI library is configured with PBS support and so should work correctly with the PBS hooks which control GPU access.
 See mpi.pbs for an example of how to use this library.
 
-The MPI library from the NVIDIA images does not have PBS support.
-If using a library like that on the host itself (for example for multi-node Horovod training) or if you are not using MPI then you will need some additional settings in the job script.
+The MPI library supplied by the OS and in the NVIDIA images does not have PBS support.
+If using an MPI library without MPI support on the host (for example for multi-node Horovod training) then you will need some additional settings in the job script.
 See multinode.pbs for more information.
