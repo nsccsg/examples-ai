@@ -9,6 +9,8 @@ Performing multi-node training with Docker is more complex and requires special 
 
 For single node training the mpirun command can be started inside the container.
 
-For multi-node training the mpirun command has to be started outside the container.
-In this case the same MPI library (or a compatible one) has to be used outside the container to start the MPI application and inside the container to start the individual MPI processes.
-The MPI library was copied from inside the Docker image. As this MPI library is not integrated with PBS some additional configuration within the PBS job script is required.
+For multi-node training the mpirun command is run outside the container.
+In this case the same MPI library (or a compatible one) has to be used outside the container to start the MPI application and inside the container to run the individual MPI processes.
+
+This is referred to as "outside-in".
+The alternative would be "inside-out" where the containers are started up first with sshd daemons (or equivalent) running inside them and the mpirun is started in the first container and connects over the network into the other running containers to launch the child processes.

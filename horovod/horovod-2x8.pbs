@@ -19,11 +19,11 @@
 layers=152
 # batch size
 batch=64
-# NFS(1) or SSD(0)
-nfs=1
+# Filesystem holding dataset: Lustre, NFS or SSD
+fs="lustre"
 
 # Singularity image to use
-image="/home/projects/ai/singularity/nvcr.io/nvidia/tensorflow:18.08-py3.simg"
+image="$SINGULARITY_IMAGES/nvcr.io/nvidia/tensorflow:19.07-py3.simg"
 
 #dataset
 dataset=resnet
@@ -33,62 +33,37 @@ if [ x"$PBS_O_WORKDIR" != x ] ; then
  cd "$PBS_O_WORKDIR" || exit $?
 fi
 
-if [ $nfs -eq 1 ] ; then
-# dataset in NFS
-data="/home/projects/41000001/datasets/imagenet/$dataset"
+if [ x"$fs" == xlustre ] ; then
+ # dataset in Lustre
+ data="/scratch/projects/ai/datasets/imagenet/$dataset"
+elif [ x"$fs" == xnfs ] ; then
+ # dataset in NFS
+ data="/home/projects/ai/datasets/imagenet/$dataset"
 else
-# dataset in local SSD
-data="/raid/datasets/$dataset"
+ # dataset in local SSD
+ data="/raid/datasets/$dataset"
 fi
 
-echo === PBS_NODEFILE
-cat $PBS_NODEFILE
-echo === PBS_NODEFILE
+### If your MPI is not tighly integrated with PBS
+### then uncomment the next line to trigger cgroups hook
+#pbsdsh hostname
 
-## This MPI is not aware of job scheduler
-## manually create host file
-hostfile="hostfile.$PBS_JOBID"
-WCOLL="wcoll.$PBS_JOBID"
-export WCOLL
-sort $PBS_NODEFILE | uniq > $WCOLL
-((np=0))
-for h in `cat $WCOLL` ; do
-n=`grep -cx "$h" "$PBS_NODEFILE"`
-echo $h slots=$n
-((np=np+n))
-done > $hostfile
+# Location of MPI built using "./configure --with-tm=/opt/pbs"
+PATH="/home/app/dgx/openmpi-3.1.3-gnu/bin:$PATH" ; export PATH
 
-
-# For multinode jobs the execjob_prologue hook must run on the sister MoM in the other vnodes
-# This happens in two circumstances
-#   An MPI application which is tightly integrated with PBS is used
-#   A process is launched from the sister MoM with pbs-attach or tm_spawn
-#      (which happens when pbsdsh is used)
-#
-# This MPI is not tightly integrated so need this:
-pbsdsh hostname
-
-# gets hosts from $WCOLL
-PDSH_RCMD_TYPE=ssh ; export PDSH_RCMD_TYPE=ssh
-/home/app/dgx/usr/bin/pdsh -f 1 nvidia-smi
-
-# Test MPI hostnames and latency/bandwidth
-for x in mpi.x mpi_nx2_latbw ; do
-echo === $x
-/usr/local/mpi/bin/mpirun \
- -np $np --hostfile $hostfile \
- --mca btl_openib_warn_default_gid_prefix 0 \
- /opt/singularity/bin/singularity exec --nv $image \
- $PWD/mpi-tests/$x
-echo === $x
-done
+# echo quick check of MPI
+echo =====
+mpicc -o mpi-hello ../mpi/mpi-hello.c
+mpirun ./mpi-hello
+mpicc -o mpi_nx2latbw ../mpi/mpi_nx2latbw.c
+mpirun ./mpi_nx2latbw
+echo =====
 
 # Main run
 SINGULARITYENV_NCCL_DEBUG=INFO ; export SINGULARITYENV_NCCL_DEBUG
-time /usr/local/mpi/bin/mpirun \
- -np $np --hostfile $hostfile \
- --mca btl_openib_warn_default_gid_prefix 0 \
+mpirun \
  -x SINGULARITYENV_NCCL_DEBUG \
+ --mca btl_openib_warn_default_gid_prefix 0 \
  /opt/singularity/bin/singularity exec --nv $image \
   python /workspace/nvidia-examples/cnn/resnet.py \
    --layers $layers \
