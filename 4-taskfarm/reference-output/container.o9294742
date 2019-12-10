@@ -1,0 +1,236 @@
+/home/adm/sup/fsg3
+/home/projects/ai/examples/4-taskfarm
+dgx4102
+Fri Dec  6 16:04:43 2019       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+| N/A   35C    P0    42W / 300W |      0MiB / 16130MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Start instance 1 at Fri Dec 6 16:04:43 +08 2019
+End instance 1 at Fri Dec 6 16:05:01 +08 2019
+Start instance 2 at Fri Dec 6 16:04:43 +08 2019
+End instance 2 at Fri Dec 6 16:05:03 +08 2019
+Start instance 4 at Fri Dec 6 16:04:43 +08 2019
+End instance 4 at Fri Dec 6 16:05:03 +08 2019
+Start instance 5 at Fri Dec 6 16:04:43 +08 2019
+End instance 5 at Fri Dec 6 16:05:04 +08 2019
+Start instance 8 at Fri Dec 6 16:04:43 +08 2019
+End instance 8 at Fri Dec 6 16:05:05 +08 2019
+Start instance 9 at Fri Dec 6 16:04:43 +08 2019
+End instance 9 at Fri Dec 6 16:05:05 +08 2019
+Start instance 7 at Fri Dec 6 16:04:43 +08 2019
+End instance 7 at Fri Dec 6 16:05:05 +08 2019
+Start instance 10 at Fri Dec 6 16:04:43 +08 2019
+End instance 10 at Fri Dec 6 16:05:06 +08 2019
+Start instance 6 at Fri Dec 6 16:04:43 +08 2019
+End instance 6 at Fri Dec 6 16:05:06 +08 2019
+Start instance 3 at Fri Dec 6 16:04:43 +08 2019
+End instance 3 at Fri Dec 6 16:05:06 +08 2019
+Start instance 11 at Fri Dec 6 16:05:01 +08 2019
+End instance 11 at Fri Dec 6 16:05:18 +08 2019
+Start instance 12 at Fri Dec 6 16:05:03 +08 2019
+End instance 12 at Fri Dec 6 16:05:22 +08 2019
+Start instance 15 at Fri Dec 6 16:05:05 +08 2019
+End instance 15 at Fri Dec 6 16:05:24 +08 2019
+Start instance 14 at Fri Dec 6 16:05:04 +08 2019
+End instance 14 at Fri Dec 6 16:05:26 +08 2019
+Start instance 18 at Fri Dec 6 16:05:06 +08 2019
+End instance 18 at Fri Dec 6 16:05:27 +08 2019
+Start instance 17 at Fri Dec 6 16:05:05 +08 2019
+End instance 17 at Fri Dec 6 16:05:27 +08 2019
+Start instance 19 at Fri Dec 6 16:05:06 +08 2019
+End instance 19 at Fri Dec 6 16:05:27 +08 2019
+Start instance 20 at Fri Dec 6 16:05:06 +08 2019
+End instance 20 at Fri Dec 6 16:05:27 +08 2019
+Start instance 13 at Fri Dec 6 16:05:03 +08 2019
+End instance 13 at Fri Dec 6 16:05:28 +08 2019
+Start instance 16 at Fri Dec 6 16:05:05 +08 2019
+End instance 16 at Fri Dec 6 16:05:28 +08 2019
+Start instance 21 at Fri Dec 6 16:05:18 +08 2019
+End instance 21 at Fri Dec 6 16:05:35 +08 2019
+Start instance 22 at Fri Dec 6 16:05:22 +08 2019
+End instance 22 at Fri Dec 6 16:05:38 +08 2019
+Start instance 23 at Fri Dec 6 16:05:24 +08 2019
+End instance 23 at Fri Dec 6 16:05:43 +08 2019
+Start instance 24 at Fri Dec 6 16:05:26 +08 2019
+End instance 24 at Fri Dec 6 16:05:46 +08 2019
+Start instance 25 at Fri Dec 6 16:05:27 +08 2019
+End instance 25 at Fri Dec 6 16:05:46 +08 2019
+Start instance 26 at Fri Dec 6 16:05:27 +08 2019
+End instance 26 at Fri Dec 6 16:05:48 +08 2019
+Start instance 30 at Fri Dec 6 16:05:28 +08 2019
+End instance 30 at Fri Dec 6 16:05:49 +08 2019
+Start instance 29 at Fri Dec 6 16:05:28 +08 2019
+End instance 29 at Fri Dec 6 16:05:49 +08 2019
+Start instance 27 at Fri Dec 6 16:05:27 +08 2019
+End instance 27 at Fri Dec 6 16:05:49 +08 2019
+Start instance 28 at Fri Dec 6 16:05:27 +08 2019
+End instance 28 at Fri Dec 6 16:05:50 +08 2019
+Start instance 31 at Fri Dec 6 16:05:35 +08 2019
+End instance 31 at Fri Dec 6 16:05:53 +08 2019
+Start instance 32 at Fri Dec 6 16:05:38 +08 2019
+End instance 32 at Fri Dec 6 16:05:55 +08 2019
+Start instance 33 at Fri Dec 6 16:05:43 +08 2019
+End instance 33 at Fri Dec 6 16:06:00 +08 2019
+Start instance 34 at Fri Dec 6 16:05:46 +08 2019
+End instance 34 at Fri Dec 6 16:06:04 +08 2019
+Start instance 35 at Fri Dec 6 16:05:46 +08 2019
+End instance 35 at Fri Dec 6 16:06:04 +08 2019
+Start instance 36 at Fri Dec 6 16:05:48 +08 2019
+End instance 36 at Fri Dec 6 16:06:07 +08 2019
+Start instance 38 at Fri Dec 6 16:05:49 +08 2019
+End instance 38 at Fri Dec 6 16:06:08 +08 2019
+Start instance 37 at Fri Dec 6 16:05:49 +08 2019
+End instance 37 at Fri Dec 6 16:06:08 +08 2019
+Start instance 39 at Fri Dec 6 16:05:49 +08 2019
+End instance 39 at Fri Dec 6 16:06:08 +08 2019
+Start instance 40 at Fri Dec 6 16:05:50 +08 2019
+End instance 40 at Fri Dec 6 16:06:09 +08 2019
+Start instance 41 at Fri Dec 6 16:05:53 +08 2019
+End instance 41 at Fri Dec 6 16:06:11 +08 2019
+Start instance 42 at Fri Dec 6 16:05:55 +08 2019
+End instance 42 at Fri Dec 6 16:06:13 +08 2019
+Start instance 43 at Fri Dec 6 16:06:00 +08 2019
+End instance 43 at Fri Dec 6 16:06:17 +08 2019
+Start instance 45 at Fri Dec 6 16:06:04 +08 2019
+End instance 45 at Fri Dec 6 16:06:22 +08 2019
+Start instance 44 at Fri Dec 6 16:06:04 +08 2019
+End instance 44 at Fri Dec 6 16:06:22 +08 2019
+Start instance 46 at Fri Dec 6 16:06:07 +08 2019
+End instance 46 at Fri Dec 6 16:06:27 +08 2019
+Start instance 48 at Fri Dec 6 16:06:08 +08 2019
+End instance 48 at Fri Dec 6 16:06:28 +08 2019
+Start instance 50 at Fri Dec 6 16:06:09 +08 2019
+End instance 50 at Fri Dec 6 16:06:28 +08 2019
+Start instance 47 at Fri Dec 6 16:06:08 +08 2019
+End instance 47 at Fri Dec 6 16:06:28 +08 2019
+Start instance 49 at Fri Dec 6 16:06:08 +08 2019
+End instance 49 at Fri Dec 6 16:06:28 +08 2019
+Start instance 51 at Fri Dec 6 16:06:11 +08 2019
+End instance 51 at Fri Dec 6 16:06:29 +08 2019
+Start instance 52 at Fri Dec 6 16:06:13 +08 2019
+End instance 52 at Fri Dec 6 16:06:30 +08 2019
+Start instance 53 at Fri Dec 6 16:06:17 +08 2019
+End instance 53 at Fri Dec 6 16:06:34 +08 2019
+Start instance 54 at Fri Dec 6 16:06:22 +08 2019
+End instance 54 at Fri Dec 6 16:06:38 +08 2019
+Start instance 55 at Fri Dec 6 16:06:22 +08 2019
+End instance 55 at Fri Dec 6 16:06:39 +08 2019
+Start instance 60 at Fri Dec 6 16:06:28 +08 2019
+End instance 60 at Fri Dec 6 16:06:48 +08 2019
+Start instance 58 at Fri Dec 6 16:06:28 +08 2019
+End instance 58 at Fri Dec 6 16:06:49 +08 2019
+Start instance 57 at Fri Dec 6 16:06:28 +08 2019
+End instance 57 at Fri Dec 6 16:06:49 +08 2019
+Start instance 56 at Fri Dec 6 16:06:27 +08 2019
+End instance 56 at Fri Dec 6 16:06:49 +08 2019
+Start instance 59 at Fri Dec 6 16:06:28 +08 2019
+End instance 59 at Fri Dec 6 16:06:50 +08 2019
+Start instance 61 at Fri Dec 6 16:06:29 +08 2019
+End instance 61 at Fri Dec 6 16:06:50 +08 2019
+Start instance 62 at Fri Dec 6 16:06:30 +08 2019
+End instance 62 at Fri Dec 6 16:06:50 +08 2019
+Start instance 63 at Fri Dec 6 16:06:34 +08 2019
+End instance 63 at Fri Dec 6 16:06:52 +08 2019
+Start instance 64 at Fri Dec 6 16:06:38 +08 2019
+End instance 64 at Fri Dec 6 16:06:55 +08 2019
+Start instance 65 at Fri Dec 6 16:06:39 +08 2019
+End instance 65 at Fri Dec 6 16:06:56 +08 2019
+Start instance 68 at Fri Dec 6 16:06:49 +08 2019
+End instance 68 at Fri Dec 6 16:07:09 +08 2019
+Start instance 67 at Fri Dec 6 16:06:49 +08 2019
+End instance 67 at Fri Dec 6 16:07:09 +08 2019
+Start instance 66 at Fri Dec 6 16:06:48 +08 2019
+End instance 66 at Fri Dec 6 16:07:11 +08 2019
+Start instance 70 at Fri Dec 6 16:06:50 +08 2019
+End instance 70 at Fri Dec 6 16:07:11 +08 2019
+Start instance 71 at Fri Dec 6 16:06:50 +08 2019
+End instance 71 at Fri Dec 6 16:07:11 +08 2019
+Start instance 72 at Fri Dec 6 16:06:50 +08 2019
+End instance 72 at Fri Dec 6 16:07:11 +08 2019
+Start instance 69 at Fri Dec 6 16:06:49 +08 2019
+End instance 69 at Fri Dec 6 16:07:12 +08 2019
+Start instance 73 at Fri Dec 6 16:06:52 +08 2019
+End instance 73 at Fri Dec 6 16:07:12 +08 2019
+Start instance 74 at Fri Dec 6 16:06:55 +08 2019
+End instance 74 at Fri Dec 6 16:07:14 +08 2019
+Start instance 75 at Fri Dec 6 16:06:56 +08 2019
+End instance 75 at Fri Dec 6 16:07:15 +08 2019
+Start instance 76 at Fri Dec 6 16:07:09 +08 2019
+End instance 76 at Fri Dec 6 16:07:29 +08 2019
+Start instance 77 at Fri Dec 6 16:07:09 +08 2019
+End instance 77 at Fri Dec 6 16:07:30 +08 2019
+Start instance 78 at Fri Dec 6 16:07:11 +08 2019
+End instance 78 at Fri Dec 6 16:07:32 +08 2019
+Start instance 83 at Fri Dec 6 16:07:12 +08 2019
+End instance 83 at Fri Dec 6 16:07:34 +08 2019
+Start instance 81 at Fri Dec 6 16:07:11 +08 2019
+End instance 81 at Fri Dec 6 16:07:34 +08 2019
+Start instance 79 at Fri Dec 6 16:07:11 +08 2019
+End instance 79 at Fri Dec 6 16:07:34 +08 2019
+Start instance 80 at Fri Dec 6 16:07:11 +08 2019
+End instance 80 at Fri Dec 6 16:07:34 +08 2019
+Start instance 82 at Fri Dec 6 16:07:12 +08 2019
+End instance 82 at Fri Dec 6 16:07:35 +08 2019
+Start instance 84 at Fri Dec 6 16:07:14 +08 2019
+End instance 84 at Fri Dec 6 16:07:35 +08 2019
+Start instance 85 at Fri Dec 6 16:07:15 +08 2019
+End instance 85 at Fri Dec 6 16:07:35 +08 2019
+Start instance 87 at Fri Dec 6 16:07:30 +08 2019
+End instance 87 at Fri Dec 6 16:07:46 +08 2019
+Start instance 86 at Fri Dec 6 16:07:29 +08 2019
+End instance 86 at Fri Dec 6 16:07:47 +08 2019
+Start instance 88 at Fri Dec 6 16:07:32 +08 2019
+End instance 88 at Fri Dec 6 16:07:50 +08 2019
+Start instance 90 at Fri Dec 6 16:07:34 +08 2019
+End instance 90 at Fri Dec 6 16:07:54 +08 2019
+Start instance 92 at Fri Dec 6 16:07:34 +08 2019
+End instance 92 at Fri Dec 6 16:07:54 +08 2019
+Start instance 89 at Fri Dec 6 16:07:34 +08 2019
+End instance 89 at Fri Dec 6 16:07:54 +08 2019
+Start instance 91 at Fri Dec 6 16:07:34 +08 2019
+End instance 91 at Fri Dec 6 16:07:55 +08 2019
+Start instance 95 at Fri Dec 6 16:07:35 +08 2019
+End instance 95 at Fri Dec 6 16:07:55 +08 2019
+Start instance 94 at Fri Dec 6 16:07:35 +08 2019
+End instance 94 at Fri Dec 6 16:07:55 +08 2019
+Start instance 93 at Fri Dec 6 16:07:35 +08 2019
+End instance 93 at Fri Dec 6 16:07:56 +08 2019
+Start instance 97 at Fri Dec 6 16:07:47 +08 2019
+End instance 97 at Fri Dec 6 16:08:04 +08 2019
+Start instance 96 at Fri Dec 6 16:07:46 +08 2019
+End instance 96 at Fri Dec 6 16:08:04 +08 2019
+Start instance 98 at Fri Dec 6 16:07:50 +08 2019
+End instance 98 at Fri Dec 6 16:08:07 +08 2019
+Start instance 100 at Fri Dec 6 16:07:54 +08 2019
+End instance 100 at Fri Dec 6 16:08:12 +08 2019
+Start instance 99 at Fri Dec 6 16:07:54 +08 2019
+End instance 99 at Fri Dec 6 16:08:12 +08 2019
+======================================================================================
+
+			Resource Usage on 2019-12-06 16:08:13.878389:
+
+	JobId: 9294742.wlm01  
+	Project: 90000001 
+	Exit Status: 0
+	NCPUs Requested: 5				NCPUs Used: 5
+							CPU Time Used: 00:00:18
+	Memory Requested: None 				Memory Used: 563568kb
+							Vmem Used: 16211588kb
+	Walltime requested: 00:05:00 			Walltime Used: 00:03:29
+	
+	Execution Nodes Used: dgx4102:ncpus=5:ngpus=1:model=dgx-03g-04h
+	
+ ======================================================================================

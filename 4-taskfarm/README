@@ -1,0 +1,12 @@
+
+Example using GNU parallel to simultaneously run multiple commands on the same GPU.
+
+The PBS job script submit.pbs runs 10 python scripts at the same time for a total of 100 scripts.
+
+Modify the file "submit.pbs" to change how many commands run at the same time.
+Modify the file "commands" to change the list of commands to be run (or adapt "submit.pbs" with suitable syntax for parallel command)
+Modify the file "launch" to change how the individual commands are run in Docker containers.
+
+Documentation at https://www.gnu.org/software/parallel/parallel_tutorial.html
+
+Will only work correctly on a single GPU job. In order to run correctly in a multi-GPU job the placement of the different processes on different GPUs will need to be handled correctly.

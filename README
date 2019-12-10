@@ -25,6 +25,7 @@ Reference output is available in the directory "reference-output" in each of the
 # Repeat for the other examples:
 2-mxnet-training	run a training job
 3-pip-install		install a python package inside a running container
+4-taskfarm              run multiple commands on the a single GPU within the same job
 
 There is also other infomation in the examples:
 docker-build		building custom images
