@@ -11,8 +11,9 @@
 ### Job will not submit unless this is changed
 #PBS -P 99999999
 
-set -e
+# Documentation at https://www.sylabs.io/docs
+
 env
 nvidia-smi
 cd "$PBS_O_WORKDIR"
-singularity exec --nv $SINGULARITY_IMAGES/nvcr.io/nvidia/mxnet:latest.simg /bin/bash < stdin > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
+singularity exec --nv $SINGULARITY_IMAGES/nvcr.io/nvidia/mxnet:latest.sif /bin/bash < stdin > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID

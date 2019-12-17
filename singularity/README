@@ -1,0 +1,23 @@
+Singularity Containers
+
+Documentation at https://www.sylabs.io/docs
+
+Singularity containers can be downloaded and run as a normal user.
+Images can be downloaded from Docker, stored as flat files or in sandbox directories.
+
+The NVIDIA optimised Docker images have been downloaded as Singularity images in $SINGULARITY_IMAGES
+
+# execute a shell in the latest TensorFlow image
+singularity exec $SINGULARITY_IMAGES/nvcr.io/nvidia/tensorflow:latest.sif /bin/sh
+
+# whilst also binding in a network directory to a specific location
+singularity exec -B $HOME/dataset:/dataset $SINGULARITY_IMAGES/nvcr.io/nvidia/tensorflow:latest.sif /bin/sh
+
+# download layers of a Docker images and start up a container:
+singularity exec docker://ubuntu:18.04 /bin/sh
+
+# download a Docker image and convert into a SIF image file
+singularity build ubuntu.sif docker://ubuntu:18.04
+
+# convert a SIF image into a sandbox directory
+singularity build --sandbox ubuntu/ ubuntu.sif
