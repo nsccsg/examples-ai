@@ -3,9 +3,7 @@ Example using GNU parallel to simultaneously run multiple commands on the same G
 
 The PBS job script submit.pbs runs 10 python scripts at the same time for a total of 100 scripts.
 
-Modify the file "submit.pbs" to change how many commands run at the same time.
-Modify the file "commands" to change the list of commands to be run (or adapt "submit.pbs" with suitable syntax for parallel command)
-Modify the file "launch" to change how the individual commands are run in Docker containers.
+Modify the file "submit.pbs" to change how many commands run at the same time and how to launch each individual command.
 
 Documentation at https://www.gnu.org/software/parallel/parallel_tutorial.html
 
