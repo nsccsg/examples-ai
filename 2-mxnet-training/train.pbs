@@ -43,7 +43,9 @@ cd "$PBS_O_WORKDIR" || exit $?
 # You will also need to change to the correct directory inside the container
 
 # The "nscc-docker run $image" command runs the following Docker command: 
-#    nvidia-docker -u $UID:$GID -v /home:/home -v /raid:/raid --rm -i --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 $image /bin/sh
+#    nvidia-docker run -u UID:GID --group-add PROJECT \
+#      -v /home:/home -v /scratch:/scratch -v /raid:/raid \
+#      --rm -i --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 $image /bin/sh
 # See full list of options with "nscc-docker run -h"
 # Pass the commands that you wish to run inside the container on the standard input
 # Edit file stdin as required

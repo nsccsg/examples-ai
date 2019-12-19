@@ -35,8 +35,7 @@ cd "$PBS_O_WORKDIR" || exit $?
 # Docker Image with VNC installed
 image="nscc/local/tensorflow:latest"
 
-# The "nscc-docker run --ports $image" command runs the following Docker command: 
-#    nvidia-docker -u $UID:$GID -v /raid:/raid -v /home:/home --rm -i --shm-size=1g --ulimit memlock=-1 --ulimit stack=67108864 -p 8888:8888 -p 5901:5901 $image /bin/sh
+# The "nscc-docker run --ports $image" adds the following extra arguments to the following Docker command: -p 8888:8888 -p 5901:5901 
 # Run VNC server inside container
 nscc-docker run --ports $image << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
 vncserver :1

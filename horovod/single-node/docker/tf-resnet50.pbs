@@ -32,7 +32,7 @@ data="/scratch/projects/41000001/datasets/$dataset/$model"
 
 stdout="$PWD/stdout.$PBS_JOBID"
 stderr="$PWD/stderr.$PBS_JOBID"
-nvidia-docker-run --lustre $image << EOF
+nscc-docker run $image << EOF
 cd /workspace/nvidia-examples/cnn
 mpiexec --allow-run-as-root -np 8  python ${model}.py \
  --layers $layers \
