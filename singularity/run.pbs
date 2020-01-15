@@ -17,3 +17,6 @@ env
 nvidia-smi
 cd "$PBS_O_WORKDIR"
 singularity exec --nv $SINGULARITY_IMAGES/nvcr.io/nvidia/mxnet:latest.sif /bin/bash < stdin > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
+
+## singularity pull ubuntu.sif docker://ubuntu:18.04 ## pull an image from Docker Hub to a local image file
+## singularity exec -B /path/to/dir:/mnt ...         ## bind directories to specific locations inside container
