@@ -1,0 +1,63 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 19.12 (build 9142930)
+PyTorch Version 1.4.0a0+a5b4d78
+
+Container image Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2019 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+NOTE: Detected MOFED driver 4.4-2.0.7; version automatically updated.
+
+Model: resnet50
+Batch size: 32
+Number of GPUs: 4
+Running warmup...
+Running benchmark...
+Iter #0: 130.5 img/sec per GPU
+Iter #1: 130.4 img/sec per GPU
+Iter #2: 130.0 img/sec per GPU
+Iter #3: 128.9 img/sec per GPU
+Iter #4: 132.7 img/sec per GPU
+Iter #5: 134.0 img/sec per GPU
+Iter #6: 127.8 img/sec per GPU
+Iter #7: 129.3 img/sec per GPU
+Iter #8: 132.3 img/sec per GPU
+Iter #9: 133.6 img/sec per GPU
+Img/sec per GPU: 131.0 +-3.9
+Total img/sec on 4 GPU(s): 523.9 +-15.6
+======================================================================================
+
+			Resource Usage on 2020-01-10 16:22:36.719677:
+
+	JobId: 9461812.wlm01  
+	Project: 90000001 
+	Exit Status: 0
+	NCPUs Requested: 20				NCPUs Used: 20
+							CPU Time Used: 00:00:00
+	Memory Requested: None 				Memory Used: 54320kb
+							Vmem Used: 1567592kb
+	Walltime requested: 01:00:00 			Walltime Used: 00:00:41
+	
+	Execution Nodes Used: (dgx4102:ncpus=20:ngpus=4)
+	
+ ======================================================================================
