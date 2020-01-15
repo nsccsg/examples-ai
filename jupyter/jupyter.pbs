@@ -21,6 +21,9 @@
 
 ### Start of commands to be run
 
+# Change directory to where job was submitted
+cd $PBS_O_WORKDIR || exit $?
+
 # Docker image to use for container
 #   To see available images run command: nscc-docker images
 #   If image is not present, email help@nscc.sg to request pulling image into repository on all DGX nodes
@@ -30,9 +33,11 @@ image="nvcr.io/nvidia/tensorflow:latest"
 PORT=8888
 
 # Run using host networking so that it is easier to access the port
+# Modify port value if it clashes with other users
 nscc-docker run --net=host $image << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
 # We can do the following if using "<<EOF" to pass variable as it is expanded by the job shell
 cd $PBS_O_WORKDIR
+hostname
 #
 # install any python packages required
 export PYTHONUSERBASE=/workspace/.local
@@ -41,9 +46,9 @@ mkdir -p \$PYTHONUSERBASE/bin
 export PATH=\$PATH:\$PYTHONUSERBASE/bin
 ## pip install --user -q -U somepythonpackage
 
-# Launch JupyterLab
+# Launch JupyterLab, listen on all interfaces on port $PORT
 export TERM=ansi
-jupyter lab --no-browser --ip=127.0.0.1 --port=$PORT \
+jupyter lab --no-browser --ip=0.0.0.0 --port=$PORT \
  --NotebookApp.terminado_settings='{"shell_command": ["/bin/bash"]}' \
  --NotebookApp.allow_remote_access=True --FileContentsManager.delete_to_trash=False
 
