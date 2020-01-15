@@ -24,16 +24,17 @@
 # Docker image to use for container
 #   To see available images run command: nscc-docker images
 #   If image is not present, email help@nscc.sg to request pulling image into repository on all DGX nodes
-image="nscc/local/tensorflow:latest"
+image="nvcr.io/nvidia/tensorflow:latest"
+
+# Change this number, port 8888 is default and may clash with other users
 PORT=8888
 
 # Run using host networking so that it is easier to access the port
-# Modify port value if it clashes with other users
 nscc-docker run --net=host $image << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
 # We can do the following if using "<<EOF" to pass variable as it is expanded by the job shell
 cd $PBS_O_WORKDIR
 #
-# install any python packaages required
+# install any python packages required
 export PYTHONUSERBASE=/workspace/.local
 # Escaping PYTHONUSERBASE in the next line so that it is expanded inside docker and take the value set inside the container
 mkdir -p \$PYTHONUSERBASE/bin
@@ -52,13 +53,13 @@ EOF
 ### However you cannot directly access port
 ### There are two methods that you can use
 ### 1. ssh port forwarding
-### 2. reverse proxy (FRP, localtunnel.me, etc.)
+### 2. reverse proxy (FRP, etc.)
 
 ### Using reverse proxies is a security risk, user is responsible for any data loss or unauthorized access.
 
 ### ssh port forwarding
-### On local machine use ssh port forwarding to tunnel to node where job is running, e.g. dgx4106:
-###   ssh -L8888:dgx4106:8888 aspire.nscc.sg
-### On local machine go to http://localhost:8888 and use token from found in file stderr.$PBS_JOBID
-### Alternatively, pass a pre-determined token using --NotebookApp.token=...
+### On local machine use ssh port forwarding to tunnel to node and port where job is running:
+###   ssh -L$PORT:$HOST:$PORT aspire.nscc.sg     ### e.g. ssh -L8888:dgx4106:8888 aspire.nscc.sg
+### On local machine go to http://localhost:$PORT and use token from found in file stderr.$PBS_JOBID
+### Alternatively, pass a pre-determined token using --NotebookApp.token=... (visible to ps command on node)
 
