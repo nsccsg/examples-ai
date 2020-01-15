@@ -4,9 +4,9 @@ New images can be produced by 2 methods:
  1. Creating a Docker file which builds on top of one of the installed NVIDIA NGC images.
  2. Pulling a new image from Docker Hub.
 
-The Dockerfile used for the nscc/local/tensorflow images are in the local-tf-py2 and local-tf-py3 directories.
+The Dockerfile used for the nscc/local/tensorflow image is given as an example.
 
-They have OpenCV and some other packages installed.
+It has OpenCV and some other packages installed.
 
 Normal users do not have the necessary permission to install images and the repository on each node is local so images need to be added on all nodes.
 Send an email to help@nscc.sg with either a Dockerfile or tag and they will build/pull the image and distribute to all nodes.

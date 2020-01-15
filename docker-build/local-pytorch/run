@@ -1,7 +1,0 @@
-#!/bin/bash
-set -eo pipefail
-
-# image name
-image="nscc/local/pytorch:19.05-py3"
-
-docker build -t "$image" .
