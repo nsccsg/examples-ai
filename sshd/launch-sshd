@@ -1,0 +1,18 @@
+#!/bin/bash
+port="${UID:-$1}"
+keydir=/workspace
+prefix=/home/app/dgx/usr
+PATH="$PATH:$prefix/bin:$prefix/sbin" ; export PATH
+# generate host keys
+dropbearkey -t rsa -f $keydir/dropbear_rsa_host_key ; \
+ dropbearkey -t dss -f $keydir/dropbear_dss_host_key ; \
+ dropbearkey -t ecdsa -f $keydir/dropbear_ecdsa_host_key ; \
+ dropbearkey -t ed25519 -f $keydir/dropbear_ed25519_host_key
+# start daemon on port $port
+echo start dropbear on port $port
+dropbear  -E -w -g -a -p $port \
+ -r $keydir/dropbear_rsa_host_key \
+ -r $keydir/dropbear_dss_host_key \
+ -r $keydir/dropbear_ecdsa_host_key \
+ -r $keydir/dropbear_ed25519_host_key \
+  > $keydir/dropbear_log 2>&1

@@ -1,0 +1,23 @@
+Running an SSH Daemon Inside a Docker Container
+
+Starting an ssh daemon inside a docker container allows you to access the environment inside the container to view the local filesystem or run tasks interactively.  However the container runs under a normal user id and so the user does not have the permission to start the ssh daemon normally.
+
+The dropbear package is a standalone sshd server which is easier to use for this purpose.
+ https://matt.ucc.asn.au/dropbear/dropbear.html
+
+The package has been compiled and installed into /home/app/dgx/usr/...
+
+The script launch-sshd when run inside a container should start an ssh daemon on the port specified as the first argument, defaults to $UID
+
+Once the job starts running you can connect to the port on that host.
+To find out where it is run "qstat -wan1" and look for the node assigned to the Job ID. The ssh command should be similar to:
+ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p $port $node
+
+There are some important caveats:
+ 1. You need to use the "--net=host" option to the "nscc-docker run" command or you will not be able to reach the port.
+ 2. The environment when you log in is different to the enviroment when you start a container (the environment variables are defined in the docker image).
+ 3. It only works with key-based authentication, your password will not work (the container is not using LDAP).
+
+The PBS script runs "env" in the docker container and generates a file "env.sh" which you should be able to source in your ssh session to set the environment correctly.
+
+If you cannot use "--net=host" and have to use the default private network then you will need to use an ssh remote port forward to connect a port on a login node to the port inside the container.
