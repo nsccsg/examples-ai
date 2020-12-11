@@ -1,0 +1,16 @@
+======================================================================================
+
+			Resource Usage on 2020-12-11 16:02:03.218490:
+
+	JobId: 2681579.wlm01  
+	Project: 90000001 
+	Exit Status: 0
+	NCPUs Requested: 5				NCPUs Used: 5
+							CPU Time Used: 00:00:00
+	Memory Requested: None 				Memory Used: 53812kb
+							Vmem Used: 1570168kb
+	Walltime requested: 02:00:00 			Walltime Used: 00:02:17
+	
+	Execution Nodes Used: (dgx4105:ncpus=5:ngpus=1)
+	
+ ======================================================================================

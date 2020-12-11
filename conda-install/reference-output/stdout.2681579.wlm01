@@ -1,0 +1,431 @@
+
+=============
+== PyTorch ==
+=============
+
+NVIDIA Release 20.03 (build 11122848)
+PyTorch Version 1.5.0a0+8f84ded
+
+Container image Copyright (c) 2019, NVIDIA CORPORATION.  All rights reserved.
+
+Copyright (c) 2014-2019 Facebook Inc.
+Copyright (c) 2011-2014 Idiap Research Institute (Ronan Collobert)
+Copyright (c) 2012-2014 Deepmind Technologies    (Koray Kavukcuoglu)
+Copyright (c) 2011-2012 NEC Laboratories America (Koray Kavukcuoglu)
+Copyright (c) 2011-2013 NYU                      (Clement Farabet)
+Copyright (c) 2006-2010 NEC Laboratories America (Ronan Collobert, Leon Bottou, Iain Melvin, Jason Weston)
+Copyright (c) 2006      Idiap Research Institute (Samy Bengio)
+Copyright (c) 2001-2004 Idiap Research Institute (Ronan Collobert, Samy Bengio, Johnny Mariethoz)
+Copyright (c) 2015      Google Inc.
+Copyright (c) 2015      Yangqing Jia
+Copyright (c) 2013-2016 The Caffe contributors
+All rights reserved.
+
+Various files include modifications (c) NVIDIA CORPORATION.  All rights reserved.
+NVIDIA modifications are covered by the license terms that apply to the underlying project or file.
+
+NOTE: Legacy NVIDIA Driver detected.  Compatibility mode ENABLED.
+
+NOTE: Detected MOFED driver 4.4-2.0.7; version automatically updated.
+
+dd37b8ed8b69
+Fri Dec 11 15:59:47 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 418.67       Driver Version: 418.67       CUDA Version: 10.2     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  Tesla V100-SXM2...  On   | 00000000:06:00.0 Off |                    0 |
+| N/A   36C    P0    59W / 300W |      0MiB / 16130MiB |      1%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+/workspace
+/home/adm/sup/fsg3/outbox/conda-install
+PATH in job shell
+PATH=/bin:/usr/bin:/usr/local/bin:/opt/singularity/bin:/usr/local/mpi/bin:/usr/local/bin:/usr/local/mpi/bin:/opt/pbs/bin:/opt/singularity/bin:/home/adm/sup/fsg3/bin
+PATH inside container
+PATH=/opt/conda/bin:/opt/cmake-3.14.6-Linux-x86_64/bin/:/usr/local/mpi/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/tensorrt/bin
+
+clone whole base environment to /workspace/conda-env
+Source:      /opt/conda
+Destination: /workspace/conda-env
+Packages: 106
+Files: 49881
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+
+activate cloned conda environment
+
+install additional packages
+Collecting package metadata (current_repodata.json): ...working... done
+Solving environment: ...working... failed with initial frozen solve. Retrying with flexible solve.
+Solving environment: ...working... failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): ...working... done
+Solving environment: ...working... done
+
+## Package Plan ##
+
+  environment location: /workspace/conda-env
+
+  added / updated specs:
+    - opencv
+
+
+The following NEW packages will be INSTALLED:
+
+  cairo              pkgs/main/linux-64::cairo-1.14.12-h8948797_3
+  ffmpeg             pkgs/main/linux-64::ffmpeg-4.0-hcdf2ecd_0
+  fontconfig         pkgs/main/linux-64::fontconfig-2.13.0-h9420a91_0
+  freeglut           pkgs/main/linux-64::freeglut-3.0.0-hf484d3e_5
+  freetype           pkgs/main/linux-64::freetype-2.10.4-h5ab3b9f_0
+  glib               pkgs/main/linux-64::glib-2.63.1-h5a9c865_0
+  graphite2          pkgs/main/linux-64::graphite2-1.3.14-h23475e2_0
+  harfbuzz           pkgs/main/linux-64::harfbuzz-1.8.8-hffaf4a1_0
+  hdf5               pkgs/main/linux-64::hdf5-1.10.2-hba1933b_1
+  icu                pkgs/main/linux-64::icu-58.2-he6710b0_3
+  jasper             pkgs/main/linux-64::jasper-2.0.14-h07fcdf6_1
+  jpeg               pkgs/main/linux-64::jpeg-9b-h024ee3a_2
+  libglu             pkgs/main/linux-64::libglu-9.0.0-hf484d3e_1
+  libopencv          pkgs/main/linux-64::libopencv-3.4.2-hb342d67_1
+  libopus            pkgs/main/linux-64::libopus-1.3.1-h7b6447c_0
+  libpng             pkgs/main/linux-64::libpng-1.6.37-hbc83047_0
+  libtiff            pkgs/main/linux-64::libtiff-4.1.0-h2733197_0
+  libuuid            pkgs/main/linux-64::libuuid-1.0.3-h1bed415_2
+  libvpx             pkgs/main/linux-64::libvpx-1.7.0-h439df22_0
+  libxcb             pkgs/main/linux-64::libxcb-1.14-h7b6447c_0
+  opencv             pkgs/main/linux-64::opencv-3.4.2-py36h6fd60c2_1
+  pcre               pkgs/main/linux-64::pcre-8.44-he6710b0_0
+  pixman             pkgs/main/linux-64::pixman-0.40.0-h7b6447c_0
+  py-opencv          pkgs/main/linux-64::py-opencv-3.4.2-py36hb342d67_1
+
+The following packages will be UPDATED:
+
+  ca-certificates                                2020.1.1-0 --> 2020.12.8-h06a4308_0
+  certifi                                 2019.11.28-py36_0 --> 2020.12.5-py36h06a4308_0
+  openssl                                 1.1.1d-h7b6447c_4 --> 1.1.1i-h27cfd23_0
+
+
+Preparing transaction: ...working... done
+Verifying transaction: ...working... done
+Executing transaction: ...working... done
+
+print conda information
+
+     active environment : /workspace/conda-env
+    active env location : /workspace/conda-env
+            shell level : 1
+       user config file : /home/adm/sup/fsg3/.condarc
+ populated config files : 
+          conda version : 4.8.2
+    conda-build version : 3.18.11
+         python version : 3.6.9.final.0
+       virtual packages : __cuda=10.2
+                          __glibc=2.27
+       base environment : /opt/conda  (read only)
+           channel URLs : https://repo.anaconda.com/pkgs/main/linux-64
+                          https://repo.anaconda.com/pkgs/main/noarch
+                          https://repo.anaconda.com/pkgs/r/linux-64
+                          https://repo.anaconda.com/pkgs/r/noarch
+          package cache : /opt/conda/pkgs
+                          /home/adm/sup/fsg3/.conda/pkgs
+       envs directories : /home/adm/sup/fsg3/.conda/envs
+                          /opt/conda/envs
+               platform : linux-64
+             user-agent : conda/4.8.2 requests/2.22.0 CPython/3.6.9 Linux/4.15.0-54-generic ubuntu/18.04.4 glibc/2.27
+                UID:GID : 11013:11001
+             netrc file : None
+           offline mode : False
+
+# packages in environment at /workspace/conda-env:
+#
+# Name                    Version                   Build  Channel
+_libgcc_mutex             0.1                        main  
+absl-py                   0.9.0                    pypi_0    pypi
+alabaster                 0.7.12                   pypi_0    pypi
+apex                      0.1                      pypi_0    pypi
+appdirs                   1.4.3                    pypi_0    pypi
+ascii-graph               1.5.1                    pypi_0    pypi
+asn1crypto                1.3.0                    py36_0  
+attrs                     19.3.0                   pypi_0    pypi
+audioread                 2.1.8                    pypi_0    pypi
+babel                     2.8.0                    pypi_0    pypi
+backcall                  0.1.0                    py36_0  
+beautifulsoup4            4.8.2                    py36_0  
+blas                      1.0                    openblas  
+bleach                    3.1.3                    pypi_0    pypi
+boto3                     1.12.28                  pypi_0    pypi
+botocore                  1.15.28                  pypi_0    pypi
+bzip2                     1.0.8                h7b6447c_0  
+ca-certificates           2020.12.8            h06a4308_0  
+cachetools                4.0.0                    pypi_0    pypi
+cairo                     1.14.12              h8948797_3  
+certifi                   2020.12.5        py36h06a4308_0  
+cffi                      1.14.0           py36h2e261b9_0  
+chardet                   3.0.4                 py36_1003  
+click                     7.1.1                    pypi_0    pypi
+cmake                     3.14.0               h52cb24c_0  
+codecov                   2.0.22                   pypi_0    pypi
+conda-package-handling    1.6.0            py36h7b6447c_0  
+coverage                  5.0.4                    pypi_0    pypi
+cryptography              2.8              py36h1ba5d50_0  
+cycler                    0.10.0                   pypi_0    pypi
+cymem                     2.0.2            py36hfd86e86_0  
+cython                    0.28.4                   pypi_0    pypi
+cytoolz                   0.9.0.1          py36h14c3975_1  
+dataproperty              0.46.4                   pypi_0    pypi
+decorator                 4.4.1                      py_0  
+defusedxml                0.6.0                    pypi_0    pypi
+dill                      0.2.9                    py36_0  
+docutils                  0.15.2                   pypi_0    pypi
+entrypoints               0.3                      pypi_0    pypi
+expat                     2.2.6                he6710b0_0  
+ffmpeg                    4.0                  hcdf2ecd_0  
+filelock                  3.0.12                     py_0  
+flake8                    3.7.9                    pypi_0    pypi
+flask                     1.1.1                    pypi_0    pypi
+fontconfig                2.13.0               h9420a91_0  
+freeglut                  3.0.0                hf484d3e_5  
+freetype                  2.10.4               h5ab3b9f_0  
+future                    0.18.2                   pypi_0    pypi
+glib                      2.63.1               h5a9c865_0  
+glob2                     0.7                        py_0  
+google-auth               1.11.3                   pypi_0    pypi
+google-auth-oauthlib      0.4.1                    pypi_0    pypi
+graphite2                 1.3.14               h23475e2_0  
+grpcio                    1.27.2                   pypi_0    pypi
+h5py                      2.10.0                   pypi_0    pypi
+harfbuzz                  1.8.8                hffaf4a1_0  
+hdf5                      1.10.2               hba1933b_1  
+html2text                 2020.1.16                pypi_0    pypi
+hypothesis                4.50.8                   pypi_0    pypi
+icu                       58.2                 he6710b0_3  
+idna                      2.8                      py36_0  
+imageio                   2.8.0                    pypi_0    pypi
+imagesize                 1.2.0                    pypi_0    pypi
+importlib-metadata        1.5.0                    pypi_0    pypi
+inflect                   4.1.0                    pypi_0    pypi
+intel-openmp              2019.4                      243  
+ipdb                      0.13.2                   pypi_0    pypi
+ipykernel                 5.2.0                    pypi_0    pypi
+ipython                   7.12.0           py36h5ca1d4c_0  
+ipython_genutils          0.2.0                    py36_0  
+itsdangerous              1.1.0                    pypi_0    pypi
+jasper                    2.0.14               h07fcdf6_1  
+jedi                      0.16.0                   py36_0  
+jinja2                    2.11.1                     py_0  
+jmespath                  0.9.5                    pypi_0    pypi
+joblib                    0.14.1                   pypi_0    pypi
+jpeg                      9b                   h024ee3a_2  
+json5                     0.9.3                    pypi_0    pypi
+jsonschema                3.2.0                    pypi_0    pypi
+jupyter-client            6.1.0                    pypi_0    pypi
+jupyter-core              4.6.3                    pypi_0    pypi
+jupyter-tensorboard       0.1.10                   pypi_0    pypi
+jupyterlab                1.0.4                    pypi_0    pypi
+jupyterlab-server         1.0.7                    pypi_0    pypi
+jupytext                  1.4.1                    pypi_0    pypi
+kiwisolver                1.1.0                    pypi_0    pypi
+krb5                      1.17.1               h173b8e3_0  
+libarchive                3.3.3                h5d8350f_5  
+libcurl                   7.68.0               h20c2e04_0  
+libedit                   3.1.20181209         hc058e9b_0  
+libffi                    3.2.1                hd88cf55_4  
+libgcc-ng                 9.1.0                hdf63c60_0  
+libgfortran-ng            7.3.0                hdf63c60_0  
+libglu                    9.0.0                hf484d3e_1  
+liblief                   0.9.0                h7725739_2  
+libopenblas               0.3.3                h5a2b251_3  
+libopencv                 3.4.2                hb342d67_1  
+libopus                   1.3.1                h7b6447c_0  
+libpng                    1.6.37               hbc83047_0  
+librosa                   0.6.3                    pypi_0    pypi
+libssh2                   1.8.2                h1ba5d50_0  
+libstdcxx-ng              9.1.0                hdf63c60_0  
+libtiff                   4.1.0                h2733197_0  
+libuuid                   1.0.3                h1bed415_2  
+libvpx                    1.7.0                h439df22_0  
+libxcb                    1.14                 h7b6447c_0  
+libxml2                   2.9.9                hea5a465_1  
+llvmlite                  0.28.0           py36hd408876_0  
+lmdb                      0.98                     pypi_0    pypi
+lz4-c                     1.8.1.2              h14c3975_0  
+lzo                       2.10                 h49e0be7_2  
+magma-cuda101             2.5.1                         1    local
+mako                      1.1.2                    pypi_0    pypi
+markdown                  3.2.1                    pypi_0    pypi
+markupsafe                1.1.1            py36h7b6447c_0  
+maskrcnn-benchmark        0.1                      pypi_0    pypi
+matplotlib                3.2.1                    pypi_0    pypi
+mbstrdecoder              0.8.4                    pypi_0    pypi
+mccabe                    0.6.1                    pypi_0    pypi
+mistune                   0.8.4                    pypi_0    pypi
+mkl                       2019.1                      144  
+mkl-include               2019.1                      144  
+mlperf-compliance         0.0.10                   pypi_0    pypi
+mock                      4.0.1                      py_0  
+more-itertools            8.2.0                    pypi_0    pypi
+msgfy                     0.0.7                    pypi_0    pypi
+msgpack-numpy             0.4.3.2                  py36_0  
+msgpack-python            0.6.1            py36hfd86e86_1  
+murmurhash                1.0.2            py36he6710b0_0  
+nbconvert                 5.6.1                    pypi_0    pypi
+nbformat                  5.0.4                    pypi_0    pypi
+ncurses                   6.1                  he6710b0_1  
+networkx                  2.0                      pypi_0    pypi
+ninja                     1.9.0            py36hfd86e86_0  
+nltk                      3.4.5                    pypi_0    pypi
+nomkl                     3.0                           0  
+notebook                  6.0.3                    pypi_0    pypi
+numba                     0.43.1           py36h962f231_0  
+numpy                     1.18.1           py36h94c655d_0  
+numpy-base                1.18.1           py36h2f8d375_1  
+nvidia-dali               0.19.0                   pypi_0    pypi
+oauthlib                  3.1.0                    pypi_0    pypi
+onnx                      1.6.0                    pypi_0    pypi
+openblas                  0.3.3                         3  
+openblas-devel            0.3.3                         3  
+opencv                    3.4.2            py36h6fd60c2_1  
+opencv-python             3.4.1.15                 pypi_0    pypi
+openssl                   1.1.1i               h27cfd23_0  
+packaging                 20.3                     pypi_0    pypi
+pandas                    0.24.2                   pypi_0    pypi
+pandocfilters             1.4.2                    pypi_0    pypi
+parso                     0.6.1                      py_0  
+patchelf                  0.10                 he6710b0_0  
+pathvalidate              2.2.1                    pypi_0    pypi
+pcre                      8.44                 he6710b0_0  
+pexpect                   4.8.0                    py36_0  
+pickleshare               0.7.5                    py36_0  
+pillow-simd               5.3.0.post1              pypi_0    pypi
+pip                       20.0.2                   py36_1  
+pixman                    0.40.0               h7b6447c_0  
+pkginfo                   1.5.0.1                  py36_0  
+plac                      0.9.6                    py36_0  
+pluggy                    0.13.1                   pypi_0    pypi
+preshed                   2.0.1            py36he6710b0_0  
+progressbar               2.5                      pypi_0    pypi
+prometheus-client         0.7.1                    pypi_0    pypi
+prompt_toolkit            3.0.3                      py_0  
+protobuf                  3.11.3                   pypi_0    pypi
+psutil                    5.6.7            py36h7b6447c_0  
+ptyprocess                0.6.0                    py36_0  
+py                        1.8.1                    pypi_0    pypi
+py-lief                   0.9.0            py36h7725739_2  
+py-opencv                 3.4.2            py36hb342d67_1  
+pyasn1                    0.4.8                    pypi_0    pypi
+pyasn1-modules            0.2.8                    pypi_0    pypi
+pybind11                  2.4.3                    pypi_0    pypi
+pycocotools               2.0+nv0.4.0              pypi_0    pypi
+pycodestyle               2.5.0                    pypi_0    pypi
+pycosat                   0.6.3            py36h7b6447c_0  
+pycparser                 2.19                     py36_0  
+pycuda                    2019.1.2                 pypi_0    pypi
+pydot                     1.4.1                    pypi_0    pypi
+pyflakes                  2.1.1                    pypi_0    pypi
+pygments                  2.5.2                      py_0  
+pyopenssl                 19.1.0                   py36_0  
+pyparsing                 2.4.6                    pypi_0    pypi
+pyrsistent                0.16.0                   pypi_0    pypi
+pysocks                   1.7.1                    py36_0  
+pytablewriter             0.50.0                   pypi_0    pypi
+pytest                    5.4.1                    pypi_0    pypi
+pytest-cov                2.8.1                    pypi_0    pypi
+pytest-pythonpath         0.7.3                    pypi_0    pypi
+python                    3.6.9                h265db76_0  
+python-dateutil           2.8.1                    pypi_0    pypi
+python-hostlist           1.20                     pypi_0    pypi
+python-libarchive-c       2.8                     py36_13  
+python-nvd3               0.15.0                   pypi_0    pypi
+python-slugify            4.0.0                    pypi_0    pypi
+pytools                   2020.1                   pypi_0    pypi
+pytorch-transformers      1.1.0                    pypi_0    pypi
+pytz                      2019.3                     py_0  
+pywavelets                1.1.1                    pypi_0    pypi
+pyyaml                    5.3              py36h7b6447c_0  
+pyzmq                     19.0.0                   pypi_0    pypi
+readline                  7.0                  h7b6447c_5  
+regex                     2018.1.10                pypi_0    pypi
+requests                  2.22.0                   py36_1  
+requests-oauthlib         1.3.0                    pypi_0    pypi
+resampy                   0.2.2                    pypi_0    pypi
+revtok                    0.0.3                    pypi_0    pypi
+rhash                     1.3.8                h1ba5d50_0  
+ripgrep                   11.0.2               he32d670_0  
+rsa                       4.0                      pypi_0    pypi
+ruamel_yaml               0.15.87          py36h7b6447c_0  
+s3transfer                0.3.3                    pypi_0    pypi
+sacrebleu                 1.2.10                   pypi_0    pypi
+sacremoses                0.0.35                   pypi_0    pypi
+scikit-image              0.15.0                   pypi_0    pypi
+scikit-learn              0.22.2.post1             pypi_0    pypi
+scipy                     1.4.1            py36habc2bb6_0  
+send2trash                1.5.0                    pypi_0    pypi
+sentencepiece             0.1.85                   pypi_0    pypi
+setuptools                45.2.0                   py36_0  
+six                       1.14.0                   py36_0  
+snowballstemmer           2.0.0                    pypi_0    pypi
+soundfile                 0.10.3.post1             pypi_0    pypi
+soupsieve                 1.9.5                    py36_0  
+sox                       1.3.7                    pypi_0    pypi
+spacy                     2.0.16           py36h962f231_0  
+sphinx                    2.4.4                    pypi_0    pypi
+sphinx-rtd-theme          0.4.3                    pypi_0    pypi
+sphinxcontrib-applehelp   1.0.2                    pypi_0    pypi
+sphinxcontrib-devhelp     1.0.2                    pypi_0    pypi
+sphinxcontrib-htmlhelp    1.0.3                    pypi_0    pypi
+sphinxcontrib-jsmath      1.0.1                    pypi_0    pypi
+sphinxcontrib-qthelp      1.0.3                    pypi_0    pypi
+sphinxcontrib-serializinghtml 1.1.4                    pypi_0    pypi
+sqlite                    3.30.0               h7b6447c_0  
+ssd                       0.1                      pypi_0    pypi
+subword-nmt               0.3.3                    pypi_0    pypi
+tabledata                 1.1.0                    pypi_0    pypi
+tabulate                  0.8.7                    pypi_0    pypi
+tbb                       2020.0               hfd86e86_0  
+tensorboard               2.1.0                    pypi_0    pypi
+tensorrt                  7.0.0.11                 pypi_0    pypi
+terminado                 0.8.3                    pypi_0    pypi
+testpath                  0.4.4                    pypi_0    pypi
+text-unidecode            1.3                      pypi_0    pypi
+thinc                     6.12.1           py36h22eb022_0  
+tk                        8.6.8                hbc83047_0  
+toml                      0.10.0                   pypi_0    pypi
+toolz                     0.10.0                     py_0  
+torch                     1.5.0a0+8f84ded          pypi_0    pypi
+torchtext                 0.4.0                    pypi_0    pypi
+torchvision               0.6.0a0                  pypi_0    pypi
+tornado                   6.0.4                    pypi_0    pypi
+tqdm                      4.31.1                   pypi_0    pypi
+traitlets                 4.3.3                    py36_0  
+typepy                    0.6.6                    pypi_0    pypi
+typing                    3.7.4.1                  pypi_0    pypi
+typing-extensions         3.7.4.1                  pypi_0    pypi
+ujson                     1.35             py36h14c3975_0  
+unidecode                 1.1.1                    pypi_0    pypi
+urllib3                   1.25.8                   py36_0  
+wcwidth                   0.1.8                      py_0  
+webencodings              0.5.1                    pypi_0    pypi
+werkzeug                  1.0.0                    pypi_0    pypi
+wheel                     0.34.2                   py36_0  
+wrapt                     1.10.11          py36h14c3975_2  
+xz                        5.2.4                h14c3975_4  
+yacs                      0.1.6                    pypi_0    pypi
+yaml                      0.1.7                had09818_2  
+zipp                      3.1.0                    pypi_0    pypi
+zlib                      1.2.11               h7b6447c_3  
+zstd                      1.3.7                h0b5b093_0  
+
+Test OpenCV
+3.4.1
+
+Test PyTorch
+1.5.0a0+8f84ded
+Tesla V100-SXM2-16GB
