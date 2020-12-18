@@ -5,9 +5,6 @@
 #PBS -N tf-resnet50
 #PBS -j oe
 ### Specify project code
-### e.g. 41000001 was the pilot project code
-###      Personal is your personal lifetime allowance
-### Job will not submit unless this is changed
 #PBS -P 99999999
 
 # Tensorflow (Resnet 50) Imagenet

@@ -15,8 +15,6 @@
 #PBS -q dgx
 
 ### Specify project code
-### e.g. 41000001 was the pilot project code
-### Job will not submit unless this is changed
 #PBS -P 99999999
 
 ### Specify name for job

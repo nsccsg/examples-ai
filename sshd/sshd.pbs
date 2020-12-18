@@ -1,14 +1,10 @@
 #!/bin/sh
 
-### Run in the shared test and development area
-### Note that you do not have exclusive access to the GPUs in the dgx-dev queue
 #PBS -q dgx
 #PBS -l select=1:ncpus=5:ngpus=1
 #PBS -l walltime=1:00:00
 
 ### Specify project code
-### e.g. 41000001 was the pilot project code
-### Job will not submit unless this is changed
 #PBS -P 99999999
 
 ### Specify name for job
