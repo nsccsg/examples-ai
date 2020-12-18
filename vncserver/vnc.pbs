@@ -32,9 +32,9 @@ cd "$PBS_O_WORKDIR" || exit $?
 # Docker Image with VNC installed
 image="nscc/local/tensorflow:latest"
 
-# The "nscc-docker run --ports $image" adds the following extra arguments to the following Docker command: -p 8888:8888 -p 5901:5901 
+# The "nscc-docker run --net=host $image" adds the following extra arguments to the following Docker command: -p 8888:8888 -p 5901:5901 
 # Run VNC server inside container
-nscc-docker run --ports $image << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
+nscc-docker run --net=host $image << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
 vncserver :1
 # Replace following lines with actual commands to run
 sleep 3600
@@ -43,5 +43,3 @@ EOF
 # To connect to VNC either use:
 # 1. Use a reverse proxy, or:
 # 2. Use qstat to see where job is running and ssh port forwarding to connect to port 5901 on that node
-
-# You can alternatively use "nscc-docker run --net=host" (host networking) rather than "nscc-docker run --ports" (private network with port mapping)
