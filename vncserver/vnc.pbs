@@ -32,7 +32,7 @@ cd "$PBS_O_WORKDIR" || exit $?
 # Docker Image with VNC installed
 image="nscc/local/tensorflow:latest"
 
-# The "nscc-docker run --net=host $image" adds the following extra arguments to the following Docker command: -p 8888:8888 -p 5901:5901 
+# The "nscc-docker run --net=host $image" allows VNC port to be accessed, alternatively publish port
 # Run VNC server inside container
 nscc-docker run --net=host $image << EOF > stdout.$PBS_JOBID 2> stderr.$PBS_JOBID
 vncserver :1
